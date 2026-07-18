@@ -75,7 +75,7 @@ export const categories: Record<Category, { label: string; description: string; 
     color: 'purple',
   },
   kids: {
-    label: 'Kids Games',
+    label: 'Brainstorming Games',
     description: 'Gentle learning games for young minds — counting, shapes, colors, animals, logic, and puzzles.',
     color: 'teal',
   },
