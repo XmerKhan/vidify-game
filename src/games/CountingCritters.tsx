@@ -89,7 +89,7 @@ export default function CountingCritters({ game, onAchievement }: { game: GameMe
   if (phase === 'difficulty') {
     return (
       <div className="relative">
-        <AnimatedBackground category="kids" />
+        <AnimatedBackground category="brainstorming" />
         <DifficultySelector title="Counting Critters" description="Count the cute critters and pick the right number! No timer, just fun!" icon={<Hash className="h-14 w-14 text-teal-600" />} difficultyDescriptions={DIFFICULTY_DESCRIPTIONS} onSelect={startWithDifficulty} />
       </div>
     );
@@ -115,7 +115,7 @@ export default function CountingCritters({ game, onAchievement }: { game: GameMe
 
   return (
     <div className="relative">
-      <AnimatedBackground category="kids" />
+      <AnimatedBackground category="brainstorming" />
       <InGameMascot slug={game.slug} category={game.category} trigger={mascotTrigger} wrong={mascotWrong} />
       <div className="relative">
         <GameHUD level={eng.level} streak={eng.streak} score={eng.score} />

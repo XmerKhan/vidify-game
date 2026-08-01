@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-type Category = 'finance' | 'tech' | 'educational' | 'kids';
+type Category = 'finance' | 'tech' | 'educational' | 'brainstorming';
 
 interface AnimatedBackgroundProps {
   category: Category;
@@ -25,7 +25,7 @@ const SHAPES: Record<Category, { svg: string; color: string; size: number }[]> =
     { svg: 'pencil', color: 'text-purple-400', size: 22 },
     { svg: 'book', color: 'text-purple-300', size: 26 },
   ],
-  kids: [
+  brainstorming: [
     { svg: 'star', color: 'text-teal-300', size: 30 },
     { svg: 'star', color: 'text-accent-300', size: 24 },
     { svg: 'heart', color: 'text-teal-200', size: 22 },
@@ -92,7 +92,7 @@ function Shape({ svg, color, size }: { svg: string; color: string; size: number 
 
 export default function AnimatedBackground({ category }: AnimatedBackgroundProps) {
   const items = useMemo(() => {
-    const shapes = SHAPES[category] || SHAPES.kids;
+    const shapes = SHAPES[category] || SHAPES.brainstorming;
     return Array.from({ length: 12 }, (_, i) => {
       const shape = shapes[i % shapes.length];
       return {

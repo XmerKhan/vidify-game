@@ -310,7 +310,7 @@ export default function MathSprint({ game, onAchievement }: { game: GameMeta; on
   if (phase === 'difficulty') {
     return (
       <div className="relative">
-        <AnimatedBackground category="kids" />
+        <AnimatedBackground category="brainstorming" />
         <DifficultySelector
           title="Math Sprint"
           description="Steer the glowing character into the correct answer tile. Avoid wrong answers! Use arrow keys or swipe to move."
@@ -346,7 +346,7 @@ export default function MathSprint({ game, onAchievement }: { game: GameMeta; on
 
   return (
     <div className="relative">
-      <AnimatedBackground category="kids" />
+      <AnimatedBackground category="brainstorming" />
       <InGameMascot slug={game.slug} category={game.category} trigger={mascotTrigger} wrong={mascotWrong} />
       <div className="relative">
         <GameHUD level={Math.floor(correct / 5) + 1} streak={streak} score={score} timeLeft={timeLeft} />

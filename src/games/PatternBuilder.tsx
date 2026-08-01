@@ -162,7 +162,7 @@ export default function PatternBuilder({ game, onAchievement }: { game: GameMeta
   if (phase === 'difficulty') {
     return (
       <div className="relative">
-        <AnimatedBackground category="kids" />
+        <AnimatedBackground category="brainstorming" />
         <DifficultySelector title="Pattern Builder" description="What comes next in the pattern? No timer, just fun!" icon={<Blocks className="h-14 w-14 text-teal-600" />} difficultyDescriptions={DIFFICULTY_DESCRIPTIONS} onSelect={startWithDifficulty} />
       </div>
     );
@@ -188,7 +188,7 @@ export default function PatternBuilder({ game, onAchievement }: { game: GameMeta
 
   return (
     <div className="relative">
-      <AnimatedBackground category="kids" />
+      <AnimatedBackground category="brainstorming" />
       <InGameMascot slug={game.slug} category={game.category} trigger={mascotTrigger} wrong={mascotWrong} />
       <div className="relative">
         <GameHUD level={eng.level} streak={eng.streak} score={eng.score} />

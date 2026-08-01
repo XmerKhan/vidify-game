@@ -91,7 +91,7 @@ export default function ColorMixing({ game, onAchievement }: { game: GameMeta; o
   if (phase === 'difficulty') {
     return (
       <div className="relative">
-        <AnimatedBackground category="kids" />
+        <AnimatedBackground category="brainstorming" />
         <DifficultySelector title="Color Mixing Magic" description="Mix two colors and pick what they make! No timer, just fun!" icon={<Palette className="h-14 w-14 text-teal-600" />} difficultyDescriptions={DIFFICULTY_DESCRIPTIONS} onSelect={startWithDifficulty} />
       </div>
     );
@@ -117,7 +117,7 @@ export default function ColorMixing({ game, onAchievement }: { game: GameMeta; o
 
   return (
     <div className="relative">
-      <AnimatedBackground category="kids" />
+      <AnimatedBackground category="brainstorming" />
       <InGameMascot slug={game.slug} category={game.category} trigger={mascotTrigger} wrong={mascotWrong} />
       <div className="relative">
         <GameHUD level={eng.level} streak={eng.streak} score={eng.score} />

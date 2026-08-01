@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-type Category = 'finance' | 'tech' | 'educational' | 'kids';
+type Category = 'finance' | 'tech' | 'educational' | 'brainstorming';
 
 interface GameMascotProps {
   category: Category;
@@ -46,7 +46,7 @@ function MascotSVG({ category, size }: { category: Category; size: number }) {
           <circle cx="60" cy="100" r="6" fill="#fbbf24" />
         </svg>
       );
-    case 'kids':
+    case 'brainstorming':
       return (
         <svg {...common}>
           <circle cx="60" cy="60" r="50" fill="#14b8a6" />

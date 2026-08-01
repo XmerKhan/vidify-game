@@ -84,7 +84,7 @@ export default function HomePage() {
               finance: Wallet,
               tech: Code2,
               educational: Globe,
-              kids: Baby,
+              brainstorming: Baby,
             };
             const Icon = icons[key];
             return (

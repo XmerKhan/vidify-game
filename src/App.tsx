@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import GamePage from './pages/GamePage';
@@ -16,6 +16,7 @@ const router = createBrowserRouter([
       { path: '/', element: <HomePage /> },
       { path: '/games/:slug', element: <GamePage /> },
       { path: '/category/:category', element: <CategoryPage /> },
+      { path: '/category/kids', element: <Navigate to="/category/brainstorming" replace /> },
       { path: '/about', element: <AboutPage /> },
       { path: '/privacy', element: <PrivacyPage /> },
       { path: '/terms', element: <TermsPage /> },
