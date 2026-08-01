@@ -396,7 +396,7 @@ export default function GameThumbnail({ game, className = '' }: ThumbnailProps) 
   const Icon = game.icon;
 
   return (
-    <div className={`relative overflow-hidden bg-gradient-to-br ${colors.from} ${colors.to} ${className}`}>
+    <div className={`relative overflow-hidden bg-gradient-to-br ${colors.from} ${colors.to} ${className}`} role="img" aria-label={`${game.title} illustration`}>
       {/* Decorative shapes */}
       <div className="absolute inset-0">{shapes}</div>
       {/* Icon badge */}

@@ -19,20 +19,34 @@ export default function CategoryPage() {
   const canonicalPath = `/category/${cat}`;
   const categoryUrl = `${SITE_ORIGIN}${canonicalPath}`;
 
+  const categoryTitles: Record<string, string> = {
+    finance: `Free Finance Games — Learn Money Skills | ${SITE_NAME}`,
+    tech: `Free Tech & Logic Games — Learn Programming | ${SITE_NAME}`,
+    educational: `Free Educational Games — Learn Online | ${SITE_NAME}`,
+    brainstorming: `Free Brain Games for Kids — Learn & Play | ${SITE_NAME}`,
+  };
+  const categorySeoDescriptions: Record<string, string> = {
+    finance: 'Play free finance games online. Learn budgeting, investing, credit scores, and smart spending through interactive play. No download needed.',
+    tech: 'Play free tech and logic games online. Learn coding, debugging, binary, keyboard shortcuts, and logic gates. Test your skills. No download needed.',
+    educational: 'Play free educational games online. Learn science, geography, history, and languages through interactive play. No download needed.',
+    brainstorming: 'Play free brain games for kids online. Counting, shapes, colors, animals, patterns, and puzzles. Safe, gentle, and fun. No download needed.',
+  };
+
+  const seoTitle = meta ? (categoryTitles[cat] || `${meta.label} | ${SITE_NAME}`) : `Category Not Found | ${SITE_NAME}`;
+  const seoDescription = meta ? (categorySeoDescriptions[cat] || meta.description) : 'Browse educational games by category.';
+
   const jsonLd = meta ? {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
     name: meta.label,
-    description: meta.description,
+    description: seoDescription,
     url: categoryUrl,
     isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_ORIGIN },
   } : null;
 
   useSEO({
-    title: meta
-      ? `${meta.label} — Play Free Online | ${SITE_NAME}`
-      : `Category Not Found | ${SITE_NAME}`,
-    description: meta?.description || 'Browse educational games by category.',
+    title: seoTitle,
+    description: seoDescription,
     canonicalPath: meta ? canonicalPath : undefined,
     jsonLd,
   });

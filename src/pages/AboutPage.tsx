@@ -33,7 +33,7 @@ export default function AboutPage() {
 
         <h2>What We Do</h2>
         <p>
-          We build games across four categories: Finance Games, Tech &amp; Logic Games, Educational Games, and Kids Games. Each one is built around a single idea — that people learn better when they're engaged, not lectured. Whether it's understanding how a credit score works or catching the signs of a phishing email, we turn the concept into something you can practice, fail at, and improve on, without any real-world risk.
+          We build games across four categories: Finance Games, Tech &amp; Logic Games, Educational Games, and Brainstorming Games. Each one is built around a single idea — that people learn better when they're engaged, not lectured. Whether it's understanding how a credit score works or catching the signs of a phishing email, we turn the concept into something you can practice, fail at, and improve on, without any real-world risk.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-4 my-8 not-prose">
