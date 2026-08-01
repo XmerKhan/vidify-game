@@ -7,6 +7,8 @@ import AboutPage from './pages/AboutPage';
 import PrivacyPage from './pages/PrivacyPage';
 import TermsPage from './pages/TermsPage';
 import ContactPage from './pages/ContactPage';
+import AdvertisementDisclosurePage from './pages/AdvertisementDisclosurePage';
+import DisclaimerPage from './pages/DisclaimerPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 const router = createBrowserRouter([
@@ -21,6 +23,8 @@ const router = createBrowserRouter([
       { path: '/privacy', element: <PrivacyPage /> },
       { path: '/terms', element: <TermsPage /> },
       { path: '/contact', element: <ContactPage /> },
+      { path: '/advertisement-disclosure', element: <AdvertisementDisclosurePage /> },
+      { path: '/disclaimer', element: <DisclaimerPage /> },
       { path: '*', element: <NotFoundPage /> },
     ],
   },

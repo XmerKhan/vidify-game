@@ -33,7 +33,7 @@ import {
   type LucideIcon,
 } from 'lucide-react';
 
-export type Category = 'finance' | 'tech' | 'educational' | 'kids';
+export type Category = 'finance' | 'tech' | 'educational' | 'brainstorming';
 
 export type Difficulty = 'Easy' | 'Medium' | 'Hard';
 
@@ -74,7 +74,7 @@ export const categories: Record<Category, { label: string; description: string; 
     description: 'Expand your knowledge of science, geography, history, and language through interactive play.',
     color: 'purple',
   },
-  kids: {
+  brainstorming: {
     label: 'Brainstorming Games',
     description: 'Gentle learning games for young minds — counting, shapes, colors, animals, logic, and puzzles.',
     color: 'teal',
@@ -146,7 +146,7 @@ export const games: GameMeta[] = [
     slug: 'code-breaker',
     title: 'Code Breaker',
     shortTitle: 'Code Breaker',
-    category: 'kids',
+    category: 'brainstorming',
     icon: Code2,
     tagline: 'Crack a hidden color sequence using logic and feedback hints.',
     description:
@@ -206,7 +206,7 @@ export const games: GameMeta[] = [
     slug: 'word-chain-challenge',
     title: 'Word Chain Challenge',
     shortTitle: 'Word Chain',
-    category: 'kids',
+    category: 'brainstorming',
     icon: Type,
     tagline: 'Build word chains where each word starts with the last letter of the previous one.',
     description:
@@ -226,7 +226,7 @@ export const games: GameMeta[] = [
     slug: 'memory-grid',
     title: 'Memory Grid',
     shortTitle: 'Memory Grid',
-    category: 'kids',
+    category: 'brainstorming',
     icon: Grid3x3,
     tagline: 'Match flag pairs from memory across a grid of face-down cards.',
     description:
@@ -246,7 +246,7 @@ export const games: GameMeta[] = [
     slug: 'math-sprint',
     title: 'Math Sprint',
     shortTitle: 'Math Sprint',
-    category: 'kids',
+    category: 'brainstorming',
     icon: Calculator,
     tagline: 'Solve arithmetic problems against the clock with escalating difficulty.',
     description:
@@ -586,7 +586,7 @@ export const games: GameMeta[] = [
     slug: 'shape-sorter',
     title: 'Shape Sorter',
     shortTitle: 'Shapes',
-    category: 'kids',
+    category: 'brainstorming',
     icon: Shapes,
     tagline: 'Sort colorful shapes into the right baskets — circles, squares, triangles, and stars!',
     description:
@@ -606,7 +606,7 @@ export const games: GameMeta[] = [
     slug: 'animal-habitat',
     title: 'Animal Habitat Match',
     shortTitle: 'Animal Habitat',
-    category: 'kids',
+    category: 'brainstorming',
     icon: PawPrint,
     tagline: 'Match friendly animals to their natural habitats — forest, ocean, desert, and more!',
     description:
@@ -626,7 +626,7 @@ export const games: GameMeta[] = [
     slug: 'counting-critters',
     title: 'Counting Critters',
     shortTitle: 'Counting',
-    category: 'kids',
+    category: 'brainstorming',
     icon: Hash,
     tagline: 'Count the cute critters and pick the right number — no timer, just fun!',
     description:
@@ -646,7 +646,7 @@ export const games: GameMeta[] = [
     slug: 'color-mixing',
     title: 'Color Mixing Magic',
     shortTitle: 'Color Magic',
-    category: 'kids',
+    category: 'brainstorming',
     icon: Palette,
     tagline: 'Mix primary colors to make new colors — red and blue make purple!',
     description:
@@ -666,7 +666,7 @@ export const games: GameMeta[] = [
     slug: 'pattern-builder',
     title: 'Pattern Builder',
     shortTitle: 'Patterns',
-    category: 'kids',
+    category: 'brainstorming',
     icon: Blocks,
     tagline: 'Complete the pattern — what comes next in the colorful sequence?',
     description:
