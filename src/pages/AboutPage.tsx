@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom';
-import { Target, Heart, Code2, Users } from 'lucide-react';
 import { useSEO, SITE_ORIGIN, SITE_NAME } from '../lib/seo';
 
 export default function AboutPage() {
   useSEO({
     title: 'About Us | Vidify Games',
-    description: 'Vidify Games is a free educational gaming platform built to teach real-world skills through original, interactive games. Learn our mission and story.',
+    description: 'Vidify Games was founded by Umer Khan. Learn why he built this free educational gaming platform and what drives it.',
     canonicalPath: '/about',
     jsonLd: {
       '@context': 'https://schema.org',
@@ -17,62 +16,74 @@ export default function AboutPage() {
   });
 
   return (
-    <div className="container-content py-10 max-w-3xl">
-      <nav className="flex items-center gap-2 text-sm text-ink-400 mb-6">
+    <div className="container-content py-10 max-w-4xl">
+      <nav className="flex items-center gap-2 text-sm text-ink-400 mb-8">
         <Link to="/" className="hover:text-ink-700">Home</Link>
         <span>/</span>
-        <span className="text-ink-600">About</span>
+        <span className="text-ink-600">About Us</span>
       </nav>
 
-      <h1 className="font-display font-extrabold text-3xl text-ink-900 mb-4">About Vidify Games</h1>
+      {/* Two-column layout: text left, photo right on desktop; photo top, text below on mobile */}
+      <div className="flex flex-col-reverse md:flex-row md:items-start md:gap-12">
+        {/* Text */}
+        <div className="flex-1 min-w-0">
+          <h1 className="font-display font-extrabold text-3xl lg:text-4xl text-ink-900 mb-6 leading-tight">
+            Hi, I'm Umer Khan — and I built Vidify Games.
+          </h1>
 
-      <div className="prose-edu">
-        <p>
-          Vidify Games is a growing collection of free, browser-based educational games built to make learning practical skills feel like play. Every game on our platform is designed from the ground up — no third-party embeds, no recycled content — to teach something real: how to manage money, spot online scams, sharpen logic, or simply learn a new fact along the way.
-        </p>
+          <div className="prose-edu space-y-5 text-ink-700 leading-relaxed">
+            <p>
+              I started Vidify Games because I kept running into the same problem: most of the content out there that tries to teach real-world skills — budgeting, investing, coding basics, world knowledge — is either too dry to sit through, or it gets hidden behind a paywall. I wanted something different. Something you could actually sit down with, spend ten minutes on, and walk away having genuinely learned something.
+            </p>
 
-        <h2>What We Do</h2>
-        <p>
-          We build games across four categories: Finance Games, Tech &amp; Logic Games, Educational Games, and Brainstorming Games. Each one is built around a single idea — that people learn better when they're engaged, not lectured. Whether it's understanding how a credit score works or catching the signs of a phishing email, we turn the concept into something you can practice, fail at, and improve on, without any real-world risk.
-        </p>
+            <p>
+              So I built the games myself, from scratch. Every single one — no third-party embeds, no recycled content. Vidify Games now has thirty original browser-based games across four categories: Finance Games, Tech &amp; Logic Games, Educational Games, and Brainstorming Games. Whether you're practicing how to build a budget, learning to read binary, brushing up on world capitals, or just keeping your mind sharp, there's something here for you.
+            </p>
 
-        <div className="grid sm:grid-cols-2 gap-4 my-8 not-prose">
-          <div className="card p-5">
-            <Target className="h-6 w-6 text-brand-600 mb-2" />
-            <h3 className="font-display font-bold text-ink-900">Original, Not Aggregated</h3>
-            <p className="text-sm text-ink-500 mt-1">Every game on Vidify Games is built from scratch with real game logic. No embeds, no iframes, no third-party content.</p>
-          </div>
-          <div className="card p-5">
-            <Heart className="h-6 w-6 text-brand-600 mb-2" />
-            <h3 className="font-display font-bold text-ink-900">Free, Forever</h3>
-            <p className="text-sm text-ink-500 mt-1">No paywalls, no signups, no downloads. We believe educational tools should be accessible to everyone.</p>
-          </div>
-          <div className="card p-5">
-            <Code2 className="h-6 w-6 text-brand-600 mb-2" />
-            <h3 className="font-display font-bold text-ink-900">Built for the Web</h3>
-            <p className="text-sm text-ink-500 mt-1">Our games run in any modern browser on any device. No installs, no plugins, no friction.</p>
-          </div>
-          <div className="card p-5">
-            <Users className="h-6 w-6 text-brand-600 mb-2" />
-            <h3 className="font-display font-bold text-ink-900">Made for Learners</h3>
-            <p className="text-sm text-ink-500 mt-1">Each game page includes an original article explaining the skill, how to play, and tips for improvement.</p>
+            <p>
+              The idea behind everything on this site is simple: people learn better when they're actually engaged. A game gives you something to react to, to fail at, to try again. It makes the skill feel real in a way that reading a bulleted list just doesn't. Every game on Vidify Games is built around one practical idea — one thing you can actually use — and each game page includes a short, plain-English article explaining what the skill is and why it matters.
+            </p>
+
+            <p>
+              I take accuracy seriously. Every article and every game mechanic gets reviewed before it goes live. I'm not trying to fill pages with content for the sake of it — I'd rather have thirty games that genuinely work than three hundred that are just noise. If something isn't accurate or isn't useful, it doesn't belong here.
+            </p>
+
+            <p>
+              Vidify Games is and always will be completely free. No signup, no download, no paywall. I believe that tools for learning should be open to everyone, and that's not going to change.
+            </p>
+
+            <p>
+              If you have a question, found something that doesn't look right, or just want to say hello, I'd love to hear from you. You can reach me at{' '}
+              <a href="mailto:vidifygamesinfo@gmail.com" className="text-brand-700 font-semibold hover:underline">
+                vidifygamesinfo@gmail.com
+              </a>{' '}
+              or through the{' '}
+              <Link to="/contact" className="text-brand-700 font-semibold hover:underline">
+                contact page
+              </Link>
+              .
+            </p>
           </div>
         </div>
 
-        <h2>Our Approach</h2>
-        <p>
-          Every game is paired with a short, plain-language guide explaining how it works, what skill it builds, and how to get better at it. We keep our content honest and specific — no vague advice, no filler. We're a small, independent team, and we review every game and article before it goes live to make sure it's accurate, useful, and free of unnecessary jargon.
-        </p>
-
-        <h2>New Games Every Month</h2>
-        <p>
-          We add new games regularly across all four categories, based on topics people are actively trying to understand — from personal finance basics to everyday tech literacy. If there's a topic you'd like to see turned into a game, reach out — we read every message.
-        </p>
-
-        <h2>Get in Touch</h2>
-        <p>
-          Questions, feedback, or suggestions? Email us at <a href="mailto:vidifygamesinfo@gmail.com" className="text-brand-700 font-semibold hover:underline">vidifygamesinfo@gmail.com</a> or through our <Link to="/contact" className="text-brand-700 font-semibold hover:underline">contact page</Link>.
-        </p>
+        {/* Photo */}
+        <div className="md:w-64 lg:w-72 shrink-0 mb-8 md:mb-0">
+          <div className="sticky top-24">
+            {/*
+              Replace the src below with "/umer-khan.jpg" (or your preferred filename)
+              once you've added the photo file to the public/ folder.
+              The SVG placeholder has the same dimensions so layout won't shift.
+            */}
+            <img
+              src="/umer-khan.svg"
+              alt="Umer Khan, founder of Vidify Games"
+              className="w-full rounded-2xl shadow-md object-cover"
+              style={{ aspectRatio: '5/6' }}
+            />
+            <p className="mt-3 text-center text-sm font-semibold text-ink-700">Umer Khan</p>
+            <p className="text-center text-xs text-ink-400">Founder, Vidify Games</p>
+          </div>
+        </div>
       </div>
     </div>
   );
