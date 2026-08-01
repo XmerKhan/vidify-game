@@ -69,13 +69,8 @@ export default function AboutPage() {
         {/* Photo */}
         <div className="md:w-64 lg:w-72 shrink-0 mb-8 md:mb-0">
           <div className="sticky top-24">
-            {/*
-              Replace the src below with "/umer-khan.jpg" (or your preferred filename)
-              once you've added the photo file to the public/ folder.
-              The SVG placeholder has the same dimensions so layout won't shift.
-            */}
             <img
-              src="/umer-khan.svg"
+              src="/my_photo.jpg"
               alt="Umer Khan, founder of Vidify Games"
               className="w-full rounded-2xl shadow-md object-cover"
               style={{ aspectRatio: '5/6' }}

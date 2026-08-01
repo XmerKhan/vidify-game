@@ -17,7 +17,6 @@ const topLinks = [
   { to: '/privacy', label: 'Privacy Policy' },
   { to: '/terms', label: 'Terms & Conditions' },
   { to: '/disclaimer', label: 'Disclaimer' },
-  { to: '/advertisement-disclosure', label: 'Advertisement Disclosure' },
 ];
 
 export default function Navbar() {
