@@ -24,6 +24,33 @@ export default function GameShell({ game, component }: GameShellProps) {
   const gameUrl = `${SITE_ORIGIN}${canonicalPath}`;
   const categoryUrl = `${SITE_ORIGIN}/category/${game.category}`;
 
+  const faqs = game.faqs ?? [
+    {
+      '@type': 'Question',
+      name: `How do I play ${game.title}?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: `${game.description} Choose a difficulty level, then follow the on-screen instructions to start playing.`,
+      },
+    },
+    {
+      '@type': 'Question',
+      name: `Is ${game.title} free to play?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: `Yes, ${game.title} is completely free to play. No signup, no download, and no payment required. Just open the page and start playing.`,
+      },
+    },
+    {
+      '@type': 'Question',
+      name: `Does ${game.title} save my scores?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, your scores are saved locally in your browser using local storage. You can compete against yourself on the local leaderboard. Clearing your browser data will reset your scores.',
+      },
+    },
+  ];
+
   const jsonLd = [
     {
       '@context': 'https://schema.org',
@@ -37,6 +64,7 @@ export default function GameShell({ game, component }: GameShellProps) {
       genre: cat.label,
       author: { '@type': 'Organization', name: SITE_NAME },
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      ...(game.dateModified ? { dateModified: game.dateModified } : {}),
     },
     {
       '@context': 'https://schema.org',
@@ -50,32 +78,14 @@ export default function GameShell({ game, component }: GameShellProps) {
     {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: `How do I play ${game.title}?`,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: `${game.description} Choose a difficulty level, then follow the on-screen instructions to start playing.`,
-          },
+      mainEntity: faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.question ?? faq.name,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer ?? faq.acceptedAnswer.text,
         },
-        {
-          '@type': 'Question',
-          name: `Is ${game.title} free to play?`,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: `Yes, ${game.title} is completely free to play. No signup, no download, and no payment required. Just open the page and start playing.`,
-          },
-        },
-        {
-          '@type': 'Question',
-          name: `Does ${game.title} save my scores?`,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Yes, your scores are saved locally in your browser using local storage. You can compete against yourself on the local leaderboard. Clearing your browser data will reset your scores.',
-          },
-        },
-      ],
+      })),
     },
     {
       '@context': 'https://schema.org',
@@ -88,6 +98,7 @@ export default function GameShell({ game, component }: GameShellProps) {
         { '@type': 'HowToStep', position: 3, name: 'Start playing', text: 'Follow the on-screen prompts and interact with the game to score points.' },
         { '@type': 'HowToStep', position: 4, name: 'Check your score', text: 'View your results on the local leaderboard and try to beat your high score.' },
       ],
+      ...(game.dateModified ? { dateModified: game.dateModified } : {}),
     },
   ];
 
@@ -153,7 +164,15 @@ export default function GameShell({ game, component }: GameShellProps) {
 
         {/* Article */}
         <article className="prose-edu max-w-none">
+          {game.dateModified && (
+            <p className="text-xs text-ink-400 mb-4">Last updated: {game.dateModified}</p>
+          )}
           <div dangerouslySetInnerHTML={{ __html: articles[game.article.body] }} />
+          <p className="text-xs text-ink-400 mt-6">
+            Reviewed by the{' '}
+            <Link to="/about" className="text-brand-700 hover:underline">Vidify Games team for accuracy</Link>
+            .
+          </p>
         </article>
 
         {/* Related games */}

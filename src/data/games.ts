@@ -37,6 +37,11 @@ export type Category = 'finance' | 'tech' | 'educational' | 'brainstorming';
 
 export type Difficulty = 'Easy' | 'Medium' | 'Hard';
 
+export interface FAQ {
+  question: string;
+  answer: string;
+}
+
 export interface GameMeta {
   slug: string;
   title: string;
@@ -51,6 +56,8 @@ export interface GameMeta {
   accent: string;
   difficulty: Difficulty;
   article: ArticleContent;
+  faqs?: FAQ[];
+  dateModified?: string;
 }
 
 export interface ArticleContent {
@@ -101,6 +108,21 @@ export const games: GameMeta[] = [
       style: 'B',
       body: `BUDGET_MASTER_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'What is the 50/30/20 budgeting rule?',
+        answer: 'The 50/30/20 rule directs 50% of your after-tax income to needs like rent and groceries, 30% to wants like entertainment, and 20% to savings and debt repayment. It is a starting point, not a strict law — higher earners may save more, while people in expensive cities may need to adjust the housing portion.',
+      },
+      {
+        question: 'How much of my income should go to rent?',
+        answer: 'Financial planners generally recommend keeping total housing costs under 30% of gross income. Crossing that threshold squeezes your food, transport, and savings categories, which is exactly what Budget Master penalizes when you push the rent slider too high.',
+      },
+      {
+        question: 'Does Budget Master save my financial health score?',
+        answer: 'Yes. Your best scores are saved locally in your browser using local storage, so you can try to beat your personal best over multiple sessions. Clearing your browser data will reset all saved scores.',
+      },
+    ],
   },
   {
     slug: 'stock-market-simulator',
@@ -121,6 +143,21 @@ export const games: GameMeta[] = [
       style: 'B',
       body: `STOCK_MARKET_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'Are the stock prices in the simulator based on real market data?',
+        answer: 'No. Prices are randomly generated to simulate market volatility. The goal is to practice decision-making under uncertainty — position sizing, diversification, and emotional discipline — not to learn stock prediction.',
+      },
+      {
+        question: 'What is position sizing and why does it matter?',
+        answer: 'Position sizing is how much of your total capital you put into a single stock. Putting everything into one rising stock can produce big gains or total losses. Spreading capital across multiple stocks smooths out volatility, which is the core principle of real portfolio diversification.',
+      },
+      {
+        question: 'Can I lose all my virtual money in the simulator?',
+        answer: 'You can lose a significant portion if you concentrate in a crashing stock, but the game ends after ten rounds regardless. The purpose is learning emotional discipline, not survival under real financial risk.',
+      },
+    ],
   },
   {
     slug: 'save-or-spend',
@@ -141,6 +178,21 @@ export const games: GameMeta[] = [
       style: 'D',
       body: `SAVE_OR_SPEND_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'How does Save or Spend decide if a choice is smart or a splurge?',
+        answer: 'Each option is evaluated against standard personal finance principles — needs-versus-wants categorization, long-term cost impact, and opportunity cost — then labeled wise, neutral, or a splurge with a short explanation so you understand the reasoning.',
+      },
+      {
+        question: 'What happens if I pick the splurge option every time?',
+        answer: 'Your score will reflect poor cumulative judgment. The game rewards consistently sound decisions across all ten rounds rather than a single lucky pick, so splurging every round produces a low score.',
+      },
+      {
+        question: 'Can playing Save or Spend actually help me spend less in real life?',
+        answer: 'Yes. The game trains the habit of pausing to categorize purchases as needs or wants before deciding. That same mental pause is what curbs impulse spending outside the game.',
+      },
+    ],
   },
   {
     slug: 'code-breaker',
@@ -301,6 +353,21 @@ export const games: GameMeta[] = [
       style: 'A',
       body: `CREDIT_SCORE_CLIMB_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'What FICO score range is considered good versus excellent?',
+        answer: 'A FICO score ranges from 300 to 850. Scores from 670 to 739 are considered good, 740 to 799 are very good, and 800 and above is excellent. Credit Score Climb challenges you to reach 800 by making decisions that mirror the real factors bureaus weigh.',
+      },
+      {
+        question: 'How much does one missed payment hurt my credit score?',
+        answer: 'A single missed payment can drop a good score by 50 to 100 points because payment history is the single biggest factor at roughly 35% of your FICO score. The damage lingers on your report for up to seven years.',
+      },
+      {
+        question: 'What credit utilization ratio should I aim for?',
+        answer: 'Keep your utilization under 30% of your total credit limit, and ideally under 10%. If your combined limits are $10,000, try to never carry more than $3,000 — and the highest scorers stay below $1,000.',
+      },
+    ],
   },
   {
     slug: 'rent-vs-buy',
@@ -321,6 +388,21 @@ export const games: GameMeta[] = [
       style: 'B',
       body: `RENT_VS_BUY_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'Is renting really throwing money away?',
+        answer: 'Not necessarily. When you factor in closing costs, maintenance, property taxes, and the opportunity cost of investing your down payment, renting can win financially over a ten-year horizon — especially in markets where home prices are high relative to rents.',
+      },
+      {
+        question: 'What is the opportunity cost of a down payment?',
+        answer: 'It is the investment return you give up by locking your cash in a house instead of the stock market. At a 7% average annual return, your down payment doubles roughly every ten years, which often rivals or exceeds home appreciation.',
+      },
+      {
+        question: 'How much should I budget for home maintenance?',
+        answer: 'A common rule of thumb is 1% of the home value per year. Over ten years on a $400,000 house, that is $40,000 — a significant sum that renters never pay and that many first-time buyers forget to include.',
+      },
+    ],
   },
   {
     slug: 'retirement-countdown',
@@ -341,6 +423,21 @@ export const games: GameMeta[] = [
       style: 'A',
       body: `RETIREMENT_COUNTDOWN_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'Why does starting early matter more than saving more?',
+        answer: 'Compound interest grows exponentially over time. Saving 10% of your income from age 25 yields more at retirement than saving 20% from age 40, even though the later saver contributes more per year. Time is the most powerful variable in retirement planning.',
+      },
+      {
+        question: 'What is an employer match and why should I take it?',
+        answer: 'An employer match is when your company contributes to your retirement account up to a certain percentage of your salary. Not taking the full match is equivalent to turning down a raise — it is free money that compounds over decades.',
+      },
+      {
+        question: 'Should I choose conservative or aggressive investments for retirement?',
+        answer: 'Over a 30-year horizon, aggressive portfolios almost always outperform conservative ones despite having down years. The right mix depends on your time horizon and risk tolerance, but younger savers generally benefit from more aggressive allocations.',
+      },
+    ],
   },
   {
     slug: 'emergency-fund-builder',
@@ -361,6 +458,21 @@ export const games: GameMeta[] = [
       style: 'B',
       body: `EMERGENCY_FUND_BUILDER_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'How much should I keep in an emergency fund?',
+        answer: 'Aim for three to six months of essential expenses. Start with a mini-fund of $1,000 to cover minor emergencies like a tire or copay, then build toward the full target over time.',
+      },
+      {
+        question: 'Where should I keep my emergency savings?',
+        answer: 'In a high-yield savings account that is separate from checking but easily liquid. It needs to be accessible when an emergency hits, but not so convenient that you dip into it for non-emergencies.',
+      },
+      {
+        question: 'Why does Emergency Fund Builder charge interest on debt?',
+        answer: 'Because real debt charges interest, which creates a spiral that slows your progress. The game simulates that spiral to show why saving before an emergency hits is far cheaper than borrowing after it does.',
+      },
+    ],
   },
   {
     slug: 'insurance-matcher',
@@ -381,6 +493,21 @@ export const games: GameMeta[] = [
       style: 'C',
       body: `INSURANCE_MATCHER_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'Do I need life insurance if I am young and single with no dependents?',
+        answer: 'Probably not. Life insurance replaces your income for people who depend on it, so if nobody does, you can skip it. Disability insurance, however, is critical because your ability to earn income is your biggest asset.',
+      },
+      {
+        question: 'Does standard home insurance cover flooding?',
+        answer: 'No. Standard home insurance excludes flood damage. A homeowner in a flood zone needs separate flood coverage, which is one of the most common gaps people discover too late after a storm.',
+      },
+      {
+        question: 'How often should I shop around for insurance?',
+        answer: 'Annually. Rates change constantly, and the company that was cheapest last year may not be this year. Get fresh quotes every twelve months for auto and home insurance — loyalty to one insurer rarely pays.',
+      },
+    ],
   },
   {
     slug: 'typing-speed',

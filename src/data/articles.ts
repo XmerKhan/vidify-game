@@ -1,72 +1,78 @@
 export const articles: Record<string, string> = {
   BUDGET_MASTER_ARTICLE: `
-<p>Budgeting is the practice of allocating your income across expense categories before you spend it, ensuring that savings and essentials are funded first. A balanced budget typically follows the 50/30/20 rule, which directs 50% of income to needs, 30% to wants, and 20% to savings.</p>
+<p>Budget Master is a free interactive budgeting game that gives you a monthly salary and asks you to divide it across rent, food, transport, savings, and discretionary spending. By dragging sliders and locking in your allocation, you learn the real skill of intentional money management — deciding where your income goes before you spend it. That skill matters because people who budget deliberately are far more likely to build savings and avoid debt than those who spend first and save whatever remains.</p>
 
-<p>Imagine it is the first of the month. Your paycheck just landed in your account, and for the next thirty days that single deposit has to cover everything: the roof over your head, the food in your fridge, the gas in your car, and hopefully a little something left over for the version of you who wants to retire someday. That is the scenario Budget Master drops you into, and it is closer to real life than most people realize.</p>
+<h2>How the Allocation Sliders Work</h2>
+<p>You start with a fixed monthly salary and five sliders representing common expense categories. Your job is to assign each category a percentage of your income. When you lock in, the game evaluates your allocation against established guidelines like the 50/30/20 rule and recommended housing-cost ratios.</p>
 
-<h2>How the Game Works</h2>
-<p>You start with a fixed monthly salary and a set of sliders representing common expense categories: rent, food, transportation, savings, and discretionary spending. Your job is to drag each slider to a percentage of your income that feels right. When you lock in your budget, the game evaluates your allocation against widely used personal finance guidelines — the 50/30/20 rule, recommended housing-cost ratios, and minimum savings targets — then hands you a financial health score from zero to one hundred.</p>
+<p>The result is a financial health score from zero to one hundred. A budget that funds essentials, saves adequately, and leaves room for enjoyment scores well. Maxing out one category while starving others does not.</p>
 
-<h2>The Real-World Skill This Builds</h2>
-<p>The core skill here is <strong>intentional allocation</strong>. Most people do not budget because they find it tedious or restrictive, but the act of deciding in advance where your money goes is the single biggest predictor of financial stability. By turning that decision into a game with instant feedback, you start to internalize what a balanced budget looks like without ever opening a spreadsheet. After a few rounds, the ratios start to feel instinctive: you begin to notice when rent is eating too much of your income or when your savings rate has quietly dropped to two percent.</p>
+<h2>The Skill This Builds: Intentional Allocation</h2>
+<p>Most people do not budget because they find it tedious or restrictive. But the act of deciding in advance where your money goes is the single biggest predictor of financial stability. Budget Master turns that decision into a game with instant feedback.</p>
 
-<h2>Three Tips You Can Apply Today</h2>
+<p>After a few rounds, the ratios start to feel instinctive. You notice when rent is eating 45% of your income or when your savings rate has quietly dropped to 2%. A common misconception is that budgeting means cutting all fun — in reality, a budget with zero discretionary spending is like a crash diet, and it fails for the same reason.</p>
+
+<h2>Practical Tips You Can Use Today</h2>
 <ul>
-<li><strong>Pay yourself first.</strong> Set your savings slider before anything else. If you save whatever is left over at the end of the month, there usually is nothing left. Aim for ten percent minimum, twenty percent if you can swing it.</li>
-<li><strong>Watch the housing line.</strong> Financial planners generally recommend keeping total housing costs under thirty percent of gross income. In the game and in life, crossing that line squeezes everything else.</li>
-<li><strong>Give yourself a guilt-free fun budget.</strong> A budget with zero discretionary spending is like a crash diet — it works until it does not. Allocating five to ten percent for enjoyment makes the rest sustainable.</li>
+<li><strong>Pay yourself first.</strong> Set your savings before anything else. Aim for at least 10% of income, 20% if you can manage it.</li>
+<li><strong>Keep housing under 30% of gross income.</strong> Crossing that line squeezes food, transport, and savings until something breaks.</li>
+<li><strong>Allow 5-10% for guilt-free fun.</strong> A sustainable budget includes enjoyment, not just discipline.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>Why did I get a low budget score even though I saved a lot?</strong> Because saving aggressively while under-funding food or transport is not actually healthy. The game rewards balance, not just one category maxed out.</p>
-<p><strong>Is the 50/30/20 rule the only correct budget?</strong> No, it is a starting point. Higher-income earners might save more than twenty percent; people in expensive cities might need to flex the housing portion. The game uses it as a benchmark, not a law.</p>
-<p><strong>Does Budget Master save my scores?</strong> Yes — your best financial health scores are saved locally in your browser, so you can try to beat your personal best over time.</p>
+<p><strong>Why did I get a low score even though I saved a lot?</strong> Saving aggressively while under-funding food or transport is not healthy. The game rewards balance across all categories, not one maxed out.</p>
+<p><strong>Is the 50/30/20 rule the only correct budget?</strong> No, it is a benchmark. Higher earners may save more than 20%; people in expensive cities may need to flex the housing portion upward.</p>
+<p><strong>Does Budget Master save my scores?</strong> Yes, your best scores are saved locally in your browser so you can chase a personal best over time.</p>
 `,
   STOCK_MARKET_ARTICLE: `
-<p>A stock market simulator is a practice tool that lets you buy and sell fictional stocks with virtual money, teaching you portfolio management and emotional discipline without risking real capital. Prices move randomly to mimic market volatility, so you learn decision-making under uncertainty rather than stock prediction.</p>
+<p>Stock Market Simulator is a free trading game where you buy and sell fictional stocks with virtual money across ten rounds of volatile price movement. You learn position sizing, diversification, and emotional discipline — the skills that matter most when real capital is at stake. Those skills matter because the average investor underperforms the market index by roughly 3% annually, largely due to panic selling and chasing hot stocks.</p>
 
-<p>Picture this: a friend tips you off about a stock that is "guaranteed to double." You buy in, and for three rounds it climbs. You feel like a genius. Then round four arrives, the price tanks, and suddenly you are underwater. If that emotional rollercoaster sounds familiar, you already understand why the Stock Market Simulator exists — it lets you experience the psychology of trading without risking a single real dollar.</p>
+<h2>What Happens Each Round</h2>
+<p>You begin with a starting cash balance and a watchlist of three fictional stocks, each with its own price and volatility profile. Over ten rounds, prices move randomly — some trend upward, some swing wildly, some quietly drift down. On each round you can buy shares, sell shares you already own, or hold.</p>
 
-<h2>How the Simulation Works</h2>
-<p>You begin with a starting cash balance and a watchlist of three fictional stocks, each with its own price and volatility profile. Over ten rounds, prices move randomly — some trend upward, some swing wildly, some quietly drift down. On each round you can buy shares, sell shares you already own, or hold. At the end of round ten, the game tallies your total portfolio value and tells you whether you finished in the green or the red.</p>
+<p>At the end of round ten, the game tallies your total portfolio value and tells you whether you finished in the green or the red. The goal is not to predict prices but to manage risk across uncertainty.</p>
 
-<h2>What Real-World Skill This Builds</h2>
-<p>The skill at work here is <strong>portfolio management under uncertainty</strong>. In real life, nobody knows what a stock will do next. What you can control is position sizing — how much of your capital you put at risk — and emotional discipline. The simulator teaches you to resist the urge to dump everything into one rising stock, and it shows you what happens when you do: sometimes you win big, sometimes you lose it all. That tension between fear and greed is the emotional core of investing, and practicing it in a no-stakes environment builds the composure you need when real money is on the line.</p>
+<h2>The Skill This Builds: Managing Risk Under Uncertainty</h2>
+<p>In real life, nobody knows what a stock will do next. What you can control is position sizing — how much of your capital you put at risk — and emotional discipline. The simulator teaches you to resist dumping everything into one rising stock.</p>
 
-<h2>Practical Tips That Translate Beyond the Game</h2>
+<p>A common misconception is that investing is about predicting the future. It is not. It is about managing risk so that when you are wrong — and you will be — the damage is limited. That tension between fear and greed is the emotional core of investing, and practicing it in a no-stakes environment builds composure for when real money is on the line.</p>
+
+<h2>Practical Tips That Translate to Real Investing</h2>
 <ul>
-<li><strong>Diversify across at least two stocks.</strong> Putting all your cash in one position is the fastest way to go bust. Spreading your capital smooths out the volatility, which is exactly what real portfolio diversification does.</li>
-<li><strong>Do not chase green candles.</strong> A stock that has risen for three straight rounds feels safe, but in the simulator that is often the moment it reverses. The same recency bias wrecks real portfolios.</li>
-<li><strong>Track your unrealized vs. realized gains.</strong> Just because your holdings are up on paper does not mean you have made money. The game forces you to sell to lock in profit, which is a habit worth carrying into real investing.</li>
+<li><strong>Diversify across at least two stocks.</strong> Putting all your cash in one position is the fastest way to go bust. Spreading capital smooths volatility, which is exactly what real portfolio diversification does.</li>
+<li><strong>Do not chase green candles.</strong> A stock that has risen for three straight rounds feels safe, but that is often the moment it reverses. The same recency bias wrecks real portfolios.</li>
+<li><strong>Lock in gains by selling.</strong> Paper profits are not real until you sell. The game forces you to sell to realize gains, which is a habit worth carrying into real investing.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>Are the stock prices based on real market data?</strong> No. They are randomly generated to simulate market volatility. The point is to practice decision-making, not to predict real stocks.</p>
-<p><strong>Can I lose all my money in the simulator?</strong> You can lose a significant portion if you concentrate in a crashing stock, but the game ends after ten rounds regardless. The goal is learning, not survival.</p>
-<p><strong>Does stock market simulator experience help with real investing?</strong> Yes. It trains emotional discipline and position sizing — the two skills that matter most when real money is at stake — without the financial risk.</p>
+<p><strong>Are the stock prices based on real market data?</strong> No, they are randomly generated to simulate volatility. The point is to practice decision-making under uncertainty, not to predict real stocks.</p>
+<p><strong>Can I lose all my virtual money?</strong> You can lose a significant portion if you concentrate in a crashing stock, but the game ends after ten rounds regardless. The goal is learning, not survival.</p>
+<p><strong>Does simulator experience help with real investing?</strong> Yes. It trains emotional discipline and position sizing without financial risk, which are the two skills that matter most when real money is at stake.</p>
 `,
   SAVE_OR_SPEND_ARTICLE: `
-<p>Save or Spend is a decision-training game that presents realistic financial scenarios and asks you to choose the smartest response, teaching you to distinguish needs from wants and weigh short-term gratification against long-term benefit. Each choice is scored as financially wise, neutral, or a splurge, rewarding consistently sound judgment across ten rounds.</p>
+<p>Save or Spend is a free financial decision game that presents realistic money scenarios — a friend's birthday, an unexpected car repair, a flash sale — and asks you to choose the smartest response. Each choice is scored as financially wise, neutral, or a splurge, training you to distinguish needs from wants under pressure. That distinction matters because the average person makes dozens of small spending decisions daily, and compounded over years, those choices determine whether you build wealth or live paycheck to paycheck.</p>
 
-<p>Every day, the average person makes dozens of small financial decisions without noticing: grab coffee or make it at home, pay for parking or circle the block, subscribe to another streaming service or share one. Individually these choices feel trivial. Compounded over months and years, they quietly determine whether you are building wealth or living paycheck to paycheck. That is the real-world problem Save or Spend is designed to train you on.</p>
+<h2>How Each Round Unfolds</h2>
+<p>Each round presents a realistic financial scenario along with two to four possible responses. You pick the option you think is smartest, and the game immediately reveals whether your choice was wise, neutral, or a splurge. A short explanation follows so you understand the reasoning.</p>
 
-<h2>How the Game Simulates the Skill</h2>
-<p>Each round presents a realistic financial scenario — a friend's birthday, an unexpected car repair, a flash sale on something you have been eyeing — along with two to four possible responses. You pick the option you think is smartest, and the game immediately reveals whether your choice was financially wise, neutral, or a splurge, along with a short explanation of why. Your score accumulates across ten rounds, rewarding consistently sound judgment rather than a single lucky pick.</p>
+<p>Your score accumulates across ten rounds, rewarding consistently sound judgment rather than a single lucky pick. Early scenarios are straightforward, but the dilemmas get murkier as you advance.</p>
 
-<h2>How Difficulty Progresses</h2>
-<p>Early scenarios are straightforward: the smart choice is usually obvious if you think for a moment. As you advance, the dilemmas get murkier. Two options might both seem reasonable, or the "fun" choice might be tempting enough that you have to actively weigh short-term gratification against long-term benefit. By the final rounds, you are making judgment calls that mirror the genuinely ambiguous decisions adults face every day — there is not always a clean right answer, and part of the skill is learning to pick the least-bad option.</p>
+<h2>The Skill This Builds: Needs-Versus-Wants Thinking</h2>
+<p>The core skill is the ability to pause and categorize a purchase before deciding. A common misconception is that small purchases do not matter — but a $12 monthly subscription is $144 per year, and three of those add up to over $400 annually. Reframing recurring costs annually is a mental trick that kills unnecessary subscriptions fast.</p>
 
-<h2>Tips for Making Smarter Money Choices</h2>
+<p>By the final rounds, you face genuinely ambiguous decisions where there is no clean right answer. Part of the skill is learning to pick the least-bad option, which mirrors the real financial choices adults make every day.</p>
+
+<h2>Practical Tips for Smarter Money Choices</h2>
 <ul>
-<li><strong>Ask whether this is a need or a want.</strong> The single most useful question in personal finance. If you can honestly categorize a purchase, the decision often makes itself.</li>
-<li><strong>Calculate the monthly cost, not just the price tag.</strong> A twelve-dollar subscription is not twelve dollars — it is one hundred forty-four dollars a year. Reframing recurring costs annually is a mental trick that kills unnecessary subscriptions fast.</li>
-<li><strong>Sleep on non-essential purchases.</strong> The game gives you seconds to decide; real life gives you the luxury of time. A twenty-four-hour rule on discretionary spending eliminates most impulse buys.</li>
+<li><strong>Ask: need or want?</strong> If you can honestly categorize a purchase, the decision often makes itself.</li>
+<li><strong>Calculate the annual cost.</strong> A $12 subscription is $144/year. Reframing recurring costs annually kills unnecessary subscriptions fast.</li>
+<li><strong>Sleep on non-essential purchases.</strong> A 24-hour rule on discretionary spending eliminates most impulse buys.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>How does Save or Spend decide if a choice is smart or a splurge?</strong> Each option is evaluated against standard personal finance principles like needs-versus-wants categorization, long-term cost impact, and opportunity cost, then labeled wise, neutral, or a splurge with a short explanation.</p>
-<p><strong>What happens if I pick the splurge option every time?</strong> Your score will reflect poor cumulative judgment, since the game rewards consistently sound decisions across all ten rounds rather than a single lucky pick.</p>
-<p><strong>Can Save or Spend actually help me spend less in real life?</strong> Yes. The game trains the habit of pausing to categorize purchases as needs or wants, which is the same mental process that curbs impulse spending outside the game.</p>
+<p><strong>How does the game decide if a choice is smart or a splurge?</strong> Each option is evaluated against needs-versus-wants categorization, long-term cost impact, and opportunity cost, then labeled with a short explanation.</p>
+<p><strong>What happens if I pick the splurge every time?</strong> Your score reflects poor cumulative judgment. The game rewards consistently sound decisions across all ten rounds, not a single lucky pick.</p>
+<p><strong>Can this game actually help me spend less?</strong> Yes. It trains the habit of pausing to categorize purchases before deciding, which is the same mental process that curbs impulse spending in real life.</p>
 `,
   CODE_BREAKER_ARTICLE: `
 <p>Code Breaker is a deduction game based on Mastermind where you guess a secret sequence of four colored pegs using feedback clues — a black peg for each correct color in the right position and a white peg for each correct color in the wrong position — within ten attempts. It trains logical reasoning and information-theoretic thinking by forcing you to treat each guess as a controlled experiment.</p>
@@ -243,119 +249,129 @@ export const articles: Record<string, string> = {
 <p><strong>What do the difficulty tiers in Geo Quiz control?</strong> They control how recognizable the countries are and how tricky the wrong-answer options get — easy covers major nations, expert reaches into smaller countries rarely discussed.</p>
 `,
   CREDIT_SCORE_CLIMB_ARTICLE: `
-<p>A credit score is a three-digit number between 300 and 850 that lenders use to assess your creditworthiness, with payment history and credit utilization being the biggest factors. Credit Score Climb is a simulation game where each financial decision you make pushes your score up or down based on the real factors credit bureaus use, teaching you what actually moves your score.</p>
+<p>Credit Score Climb is a free simulation game where each financial decision you make pushes a simulated credit score up or down based on the real factors bureaus use. You learn what actually moves a FICO score — payment history, utilization, credit age, inquiries, and credit mix. That knowledge matters because your real credit score determines your mortgage rate, car loan terms, and even whether a landlord will rent to you.</p>
 
-<p>A credit score is one of the most important numbers in your financial life. It determines whether you get approved for a mortgage, what interest rate you pay on a car loan, and sometimes even whether a landlord will rent to you. Yet most people have no idea what actually moves their score up or down. Credit Score Climb is built to fix that — by letting you make the decisions and see the impact in real time.</p>
+<h2>What Each Decision Does to Your Score</h2>
+<p>You start with a simulated score in the poor range, typically around 580. Each round presents a financial decision: pay on time, miss a payment, open a new card, max out your limit, or keep utilization low. Every choice pushes your score up or down based on the actual FICO weighting.</p>
 
-<h2>How the Game Works</h2>
-<p>You start with a simulated credit score in the poor range. Over a series of rounds, each representing a financial decision, you choose between actions: pay your bill on time, miss a payment, open a new card, max out your limit, or keep your utilization low. Each choice pushes your score up or down based on the actual factors credit bureaus use — payment history, credit utilization, length of credit history, new credit inquiries, and credit mix. The goal is to reach a score of 800 before the game ends.</p>
+<p>The goal is to reach 800 — the threshold for exceptional credit — before the game ends. Along the way, you see exactly which factor caused each movement, making the cause-and-effect relationship concrete.</p>
 
-<h2>The Real-World Skill This Builds</h2>
-<p>The skill at work here is <strong>credit awareness</strong>. Most people only think about their credit score when they are about to apply for something, which is far too late. By simulating the cause-and-effect relationship between everyday financial behavior and your score, the game trains you to internalize what helps and what hurts. After a few rounds, you start to instinctively understand that carrying a high balance relative to your limit is nearly as damaging as missing a payment, and that opening multiple cards in a short window signals risk to lenders.</p>
+<h2>The Skill This Builds: Credit Awareness</h2>
+<p>Most people only think about their credit score when they are about to apply for something, which is far too late. A common misconception is that carrying a high balance is fine as long as you pay the minimum. In reality, high utilization is nearly as damaging as missing a payment.</p>
 
-<h2>Three Tips You Can Apply Today</h2>
+<p>The game trains you to internalize what helps and what hurts. After a few rounds, you instinctively understand that payment history is 35% of your score, that one missed payment can drop a good score by 50-100 points, and that opening multiple cards in a short window signals risk to lenders.</p>
+
+<h2>Practical Tips You Can Apply Today</h2>
 <ul>
-<li><strong>Never miss a payment.</strong> Payment history is the single biggest factor in your score, typically accounting for about thirty-five percent. Even one missed payment can drop a good score by fifty to a hundred points.</li>
-<li><strong>Keep utilization under thirty percent.</strong> If your credit limit is ten thousand dollars, try to never carry a balance above three thousand. Lower is even better — the highest scorers tend to stay under ten percent.</li>
-<li><strong>Avoid opening multiple accounts at once.</strong> Each application triggers a hard inquiry that temporarily dings your score. Space new applications out by at least six months when possible.</li>
+<li><strong>Never miss a payment.</strong> Payment history is 35% of your FICO score. Even one missed payment can drop a good score by 50-100 points and stays on your report for up to seven years.</li>
+<li><strong>Keep utilization under 30%.</strong> If your limit is $10,000, never carry more than $3,000. The highest scorers stay under 10%.</li>
+<li><strong>Space out new applications.</strong> Each hard inquiry temporarily dings your score. Wait at least six months between new credit applications.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>What is the biggest factor that affects my credit score?</strong> Payment history, which typically accounts for about thirty-five percent of your score. Even one missed payment can drop a good score by fifty to a hundred points.</p>
-<p><strong>What credit utilization ratio should I aim for?</strong> Keep it under thirty percent of your limit, and ideally under ten percent. High utilization is nearly as damaging as missing a payment.</p>
-<p><strong>Does opening a new credit card hurt my score?</strong> Yes, temporarily. Each application triggers a hard inquiry that dings your score, so space new applications out by at least six months when possible.</p>
+<p><strong>What FICO score range is considered good?</strong> Scores from 670 to 739 are good, 740 to 799 are very good, and 800+ is exceptional. Credit Score Climb challenges you to reach 800.</p>
+<p><strong>How much does one missed payment hurt?</strong> A single missed payment can drop a good score by 50-100 points because payment history is 35% of your FICO score. The damage lingers on your report for up to seven years.</p>
+<p><strong>What utilization ratio should I aim for?</strong> Keep it under 30% of your total limit, ideally under 10%. On $10,000 in combined limits, stay below $3,000 — and the highest scorers stay below $1,000.</p>
 `,
   RENT_VS_BUY_ARTICLE: `
-<p>Rent vs Buy is a financial comparison game that calculates whether renting or buying a home wins over a ten-year horizon by factoring in closing costs, maintenance, property taxes, and the opportunity cost of investing your down payment. It teaches holistic financial comparison — thinking about how variables like interest rates, appreciation, and investment returns interact rather than relying on the simple rule that renting is throwing money away.</p>
+<p>Rent vs Buy is a free financial comparison game that calculates whether renting or buying a home wins over a ten-year horizon. You adjust variables like purchase price, down payment, mortgage rate, property tax, appreciation, and investment returns, and the game factors in closing costs, maintenance, and opportunity cost. That holistic comparison matters because the rent-versus-buy decision is one of the largest financial choices most people will ever make, and the conventional wisdom that renting is throwing money away is often wrong.</p>
 
-<p>The rent-versus-buy decision is one of the largest financial choices most people will ever make, and it is rarely as simple as the conventional wisdom suggests. Buy a house, the saying goes, because renting is throwing money away. But the math tells a more nuanced story, and that nuance is exactly what Rent vs Buy is designed to teach.</p>
+<h2>What the Calculator Shows You</h2>
+<p>You adjust key variables — monthly rent, home price, down payment, mortgage interest rate, property tax, home appreciation, and investment return rate. The game then calculates which option wins financially over a ten-year horizon. It factors in closing costs, maintenance, property taxes, and the opportunity cost of investing your down payment instead.</p>
 
-<h2>How the Game Works</h2>
-<p>You adjust key variables — monthly rent, home purchase price, down payment, mortgage interest rate, property tax, home appreciation, and investment return rate — and the game calculates which option wins financially over a ten-year horizon. It factors in closing costs, maintenance, property taxes, and the opportunity cost of investing your down payment instead. The result is a side-by-side comparison that often surprises first-time players.</p>
+<p>The result is a side-by-side comparison that often surprises first-time players. A low interest rate makes buying attractive, but if home prices are inflated relative to rent, you might still lose.</p>
 
-<h2>What Real-World Skill This Builds</h2>
-<p>The skill here is <strong>holistic financial comparison</strong>. Most rent-versus-buy calculators on the internet show you a single number and call it a day. This game forces you to think about how the variables interact: a low interest rate makes buying attractive, but if home prices are inflated relative to rent, you might still lose. High investment returns make renting more attractive because your down payment grows in the market instead of being locked in a house. The game trains you to think about housing not as an emotional decision but as a financial one, while still acknowledging that non-financial factors matter.</p>
+<h2>The Skill This Builds: Holistic Financial Comparison</h2>
+<p>Most rent-versus-buy calculators on the internet show a single number and call it a day. This game forces you to think about how variables interact. High investment returns make renting more attractive because your down payment grows in the market instead of being locked in a house.</p>
 
-<h2>Three Things Most People Forget to Include</h2>
+<p>A common misconception is that buying is always better because you build equity. But buying a $400,000 home typically costs 3-5% in closing fees upfront and another 6-10% in realtor commissions when you sell — transaction costs that can erase several years of appreciation.</p>
+
+<h2>Costs Most People Forget to Include</h2>
 <ul>
-<li><strong>Closing costs.</strong> Buying a home typically costs three to five percent of the purchase price in closing fees. Selling it later costs another six to ten percent in realtor commissions. These transaction costs are often enough to erase several years of appreciation.</li>
-<li><strong>Maintenance and repairs.</strong> A common rule of thumb is to budget one percent of the home's value per year for maintenance. Over ten years, that is a significant sum that renters never pay.</li>
-<li><strong>Opportunity cost of the down payment.</strong> If you invest twenty percent down instead of buying, that money grows. At a seven percent average return, it doubles roughly every ten years — a figure that often rivals or exceeds home appreciation.</li>
+<li><strong>Closing costs.</strong> Buying costs 3-5% of the purchase price in fees. Selling later costs another 6-10% in commissions. These can erase years of appreciation.</li>
+<li><strong>Maintenance and repairs.</strong> Budget 1% of the home's value per year. Over ten years on a $400,000 house, that is $40,000 renters never pay.</li>
+<li><strong>Opportunity cost of the down payment.</strong> At a 7% average return, your down payment doubles every ten years — a figure that often rivals or exceeds home appreciation.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
 <p><strong>Is renting really throwing money away?</strong> Not necessarily. When you factor in closing costs, maintenance, property taxes, and the opportunity cost of investing your down payment, renting can win financially over a ten-year horizon, especially in expensive markets.</p>
-<p><strong>What is the opportunity cost of a down payment?</strong> It is the investment return you give up by locking your cash in a house instead of the market. At a seven percent average return, your down payment doubles roughly every ten years, which often rivals home appreciation.</p>
-<p><strong>How much should I budget for home maintenance?</strong> A common rule of thumb is one percent of the home's value per year. Over ten years, that is a significant sum that renters never pay.</p>
+<p><strong>What is the opportunity cost of a down payment?</strong> It is the investment return you give up by locking cash in a house. At 7% average return, your down payment doubles roughly every ten years, often rivaling home appreciation.</p>
+<p><strong>How much should I budget for home maintenance?</strong> A common rule is 1% of the home's value per year. Over ten years on a $400,000 house, that is $40,000 — a significant sum renters never pay.</p>
 `,
   RETIREMENT_COUNTDOWN_ARTICLE: `
-<p>Retirement Countdown is a simulation game where each round represents one year of your career and you choose your savings rate and investment risk level, teaching the power of compound interest and the cost of procrastination. It demonstrates that starting to save at age 25 with a lower rate beats starting at 40 with a higher rate, because time is the most important variable in retirement savings.</p>
+<p>Retirement Countdown is a free simulation game where each round represents one year of your career and you choose your savings rate and investment risk level. You learn the power of compound interest and the cost of procrastination — that starting at 25 with a lower rate beats starting at 40 with a higher one. That lesson matters because the single most important variable in retirement savings is not your return rate or savings rate, but how many years your money has to compound.</p>
 
-<p>Retirement feels abstract when you are twenty-five and urgent when you are fifty-five. The gap between those two feelings is where most people lose the retirement game — not because they fail to save, but because they start too late. Retirement Countdown is designed to make the cost of delay viscerally clear by letting you simulate an entire career of savings decisions in minutes.</p>
+<h2>Simulating a Career in Minutes</h2>
+<p>You begin at age 25 with a starting salary and zero savings. Each round represents one year. You choose what percentage of your income to save and how aggressively to invest — conservative, balanced, or aggressive.</p>
 
-<h2>How the Game Works</h2>
-<p>You begin at age twenty-five with a starting salary and zero savings. Each round represents one year. You choose what percentage of your income to save and how aggressively to invest — conservative, balanced, or aggressive. The game applies compound interest to your portfolio, raises your salary slightly each year, and deducts living expenses. After thirty-five rounds, you see how big your nest egg became and whether it will last through retirement.</p>
+<p>The game applies compound interest to your portfolio, raises your salary slightly each year, and deducts living expenses. After 35 rounds, you see how big your nest egg became and whether it will last through retirement.</p>
 
-<h2>The Real-World Skill This Builds</h2>
-<p>The core lesson is <strong>the power of compound interest and the cost of procrastination</strong>. A player who saves ten percent from age twenty-five ends up with dramatically more than someone who saves twenty percent starting at forty — even though the second person saved more per year. The game makes this concrete because you can see the numbers diverge in real time. It also teaches the trade-off between investment risk and reward: aggressive portfolios have down years that can be scary, but over thirty years they almost always outperform conservative ones.</p>
+<h2>The Skill This Builds: Understanding Compound Interest</h2>
+<p>A player who saves 10% from age 25 ends up with dramatically more than someone who saves 20% starting at 40 — even though the second person saved more per year. The game makes this concrete because you can see the numbers diverge in real time.</p>
 
-<h2>Three Tips You Can Apply Today</h2>
+<p>A common misconception is that you need to save a large percentage to retire comfortably. In reality, starting early with even 10% is more powerful than doubling your rate 15 years later. The game also teaches the trade-off between risk and reward: aggressive portfolios have down years, but over 30 years they almost always outperform conservative ones.</p>
+
+<h2>Practical Tips for Real Retirement Saving</h2>
 <ul>
-<li><strong>Start now, not later.</strong> Money invested at age twenty-five has roughly twice as much time to compound as money invested at thirty-five. The single most important variable in retirement savings is not your return rate or your savings rate — it is how many years your money has to grow.</li>
-<li><strong>At least get the employer match.</strong> If your employer matches retirement contributions up to a certain percentage, that is free money. Not taking the full match is equivalent to turning down a raise.</li>
-<li><strong>Increase your savings rate automatically.</strong> Set your contribution to increase by one percent each year. You barely notice the difference in your paycheck, but the compounding effect over decades is enormous.</li>
+<li><strong>Start now, not later.</strong> Money invested at 25 has roughly twice as much time to compound as money invested at 35. Time beats rate every time.</li>
+<li><strong>At least get the employer match.</strong> If your employer matches contributions up to a certain percentage, not taking the full match is equivalent to turning down a raise.</li>
+<li><strong>Auto-increase your savings rate.</strong> Set your contribution to increase by 1% each year. You barely notice the difference, but the compounding effect over decades is enormous.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>How much should I save for retirement each month?</strong> Aim for at least ten percent of your income, twenty if you can. The most important variable is not your rate, however — it is how many years your money has to compound, so start as early as possible.</p>
-<p><strong>Why does starting early matter more than saving more?</strong> Because compound interest grows exponentially over time. Saving ten percent from age 25 yields more than saving twenty percent from age 40, even though the later saver contributes more per year.</p>
-<p><strong>Should I choose conservative or aggressive investments for retirement?</strong> Aggressive portfolios have down years that can be scary, but over thirty years they almost always outperform conservative ones. The right mix depends on your time horizon and risk tolerance.</p>
+<p><strong>Why does starting early matter more than saving more?</strong> Compound interest grows exponentially. Saving 10% from age 25 yields more at retirement than saving 20% from age 40, even though the later saver contributes more per year.</p>
+<p><strong>What is an employer match?</strong> Your company contributes to your retirement account up to a certain percentage of your salary. Not taking the full match is turning down free money that compounds over decades.</p>
+<p><strong>Conservative or aggressive investments?</strong> Over 30 years, aggressive portfolios almost always outperform despite down years. Younger savers generally benefit from more aggressive allocations.</p>
 `,
   EMERGENCY_FUND_BUILDER_ARTICLE: `
-<p>Emergency Fund Builder is a simulation game where each round represents one month and you choose how much to save before a random life event occurs, teaching you to build a financial buffer before you need it. The goal is to accumulate three to six months of expenses so that unexpected costs like car repairs or job loss do not force you into debt.</p>
+<p>Emergency Fund Builder is a free simulation game where each round represents one month and you choose how much to save before a random life event occurs. You learn to build a financial buffer before you need it — accumulating three to six months of expenses so unexpected costs do not force you into debt. That skill matters because nearly half of adults could not cover an unexpected $400 expense without borrowing or selling something.</p>
 
-<p>Nearly half of adults could not cover an unexpected four-hundred-dollar expense without borrowing or selling something. That statistic, repeated in survey after survey, is the problem Emergency Fund Builder is designed to solve — not by lecturing, but by letting you experience the difference between having a safety net and not having one.</p>
+<h2>How Each Month Unfolds</h2>
+<p>You start with zero savings and a monthly income. Each round represents one month. You choose how much to save, and then a random life event occurs — nothing happens, a car repair, a medical bill, a job loss, or a broken appliance.</p>
 
-<h2>How the Game Works</h2>
-<p>You start with zero savings and a monthly income. Each round represents one month. You choose how much to save, and then a random life event occurs — nothing happens, a car repair, a medical bill, a job loss, a broken appliance. If you have enough saved, you cover the expense and continue. If you do not, you go into debt, which charges interest each subsequent month and slows your progress. The goal is to build a fund covering three to six months of expenses.</p>
+<p>If you have enough saved, you cover the expense and continue. If you do not, you go into debt, which charges interest each subsequent month and slows your progress. The goal is to build a fund covering three to six months of expenses.</p>
 
-<h2>The Real-World Skill This Builds</h2>
-<p>The skill is <strong>building a financial buffer before you need it</strong>. The game's random events teach the core truth about emergencies: they are unpredictable in timing but predictable in occurrence. You do not know when your car will break down, but you know it will eventually. By simulating the experience of having — or not having — savings when an expense hits, the game makes the value of an emergency fund viscerally clear. Players who save aggressively early in the game almost always finish stronger, even though they sacrifice some spending, because they avoid the debt spiral that catches players who save nothing.</p>
+<h2>The Skill This Builds: Proactive Financial Buffering</h2>
+<p>The game's random events teach the core truth about emergencies: they are unpredictable in timing but predictable in occurrence. You do not know when your car will break down, but you know it will eventually. A common misconception is that you will just put emergencies on a credit card — but at 20% APR, a $1,500 repair becomes $1,800 in just a few months if you carry the balance.</p>
 
-<h2>Three Tips You Can Apply Today</h2>
+<p>Players who save aggressively early in the game almost always finish stronger. They sacrifice some spending upfront but avoid the debt spiral that catches players who save nothing — and that spiral is exactly what the game makes viscerally clear.</p>
+
+<h2>Practical Tips for Building Your Real Fund</h2>
 <ul>
-<li><strong>Start with a mini-fund.</strong> Before aiming for three months of expenses, save one thousand dollars. This covers most minor emergencies — a tire, a copay, a small repair — and keeps you from putting it on a credit card.</li>
-<li><strong>Automate it.</strong> Set up an automatic transfer to a separate savings account on payday. If you have to manually move the money, you will find reasons not to. Automation removes the decision.</li>
-<li><strong>Keep it separate but accessible.</strong> Your emergency fund should be in a high-yield savings account, not your checking account and not invested. You need it to be liquid when the emergency hits, but not so convenient that you dip into it for non-emergencies.</li>
+<li><strong>Start with a $1,000 mini-fund.</strong> Before aiming for three months of expenses, save $1,000. This covers most minor emergencies — a tire, a copay, a small repair — and keeps you off the credit card treadmill.</li>
+<li><strong>Automate the transfer.</strong> Set up an automatic transfer to a separate savings account on payday. If you have to move the money manually, you will find reasons not to. Automation removes the decision.</li>
+<li><strong>Keep it separate but accessible.</strong> Use a high-yield savings account, not checking and not invested. It needs to be liquid when the emergency hits, but not so convenient that you dip into it for non-emergencies.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>How much should I keep in an emergency fund?</strong> Aim for three to six months of expenses. Start with a mini-fund of one thousand dollars to cover minor emergencies, then build toward the full target.</p>
-<p><strong>Where should I keep my emergency fund?</strong> In a high-yield savings account that is separate from checking but liquid. It needs to be accessible when an emergency hits, but not so convenient that you dip into it for non-emergencies.</p>
-<p><strong>Why does Emergency Fund Builder charge interest on debt?</strong> Because debt in real life charges interest, which slows your progress. The game simulates that debt spiral to show why saving before an emergency hits is so much cheaper than borrowing after it does.</p>
+<p><strong>How much should I keep in an emergency fund?</strong> Aim for three to six months of essential expenses. Start with a $1,000 mini-fund to cover minor emergencies, then build toward the full target over time.</p>
+<p><strong>Where should I keep my emergency savings?</strong> In a high-yield savings account separate from checking but easily liquid. It needs to be accessible when an emergency hits, but not so convenient that you dip into it for non-emergencies.</p>
+<p><strong>Why does the game charge interest on debt?</strong> Because real debt charges interest, creating a spiral that slows your progress. The game simulates that spiral to show why saving before an emergency is far cheaper than borrowing after one.</p>
 `,
   INSURANCE_MATCHER_ARTICLE: `
-<p>Insurance Matcher is a literacy game that presents life scenarios and asks you to pick the best coverage from five insurance types — auto, home, health, life, and disability — teaching you what each policy protects and when it is worth the premium. It trains you to match the right coverage to the risks you actually face rather than defaulting to the cheapest option.</p>
+<p>Insurance Matcher is a free literacy game that presents life scenarios and asks you to pick the best coverage from five insurance types — auto, home, health, life, and disability. You learn what each policy protects, what it excludes, and when the premium is worth paying. That knowledge matters because insurance is the financial product everyone buys and nobody understands — and when disaster strikes, people discover too late what was excluded or never purchased at all.</p>
 
-<p>Insurance is the financial product everyone buys and nobody understands. You pay premiums for years, hoping never to use the coverage, and when something finally happens, you discover too late what was excluded, what was capped, or what you never bought at all. Insurance Matcher is designed to build literacy around the five major insurance types by turning them into a matching game.</p>
+<h2>Matching Coverage to Real Scenarios</h2>
+<p>Each round presents a brief life scenario — a young driver buys a car, a new homeowner moves into a flood zone, a parent with dependents starts a business. You pick the best insurance coverage from five types: auto, home, health, life, and disability.</p>
 
-<h2>How the Game Works</h2>
-<p>Each round presents a brief life scenario — a young driver buys a car, a new homeowner moves into a flood zone, a parent with dependents starts a business — and you pick the best insurance coverage from five types: auto, home, health, life, and disability. The game explains why each type fits certain situations and when it does not. Your score reflects how consistently you match the right coverage to the right scenario.</p>
+<p>The game explains why each type fits certain situations and when it does not. Your score reflects how consistently you match the right coverage to the right scenario.</p>
 
-<h2>What Real-World Skill This Builds</h2>
-<p>The skill is <strong>insurance literacy</strong> — knowing what each type of insurance protects, what it does not, and when it is worth the premium. Most people buy insurance the way they buy a phone plan: pick the cheapest option, hope for the best. The game trains you to think about what risks you actually face and which policies address them. A young single person with no dependents probably does not need life insurance, but disability insurance is critical because your ability to earn income is your biggest asset. A homeowner in a flood zone needs separate flood coverage because standard home insurance excludes it. These distinctions matter, and the game makes them memorable through active recall.</p>
+<h2>The Skill This Builds: Insurance Literacy</h2>
+<p>Most people buy insurance the way they buy a phone plan: pick the cheapest option, hope for the best. The game trains you to think about what risks you actually face and which policies address them. A young single person with no dependents probably does not need life insurance, but disability insurance is critical because your ability to earn income is your biggest asset.</p>
 
-<h2>Three Tips You Can Apply Today</h2>
+<p>A common misconception is that standard home insurance covers flooding. It does not — flood damage is excluded by default, and a homeowner in a flood zone needs separate flood coverage. These distinctions matter, and the game makes them memorable through active recall.</p>
+
+<h2>Practical Tips for Real Insurance Decisions</h2>
 <ul>
-<li><strong>Buy term life if anyone depends on your income.</strong> Term life is straightforward and affordable when you are young. A twenty-year policy covering ten times your annual income is a common starting point for parents.</li>
-<li><strong>Check your disability coverage.</strong> Disability insurance is the most overlooked type. If you cannot work for six months due to illness or injury, this coverage replaces a portion of your income. Many employers offer it, but the group coverage may be insufficient.</li>
-<li><strong>Re-shop your policies annually.</strong> Loyalty to an insurance company rarely pays. Rates change, and the company that was cheapest last year may not be this year. Get quotes every twelve months for auto and home insurance.</li>
+<li><strong>Buy term life if anyone depends on your income.</strong> A 20-year policy covering 10x your annual income is a common starting point for parents. Term life is straightforward and affordable when you are young.</li>
+<li><strong>Check your disability coverage.</strong> Disability insurance is the most overlooked type. If you cannot work for six months due to illness or injury, it replaces a portion of your income. Many employers offer it, but group coverage may be insufficient.</li>
+<li><strong>Re-shop your policies annually.</strong> Loyalty to an insurer rarely pays. Rates change, and the cheapest company last year may not be this year. Get fresh quotes every 12 months for auto and home.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>Do I need life insurance if I am young and single with no dependents?</strong> Probably not. Life insurance replaces your income for people who depend on it, so if nobody does, you can skip it. Disability insurance, however, is critical because your ability to earn income is your biggest asset.</p>
-<p><strong>Does standard home insurance cover flooding?</strong> No. Standard home insurance excludes flood damage, so a homeowner in a flood zone needs separate flood coverage.</p>
-<p><strong>How often should I shop around for insurance?</strong> Annually. Rates change constantly, and the company that was cheapest last year may not be this year, so get fresh quotes every twelve months for auto and home insurance.</p>
+<p><strong>Do I need life insurance if I am young and single?</strong> Probably not — life insurance replaces your income for dependents, and if nobody depends on it, you can skip it. Disability insurance, however, is critical because your earning ability is your biggest asset.</p>
+<p><strong>Does standard home insurance cover flooding?</strong> No. Standard home insurance excludes flood damage, so a homeowner in a flood zone needs separate flood coverage — one of the most common gaps people discover too late.</p>
+<p><strong>How often should I shop around for insurance?</strong> Annually. Rates change constantly, and the cheapest company last year may not be this year. Get fresh quotes every 12 months for auto and home insurance.</p>
 `,
   TYPING_SPEED_ARTICLE: `
 <p>Typing Speed Test is a game that measures your words per minute and accuracy in real time as you type displayed sentences, training you to find the sweet spot where you are fast but not making so many errors that corrections eat your time. The average person types around 40 WPM, while trained typists hit 60 to 80, and the gap amounts to hundreds of hours saved over a career.</p>
