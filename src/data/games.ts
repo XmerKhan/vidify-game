@@ -233,6 +233,21 @@ export const games: GameMeta[] = [
       style: 'D',
       body: `BUG_HUNTER_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'What types of bugs does Bug Hunter show?',
+        answer: 'Off-by-one errors, wrong comparison operators, type mismatches, undefined variables, and logic slips — the same categories that appear most often in real code review. Higher difficulty levels introduce subtler bugs that require tracing code execution mentally.',
+      },
+      {
+        question: 'How is my score calculated in Bug Hunter?',
+        answer: 'Your score reflects both accuracy and speed. Quick correct answers earn bonus points, while wrong answers carry penalties. This scoring mirrors real code review, where finding bugs fast matters but being wrong wastes everyone\'s time.',
+      },
+      {
+        question: 'Does Bug Hunter help with real-world debugging?',
+        answer: 'Yes. It trains the pattern-recognition skill that experienced developers use to spot bugs quickly during code review. Studies of expert reviewers show their first impression is correct more often than their second guess, which is exactly the reflex the game builds.',
+      },
+    ],
   },
   {
     slug: 'binary-blitz',
@@ -253,6 +268,21 @@ export const games: GameMeta[] = [
       style: 'A',
       body: `BINARY_BLITZ_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'How do I convert binary to decimal quickly?',
+        answer: 'Read the binary number right to left, and for each digit that is 1, add the corresponding power of two: 1, 2, 4, 8, 16, and so on. The sum is the decimal value. Memorizing the first eight powers of two lets you convert any 8-bit number in seconds.',
+      },
+      {
+        question: 'Why is 10 in binary equal to 2 in decimal?',
+        answer: 'In base-2, the rightmost digit is the ones place and the next is the twos place. "10" means one group of two and zero ones, which equals two. This is the most common slip for beginners who read binary left to right as if it were decimal.',
+      },
+      {
+        question: 'What is the fastest way to convert decimal to binary?',
+        answer: 'Use the largest power method: find the biggest power of two that fits into your number, subtract it, and repeat with the remainder until you reach zero. Each power you used corresponds to a 1 bit in the result.',
+      },
+    ],
   },
   {
     slug: 'word-chain-challenge',
@@ -528,6 +558,21 @@ export const games: GameMeta[] = [
       style: 'A',
       body: `TYPING_SPEED_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'What is a good typing speed in words per minute?',
+        answer: 'The average person types around 40 WPM, trained typists hit 60 to 80, and top performers exceed 100. A practical target for most office work is 60 to 80 WPM, which lets you write as fast as you think without corrections slowing you down.',
+      },
+      {
+        question: 'Should I type as fast as I possibly can?',
+        answer: 'No. Typing at about 90% of your top speed significantly reduces errors, and fewer corrections means your effective speed is actually higher than when you max out and make mistakes. The game shows both WPM and accuracy live to help you find that sweet spot.',
+      },
+      {
+        question: 'How do I improve my typing speed quickly?',
+        answer: 'Learn proper home-row touch typing so each finger owns specific keys, look at the screen instead of the keyboard, and practice slightly below your max speed to minimize corrections. A few hours of focused practice can double your speed within a week.',
+      },
+    ],
   },
   {
     slug: 'shortcut-master',
@@ -548,6 +593,21 @@ export const games: GameMeta[] = [
       style: 'B',
       body: `SHORTCUT_MASTER_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'Which keyboard shortcuts save the most time?',
+        answer: 'Undo (Ctrl/Cmd+Z), switch tabs (Ctrl/Cmd+Tab), close tab (Ctrl/Cmd+W), switch application (Alt/Cmd+Tab), and find (Ctrl/Cmd+F). These five cover the most frequent actions and eliminate mouse travel for the tasks you do dozens of times per day.',
+      },
+      {
+        question: 'How long does it take to memorize keyboard shortcuts?',
+        answer: 'A few focused sessions with active recall under time pressure, like Shortcut Master provides, is enough to make the most common shortcuts automatic within a week. The key is practicing recall, not just re-reading a cheat sheet.',
+      },
+      {
+        question: 'Are Mac and Windows keyboard shortcuts the same?',
+        answer: 'Most are analogous — Ctrl on Windows maps to Cmd on Mac for the same actions, with a few exceptions like application switching, which uses Alt+Tab on Windows and Cmd+Tab on Mac. Shortcut Master covers both platforms.',
+      },
+    ],
   },
   {
     slug: 'logic-gate-sim',
@@ -568,6 +628,21 @@ export const games: GameMeta[] = [
       style: 'D',
       body: `LOGIC_GATE_SIM_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'What are the basic logic gates I need to know?',
+        answer: 'AND, OR, NOT, XOR, and NAND. AND outputs true only when both inputs are true, OR outputs true when either input is true, NOT flips a single input, XOR outputs true when exactly one input is true, and NAND is the inverse of AND.',
+      },
+      {
+        question: 'Why is the NAND gate called universal?',
+        answer: 'Because you can construct any other logic gate — AND, OR, NOT, XOR — using only NAND gates. This property makes NAND extremely useful in real circuit design, where entire processors can be built from a single gate type.',
+      },
+      {
+        question: 'How do I simplify a logic circuit?',
+        answer: 'Use De Morgan\'s laws to convert between AND and OR gates: NOT (A AND B) equals (NOT A) OR (NOT B). This identity often lets you match a truth table with fewer gates, which is faster and cheaper in real hardware.',
+      },
+    ],
   },
   {
     slug: 'website-speed',
@@ -588,6 +663,21 @@ export const games: GameMeta[] = [
       style: 'B',
       body: `WEBSITE_SPEED_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'What is the single biggest cause of slow web pages?',
+        answer: 'Unoptimized images. A 5-megabyte hero photo can take several seconds to load on mobile. Converting it to a 200-kilobyte compressed, properly sized version can cut load time in half by itself — often the highest-ROI optimization you can make.',
+      },
+      {
+        question: 'Does enabling browser caching help first-time visitors?',
+        answer: 'No. Caching stores static assets locally so returning visitors load nearly instantly, but it does not improve the first visit since there is nothing cached yet. For first-time visitors, focus on image compression and server response time.',
+      },
+      {
+        question: 'What does minifying CSS and JavaScript do?',
+        answer: 'It removes whitespace, comments, and unnecessary characters from code files, reducing their size by 30 to 50 percent so they download and parse faster. Modern build tools do this automatically, but many sites still ship unminified code.',
+      },
+    ],
   },
   {
     slug: 'tech-acronym-decoder',
@@ -608,6 +698,21 @@ export const games: GameMeta[] = [
       style: 'C',
       body: `TECH_ACRONYM_DECODER_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'What does API stand for and what does it do?',
+        answer: 'API stands for Application Programming Interface, and it is the set of rules that lets one program talk to another. Every web app, mobile app, and software integration runs on APIs — they are how different services share data and functionality.',
+      },
+      {
+        question: 'What is DNS in simple terms?',
+        answer: 'DNS stands for Domain Name System, and it is the phonebook of the internet. It translates human-readable domain names like example.com into the IP addresses that computers use to find each other on the network.',
+      },
+      {
+        question: 'What is the difference between SQL and HTTP?',
+        answer: 'SQL is the standard language for interacting with relational databases, while HTTP is the protocol that defines how web browsers and servers communicate. One queries stored data, the other transfers web pages across the internet.',
+      },
+    ],
   },
   {
     slug: 'capital-city',

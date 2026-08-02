@@ -101,52 +101,53 @@ export const articles: Record<string, string> = {
 <p><strong>What is the fastest way to crack the code?</strong> Use the information-theoretic approach: choose each guess to eliminate as many remaining possibilities as possible, even if you think the guess is wrong. Tournament players solve codes in five or six guesses this way.</p>
 `,
   BINARY_BLITZ_ARTICLE: `
-<p>Binary is a base-2 number system that uses only 0 and 1, where each position represents a power of two — the rightmost digit is 1, the next is 2, then 4, 8, 16, and so on. Binary Blitz is a timed game that trains you to convert between binary and decimal numbers quickly by building fluency through repetition.</p>
+<p>Binary Blitz is a free timed game that trains you to convert between binary and decimal numbers quickly through repetition. You build fluency with base-2 arithmetic — the number system that underlies every computer on the planet. That fluency matters for anyone in computer science, networking, or embedded systems, where reading hex dumps, subnet masks, or bit flags without a calculator saves real time.</p>
 
-<p>Binary is the native language of every computer on the planet. Every photo you take, every song you stream, every message you send is ultimately a sequence of ones and zeros underneath. You do not need to speak binary fluently to use technology — but if you work in or around computing, being able to convert between binary and decimal quickly gives you an intuitive feel for how numbers live inside a machine. Binary Blitz is built to develop that fluency through timed repetition.</p>
+<h2>How a Round Unfolds</h2>
+<p>A prompt appears asking you to convert either a binary number to decimal or a decimal number to binary. You type your answer in the input field and hit enter. Correct answers add time to the clock and increase your streak.</p>
 
-<h2>How to Play, Step by Step</h2>
-<ol>
-<li>A prompt appears asking you to convert either a binary number to decimal or a decimal number to binary.</li>
-<li>Type your answer in the input field and hit enter.</li>
-<li>Correct answers add time to the clock and increase your streak. Wrong answers cost you a small time penalty and reset your streak multiplier.</li>
-<li>The game continues until the timer hits zero. Your final score is based on correct answers, streak length, and how far you progressed.</li>
-</ol>
+<p>Wrong answers cost you a small time penalty and reset your streak multiplier. The game continues until the timer hits zero, and your final score is based on correct answers, streak length, and how far you progressed.</p>
 
-<h2>Common Mistakes Beginners Make</h2>
-<p>The most frequent error is <strong>reading binary left to right as if it were a normal number</strong>. Binary is read right to left: the rightmost digit is the ones place, the next is the twos place, then fours, eights, and so on. A common slip is treating "10" in binary as ten — it is actually two. Another mistake is trying to do the full conversion in your head all at once. Faster solvers break it into place values: they glance at the number, identify which bits are set, and sum the corresponding powers of two. With practice this becomes a reflex, much like multiplying single-digit numbers.</p>
+<h2>Building Binary-to-Decimal Fluency</h2>
+<p>Binary is a base-2 number system where each position represents a power of two — the rightmost digit is 1, the next is 2, then 4, 8, 16, and so on. Every photo, song, and message on a computer is ultimately a sequence of ones and zeros underneath.</p>
 
-<h2>Advanced Strategy Tips</h2>
-<p>Memorize the first eight powers of two — 1, 2, 4, 8, 16, 32, 64, 128 — and you can convert any eight-bit number in seconds. For decimal-to-binary, use the <strong>largest power method</strong>: find the biggest power of two that fits, subtract it, and repeat with the remainder. For example, forty-five: thirty-two fits (bit 5 set), remainder thirteen; eight fits (bit 3 set), remainder five; four fits (bit 2 set), remainder one; one fits (bit 0 set). So forty-five is 101101. Practicing this method against the clock is exactly what turns slow conversion into instant recognition.</p>
+<p>Many people assume binary fluency requires doing math in your head. It does not. Faster solvers break it into place values: they glance at the number, identify which bits are set, and sum the corresponding powers of two. With practice this becomes a reflex, much like multiplying single-digit numbers.</p>
 
-<blockquote><strong>Did you know?</strong> The binary system was fully described in 1703 by the mathematician Gottfried Wilhelm Leibniz, who saw the digits 0 and 1 as a beautiful expression of creation from nothing. It would be another two and a half centuries before Claude Shannon proved binary was the optimal base for electronic circuit design — the insight that made modern computing possible.</blockquote>
-
-<h2>Frequently Asked Questions</h2>
-<p><strong>How do I convert binary to decimal?</strong> Read the binary number right to left, and for each digit that is 1, add the corresponding power of two: 1, 2, 4, 8, 16, and so on. The sum is the decimal value.</p>
-<p><strong>Why is 10 in binary equal to 2 in decimal?</strong> Because in base-2, the rightmost digit is the ones place and the next is the twos place. "10" means one group of two and zero ones, which equals two.</p>
-<p><strong>What is the fastest way to convert decimal to binary?</strong> Use the largest power method: find the biggest power of two that fits into your number, subtract it, and repeat with the remainder until you reach zero. Each power you used corresponds to a 1 bit.</p>
-`,
-  BUG_HUNTER_ARTICLE: `
-<p>Bug Hunter is a code-review game that shows you short programming snippets with exactly one hidden bug and asks you to click the buggy line before the timer expires. It trains pattern recognition for common coding errors — off-by-one mistakes, wrong comparison operators, type mismatches, and logic slips — which is the same skill real developers use during code review.</p>
-
-<p>Every developer has been there: the code looks fine, it compiles without errors, the logic seems sound — and yet something is broken. The ability to scan a snippet and instantly spot the line that does not belong is not an innate talent. It is a pattern-recognition skill built through repetition, and that is exactly the gap Bug Hunter fills.</p>
-
-<h2>How the Game Simulates the Skill</h2>
-<p>Each round displays a short code snippet — usually five to twelve lines — in JavaScript or a similar language. Exactly one line contains a bug: it might be an off-by-one error, a wrong comparison operator, a type mismatch, an undefined variable, or a logic slip. You click the line you believe is buggy before the timer expires. The game then reveals whether you were right, what the bug was, and what the correct code should look like. Your score reflects both accuracy and speed, with bonus points for quick correct answers and penalties for wrong ones.</p>
-
-<h2>How Difficulty Progresses</h2>
-<p>Early rounds use short snippets with obvious, common bugs — a missing semicolon, a swapped comparison operator, a variable name typo. As your score climbs, the snippets get longer, the bugs get subtler, and the time limit tightens. By the higher levels you are looking at logic errors that require you to mentally trace the code's execution: a loop that runs one time too many, an array index that is off by one, a condition that should use "and" but uses "or." The progression mirrors the real experience of leveling up as a developer — the bugs do not get harder to fix, they get harder to spot.</p>
-
-<h2>Tips for Improving Speed and Accuracy</h2>
+<h2>Strategies for Faster Conversion</h2>
 <ul>
-<li><strong>Scan for the usual suspects first.</strong> Before you read the logic, check comparison operators, array indices, and variable names. These are the most common bug categories and the fastest to verify visually.</li>
-<li><strong>Trace the boundary conditions.</strong> Off-by-one errors almost always live at the edges — the first or last iteration of a loop, the zeroth or final index of an array. Check those lines before the middle.</li>
-<li><strong>Do not overthink the first pass.</strong> Trust your initial instinct. Studies of expert code reviewers show that their first impression is correct more often than their second guess. If a line looks wrong, it probably is.</li>
+<li><strong>Memorize the first eight powers of two.</strong> Knowing 1, 2, 4, 8, 16, 32, 64, 128 lets you convert any 8-bit number in seconds without calculating.</li>
+<li><strong>Use the largest power method for decimal-to-binary.</strong> Find the biggest power of two that fits, subtract it, and repeat with the remainder. For 45: 32 fits (bit 5), remainder 13; 8 fits (bit 3), remainder 5; 4 fits (bit 2), remainder 1; 1 fits (bit 0). So 45 is 101101.</li>
+<li><strong>Read binary right to left.</strong> The most common slip is treating "10" in binary as ten — it is actually two. The rightmost digit is the ones place, not the leftmost.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>What types of bugs does Bug Hunter show?</strong> The game features off-by-one errors, wrong comparison operators, type mismatches, undefined variables, and logic slips — the same categories that appear most often in real code review.</p>
-<p><strong>How is my score calculated in Bug Hunter?</strong> Your score reflects both accuracy and speed: quick correct answers earn bonus points, while wrong answers carry penalties, so accuracy matters more than raw speed.</p>
+<p><strong>How do I convert binary to decimal quickly?</strong> Read right to left, and for each 1 bit, add the corresponding power of two: 1, 2, 4, 8, 16, and so on. The sum is the decimal value. Memorizing the first eight powers of two makes this instant.</p>
+<p><strong>Why is 10 in binary equal to 2 in decimal?</strong> In base-2, the rightmost digit is the ones place and the next is the twos place. "10" means one group of two and zero ones, which equals two — the most common slip for beginners.</p>
+<p><strong>What is the fastest way to convert decimal to binary?</strong> Use the largest power method: find the biggest power of two that fits, subtract it, and repeat with the remainder until you reach zero. Each power you used corresponds to a 1 bit.</p>
+`,
+  BUG_HUNTER_ARTICLE: `
+<p>Bug Hunter is a free code-review game that shows you short programming snippets with exactly one hidden bug and asks you to click the buggy line before the timer expires. You train pattern recognition for common coding errors — off-by-one mistakes, wrong comparison operators, type mismatches, and logic slips — which is the same skill real developers use during code review. That skill matters because debugging consumes an estimated 50% of a developer's workday, and the ability to spot bugs quickly separates senior engineers from juniors.</p>
+
+<h2>What Each Round Looks Like</h2>
+<p>Each round displays a short code snippet — usually 5 to 12 lines — in JavaScript or a similar language. Exactly one line contains a bug: it might be an off-by-one error, a wrong comparison operator, a type mismatch, an undefined variable, or a logic slip. You click the line you believe is buggy before the timer expires.</p>
+
+<p>The game then reveals whether you were right, what the bug was, and what the correct code should look like. Your score reflects both accuracy and speed, with bonus points for quick correct answers and penalties for wrong ones.</p>
+
+<h2>The Skill You Build: Debugging Pattern Recognition</h2>
+<p>Experienced developers do not read code line by line looking for bugs. They scan for patterns — comparison operators, array indices, variable names — and their eyes stop on anomalies automatically. This is the same pattern-recognition process that chess masters use to read board positions.</p>
+
+<p>It is a common mistake to think debugging is about intelligence. It is not. It is about exposure: you see enough bugs over enough years that your brain starts recognizing them without conscious effort. Bug Hunter compresses years of exposure into minutes by surfacing the most common bug categories repeatedly.</p>
+
+<h2>Tips for Spotting Bugs Faster</h2>
+<ul>
+<li><strong>Scan for the usual suspects first.</strong> Before reading the logic, check comparison operators, array indices, and variable names. These are the most common bug categories and the fastest to verify visually.</li>
+<li><strong>Trace the boundary conditions.</strong> Off-by-one errors almost always live at the edges — the first or last iteration of a loop, the zeroth or final index of an array. Check those lines before the middle.</li>
+<li><strong>Trust your first impression.</strong> Studies of expert code reviewers show their first instinct is correct more often than their second guess. If a line looks wrong, it probably is.</li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+<p><strong>What types of bugs does Bug Hunter show?</strong> Off-by-one errors, wrong comparison operators, type mismatches, undefined variables, and logic slips — the same categories that appear most often in real code review. Higher difficulty levels introduce subtler bugs that require tracing code execution mentally.</p>
+<p><strong>How is my score calculated?</strong> Your score reflects both accuracy and speed. Quick correct answers earn bonus points, while wrong answers carry penalties. This mirrors real code review, where finding bugs fast matters but being wrong wastes everyone's time.</p>
 <p><strong>Does Bug Hunter help with real-world debugging?</strong> Yes. It trains the pattern-recognition skill that experienced developers use to spot bugs quickly during code review, which transfers directly to real debugging work.</p>
 `,
   WORD_CHAIN_ARTICLE: `
@@ -374,40 +375,44 @@ export const articles: Record<string, string> = {
 <p><strong>How often should I shop around for insurance?</strong> Annually. Rates change constantly, and the cheapest company last year may not be this year. Get fresh quotes every 12 months for auto and home insurance.</p>
 `,
   TYPING_SPEED_ARTICLE: `
-<p>Typing Speed Test is a game that measures your words per minute and accuracy in real time as you type displayed sentences, training you to find the sweet spot where you are fast but not making so many errors that corrections eat your time. The average person types around 40 WPM, while trained typists hit 60 to 80, and the gap amounts to hundreds of hours saved over a career.</p>
+<p>Typing Speed Test is a free game that measures your words per minute and accuracy in real time as you type displayed sentences. You train to find the sweet spot where you are fast but not making so many errors that corrections eat your time. That skill matters because the average person types around 40 WPM while trained typists hit 60 to 80 — and over a career, that gap amounts to hundreds of hours saved.</p>
 
-<p>Typing is the skill you use more than almost any other at a computer, yet most people never formally train it. The average person types around forty words per minute using whatever finger technique they developed on their own. Trained typists hit sixty to eighty, and top performers exceed one hundred. That gap — the difference between forty and eighty words per minute — is not a luxury. Over a career, it amounts to hundreds of hours saved. Typing Speed Test is built to close that gap.</p>
+<h2>What the Game Measures</h2>
+<p>A sentence appears on screen. You type it as quickly and accurately as you can. The game measures your words per minute and accuracy in real time, updating with each keystroke. When you finish a sentence, a new one appears.</p>
 
-<h2>How the Game Works</h2>
-<p>A sentence appears on screen. You type it as quickly and accurately as you can. The game measures your words per minute and accuracy in real time, updating with each keystroke. When you finish a sentence, a new one appears, and your cumulative stats are tracked across the session. The timer counts down, and when it reaches zero, your final WPM and accuracy are displayed alongside your best previous score.</p>
+<p>Your cumulative stats are tracked across the session. The timer counts down, and when it reaches zero, your final WPM and accuracy are displayed alongside your best previous score.</p>
 
-<h2>Why This Improves Your Typing</h2>
-<p>The game trains two things simultaneously: <strong>speed and accuracy</strong>. Most typing tests optimize for speed alone, which encourages sloppy typing that you then have to correct — actually slowing you down. This game shows both metrics live, which trains you to find the sweet spot where you are fast but not making so many errors that corrections eat your time. The displayed sentences use common English words and punctuation, so the practice transfers directly to real-world typing tasks like writing emails and reports.</p>
+<h2>Finding the Speed-Accuracy Balance</h2>
+<p>Most typing tests optimize for speed alone, which encourages sloppy typing that you then have to correct — actually slowing you down. This game shows both metrics live, which trains you to find the balance point where you are fast but not making so many errors that corrections eat your time.</p>
 
-<h2>Three Tips for Faster Typing</h2>
+<p>Contrary to popular belief, typing faster is not about pressing keys more quickly. It is about reducing the number of corrections. Studies show that typing at 90% of your top speed significantly reduces errors, and fewer corrections means your effective speed is actually higher than when you max out.</p>
+
+<h2>Practical Tips for Faster Typing</h2>
 <ul>
 <li><strong>Learn proper home-row touch typing.</strong> If you still hunt-and-peck, investing a few hours in learning the standard finger positions will double your speed within a week. Each finger is responsible for specific keys, and muscle memory takes over from there.</li>
-<li><strong>Look at the screen, not the keyboard.</strong> Every glance down costs roughly a second. At eighty words per minute, that is a significant fraction of each word. Train yourself to trust your fingers and use the screen for feedback.</li>
-<li><strong>Type slightly below your maximum speed.</strong> Studies show that typing at ninety percent of your top speed significantly reduces errors. Fewer corrections means your effective speed is actually higher, even though your raw keystroke rate is lower.</li>
+<li><strong>Look at the screen, not the keyboard.</strong> Every glance down costs roughly a second. At 80 WPM, that is a significant fraction of each word. Train yourself to trust your fingers and use the screen for feedback.</li>
+<li><strong>Type slightly below your maximum speed.</strong> Typing at 90% of your top speed significantly reduces errors. Fewer corrections means your effective speed is actually higher, even though your raw keystroke rate is lower.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
 <p><strong>What is a good typing speed in words per minute?</strong> The average person types around 40 WPM, trained typists hit 60 to 80, and top performers exceed 100. A practical target for most office work is 60 to 80 WPM.</p>
-<p><strong>Should I type as fast as I possibly can?</strong> No. Typing at about ninety percent of your top speed significantly reduces errors, and fewer corrections means your effective speed is actually higher than when you max out and make mistakes.</p>
+<p><strong>Should I type as fast as I possibly can?</strong> No. Typing at about 90% of your top speed significantly reduces errors, and fewer corrections means your effective speed is actually higher than when you max out and make mistakes.</p>
 <p><strong>How do I improve my typing speed quickly?</strong> Learn proper home-row touch typing so each finger owns specific keys, look at the screen instead of the keyboard, and practice slightly below your max speed to minimize corrections.</p>
 `,
   SHORTCUT_MASTER_ARTICLE: `
-<p>Shortcut Master is a recall game that shows you an action name like "Copy" or "Undo" and asks you to pick the correct keyboard shortcut from four options, building the muscle memory needed to use shortcuts automatically under deadline pressure. It covers Windows, Mac, and browser shortcuts, and the timer forces you to rely on recall rather than looking down at the keyboard.</p>
+<p>Shortcut Master is a free recall game that shows you an action name like "Copy" or "Undo" and asks you to pick the correct keyboard shortcut from four options. You build the muscle memory needed to use shortcuts automatically under deadline pressure, covering Windows, Mac, and browser shortcuts. That skill matters because reaching for the mouse takes 3-5 seconds per action versus under 1 second for the keyboard equivalent — a difference that compounds into dozens of minutes saved per day.</p>
 
-<p>If you spend eight hours a day at a computer, keyboard shortcuts are not a convenience — they are a multiplier on your productivity. Reaching for the mouse, moving the cursor, clicking a menu, and navigating to an action takes roughly three to five seconds. The keyboard equivalent takes under one. Over a day, that difference compounds into dozens of minutes saved. Shortcut Master is designed to build that muscle memory through rapid recall.</p>
+<h2>How the Recall Round Works</h2>
+<p>An action name appears — "Copy," "Undo," "Close Tab," "Switch Application" — and you pick the correct keyboard shortcut from four options. The game covers Windows, Mac, and browser shortcuts. Each correct answer adds to your score and streak; wrong answers reset your streak.</p>
 
-<h2>How the Game Works</h2>
-<p>An action name appears — "Copy," "Undo," "Close Tab," "Switch Application" — and you pick the correct keyboard shortcut from four options. The game covers Windows, Mac, and browser shortcuts. Each correct answer adds to your score and streak; wrong answers reset your streak. The timer creates pressure that forces you to rely on recall rather than looking down at the keyboard, which is exactly how real shortcut use works.</p>
+<p>The timer creates pressure that forces you to rely on recall rather than looking down at the keyboard. This is exactly how real shortcut use works: you do not have time to think, you just execute.</p>
 
-<h2>Why This Builds Real Productivity</h2>
-<p>The game trains <strong>active recall under time pressure</strong>, which is the same cognitive condition you face when working. Knowing a shortcut in theory is different from executing it without thinking under deadline pressure. By repeatedly matching actions to shortcuts against the clock, you build the neural pathways that make shortcuts automatic. After a few sessions, you will find yourself reaching for Ctrl+S without thinking, closing tabs with Ctrl+W, and switching apps with Alt+Tab — all because the game made the recall instant.</p>
+<h2>Keyboard Efficiency as a Productivity Skill</h2>
+<p>Knowing a shortcut in theory is different from executing it without thinking under deadline pressure. Shortcut Master trains active recall under time pressure, which is the same cognitive condition you face when working.</p>
 
-<h2>Five Shortcuts That Save the Most Time</h2>
+<p>Many people assume they will pick up shortcuts naturally over time. In practice, most users default to the mouse because it feels safer, and the shortcuts they do know fade without reinforcement. Repeated matching against the clock builds the neural pathways that make shortcuts automatic — after a few sessions, you reach for Ctrl+S without thinking.</p>
+
+<h2>Shortcuts That Save the Most Time</h2>
 <ul>
 <li><strong>Ctrl/Cmd + Z — Undo.</strong> The most-used shortcut in computing. If you only learn one, learn this one.</li>
 <li><strong>Ctrl/Cmd + Tab — Switch tabs.</strong> Eliminates mouse travel when you have many tabs open.</li>
@@ -422,63 +427,69 @@ export const articles: Record<string, string> = {
 <p><strong>Are Mac and Windows keyboard shortcuts the same?</strong> Most are analogous — Ctrl on Windows maps to Cmd on Mac for the same actions, with a few exceptions like application switching, which uses Alt+Tab on Windows and Cmd+Tab on Mac.</p>
 `,
   LOGIC_GATE_SIM_ARTICLE: `
-<p>Logic Gate Simulator is a game where you connect AND, OR, NOT, XOR, and NAND gates to input lines so your circuit's output matches a target truth table for every input combination. It teaches combinational logic design — the foundation of digital electronics — by letting you build with the same fundamental building blocks that every computer processor uses.</p>
+<p>Logic Gate Simulator is a free game where you connect AND, OR, NOT, XOR, and NAND gates to input lines so your circuit's output matches a target truth table for every input combination. You learn combinational logic design — the foundation of digital electronics — using the same building blocks that every computer processor uses. That skill matters for anyone studying computer science, electrical engineering, or embedded systems, where understanding how gates combine to create computation is essential.</p>
 
-<p>Every computer ever built — from the first vacuum-tube machines to the phone in your pocket — is ultimately a collection of logic gates. These tiny circuits take electrical signals as input and produce an output based on simple rules: AND outputs true only when both inputs are true, OR outputs true when either input is true, NOT flips a single input. Stack enough of these together and you get addition, memory, and everything software can do. Logic Gate Simulator lets you build with these fundamental building blocks.</p>
+<h2>Building a Circuit That Matches the Target</h2>
+<p>A target truth table appears showing the desired output for every combination of inputs. You select gates — AND, OR, NOT, XOR, NAND — and connect them to the input lines. When your circuit's output matches the target truth table for every input combination, you win the round.</p>
 
-<h2>How the Game Works</h2>
-<p>A target truth table appears showing the desired output for every combination of inputs. You select gates — AND, OR, NOT, XOR, NAND — and connect them to the input lines. When your circuit's output matches the target truth table for every input combination, you win the round. Difficulty controls how many inputs and gates are involved, starting with simple single-gate circuits and progressing to multi-gate networks that require careful planning.</p>
+<p>Difficulty controls how many inputs and gates are involved. You start with simple single-gate circuits and progress to multi-gate networks that require careful planning before you place a single gate.</p>
 
-<h2>Why This Builds Real Computer Science Intuition</h2>
-<p>The skill is <strong>combinational logic design</strong> — the foundation of digital electronics. By working through circuits manually, you develop an intuitive feel for how gates combine. You learn that NAND gates are universal — you can build any other gate from them — and that XOR is the key to binary addition. These are not abstract facts; they are the principles that make processors work. Students who play with logic gates before taking a digital design class consistently outperform those who only study the theory, because the game builds spatial reasoning about signal flow that textbooks alone cannot teach.</p>
+<h2>Understanding Digital Logic Fundamentals</h2>
+<p>Every computer ever built — from vacuum-tube machines to the phone in your pocket — is ultimately a collection of logic gates. An AND gate outputs true only when both inputs are true. An OR gate outputs true when either input is true. A NOT gate flips a single input. Stack enough of these together and you get addition, memory, and everything software can do.</p>
 
-<h2>Three Tips for Solving Logic Circuits</h2>
+<p>One thing that surprises many students is that NAND gates are universal — you can build any other gate from them alone. This is why real processors are often manufactured using only NAND (or NOR) gates. Students who practice with logic gates before taking a digital design class consistently outperform those who only study the theory, because the game builds spatial reasoning about signal flow that textbooks alone cannot teach.</p>
+
+<h2>Approaches for Solving Logic Circuits</h2>
 <ul>
-<li><strong>Start from the output and work backward.</strong> Look at what the final output needs to be, then figure out what gate could produce that, then what its inputs need to be. Working backward is often faster than trying to build forward from the inputs.</li>
+<li><strong>Work backward from the output.</strong> Look at what the final output needs to be, then figure out what gate could produce that, then what its inputs need to be. Working backward is often faster than building forward from the inputs.</li>
 <li><strong>Use De Morgan's laws to simplify.</strong> NOT (A AND B) is the same as (NOT A) OR (NOT B). This identity lets you convert between AND and OR gates, which is often the key to matching a truth table with fewer gates.</li>
 <li><strong>Check all input combinations.</strong> A circuit that works for the first few rows of a truth table may fail on edge cases. Always verify every row before submitting, especially for circuits with three or more inputs.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>What are the basic logic gates I need to know?</strong> AND, OR, NOT, XOR, and NAND. NAND is especially important because it is universal — you can build any other gate from NAND gates alone.</p>
-<p><strong>Why is the NAND gate called universal?</strong> Because you can construct any other logic gate — AND, OR, NOT, XOR — using only NAND gates, which makes NAND extremely useful in real circuit design.</p>
-<p><strong>How do I simplify a logic circuit?</strong> Use De Morgan's laws to convert between AND and OR gates: NOT (A AND B) equals (NOT A) OR (NOT B). This often lets you match a truth table with fewer gates.</p>
+<p><strong>What are the basic logic gates I need to know?</strong> AND, OR, NOT, XOR, and NAND. AND outputs true only when both inputs are true, OR outputs true when either input is true, NOT flips a single input, XOR outputs true when exactly one input is true, and NAND is the inverse of AND.</p>
+<p><strong>Why is the NAND gate called universal?</strong> Because you can construct any other logic gate — AND, OR, NOT, XOR — using only NAND gates. This makes NAND extremely useful in real circuit design, where entire processors can be built from a single gate type.</p>
+<p><strong>How do I simplify a logic circuit?</strong> Use De Morgan's laws to convert between AND and OR gates: NOT (A AND B) equals (NOT A) OR (NOT B). This often lets you match a truth table with fewer gates, which is faster and cheaper in real hardware.</p>
 `,
   WEBSITE_SPEED_ARTICLE: `
-<p>Website Speed Optimizer is a game that gives you a fictional slow website and a menu of optimization techniques — compress images, enable caching, minify code, use a CDN — to get load time under two seconds. It teaches performance budgeting: knowing which optimizations give the biggest bang for the buck and the correct order to apply them.</p>
+<p>Website Speed Optimizer is a free game that gives you a fictional slow website and a menu of optimization techniques — compress images, enable caching, minify code, use a CDN — to get load time under two seconds. You learn performance budgeting: knowing which optimizations give the biggest bang for the buck and the correct order to apply them. That skill matters because search engines penalize slow sites in rankings and users abandon pages that take more than 3 seconds to load, with mobile networks making the problem worse.</p>
 
-<p>Page speed is no longer optional. Search engines penalize slow sites in rankings, users abandon pages that take more than three seconds to load, and mobile networks make the problem worse. Yet most people building websites have never measured load time or learned what actually makes a page fast. Website Speed Optimizer turns that knowledge into a game.</p>
+<h2>The Optimization Challenge</h2>
+<p>A fictional website loads in 6 seconds — painfully slow. You are presented with a menu of optimization techniques: compress images, enable browser caching, minify CSS and JavaScript, use a content delivery network, reduce server response time, and more. Each technique reduces the load time by a realistic amount.</p>
 
-<h2>How the Game Works</h2>
-<p>A fictional website loads in six seconds — painfully slow. You are presented with a menu of optimization techniques: compress images, enable browser caching, minify CSS and JavaScript, use a content delivery network, reduce server response time, and more. Each technique reduces the load time by a realistic amount. Your goal is to get the page under two seconds using the best combination of techniques, learning which optimizations have the biggest impact.</p>
+<p>Your goal is to get the page under 2 seconds using the best combination of techniques. The game teaches you which optimizations have the biggest impact and which are not worth the effort for a given situation.</p>
 
-<h2>What Real-World Skill This Builds</h2>
-<p>The skill is <strong>performance budgeting</strong> — knowing which optimizations give the biggest bang for the buck. Not all techniques are equal: compressing images often saves more time than minifying code, and enabling a CDN helps distant users more than local ones. The game trains you to think about performance as a set of trade-offs rather than a single fix. You also learn the order of operations: some optimizations should come before others because they are prerequisites. For example, you should measure server response time before deciding whether a CDN will help, because if the server itself is slow, a CDN only masks the problem.</p>
+<h2>Web Performance Literacy</h2>
+<p>Not all techniques are equal. Compressing images often saves more time than minifying code, and enabling a CDN helps distant users more than local ones. The game trains you to think about performance as a set of trade-offs rather than a single fix.</p>
 
-<h2>Three Optimizations With the Biggest Impact</h2>
+<p>People often assume a CDN is a silver bullet for slow sites. It is not — if the server itself is slow, a CDN only masks the problem by caching static assets at the edge. You also learn the order of operations: some optimizations should come before others because they are prerequisites. Measuring server response time first tells you whether a CDN will actually help.</p>
+
+<h2>Optimizations With the Biggest Impact</h2>
 <ul>
-<li><strong>Compress and resize images.</strong> Unoptimized images are the single biggest cause of slow pages. Converting a five-megabyte hero image to a two-hundred-kilobyte compressed version can cut load time in half by itself.</li>
+<li><strong>Compress and resize images.</strong> Unoptimized images are the single biggest cause of slow pages. Converting a 5 MB hero image to a 200 KB compressed version can cut load time in half by itself.</li>
 <li><strong>Enable browser caching.</strong> Caching tells the browser to store static assets locally so returning visitors load nearly instantly. This does not help first-time visitors but dramatically improves repeat-visit speed.</li>
-<li><strong>Minify CSS and JavaScript.</strong> Removing whitespace, comments, and unnecessary characters from code files reduces their size by thirty to fifty percent. Modern build tools do this automatically, but many sites still ship unminified code.</li>
+<li><strong>Minify CSS and JavaScript.</strong> Removing whitespace, comments, and unnecessary characters from code files reduces their size by 30 to 50%. Modern build tools do this automatically, but many sites still ship unminified code.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>What is the single biggest cause of slow web pages?</strong> Unoptimized images. Converting a large hero image to a compressed, properly sized version can cut load time in half by itself.</p>
+<p><strong>What is the single biggest cause of slow web pages?</strong> Unoptimized images. A 5 MB hero photo can take several seconds to load on mobile. Converting it to a 200 KB compressed, properly sized version can cut load time in half by itself.</p>
 <p><strong>Does enabling browser caching help first-time visitors?</strong> No. Caching stores static assets locally so returning visitors load nearly instantly, but it does not improve the first visit since there is nothing cached yet.</p>
-<p><strong>What does minifying CSS and JavaScript do?</strong> It removes whitespace, comments, and unnecessary characters from code files, reducing their size by thirty to fifty percent so they download and parse faster.</p>
+<p><strong>What does minifying CSS and JavaScript do?</strong> It removes whitespace, comments, and unnecessary characters from code files, reducing their size by 30 to 50% so they download and parse faster.</p>
 `,
   TECH_ACRONYM_DECODER_ARTICLE: `
-<p>Tech Acronym Decoder is a matching game that shows you a tech acronym like API, DNS, or SQL and asks you to pick the correct expansion from four options, building technical vocabulary through active recall. Knowing what each acronym stands for unlocks comprehension of the conversations, job postings, and documentation that fill the technology world.</p>
+<p>Tech Acronym Decoder is a free matching game that shows you a tech acronym like API, DNS, or SQL and asks you to pick the correct expansion from four options. You build technical vocabulary through active recall — the most effective method for memorizing definitions. That vocabulary matters because the technology world runs on acronyms, and knowing what each one stands for unlocks comprehension of job postings, documentation, and conversations that otherwise sound like alphabet soup.</p>
 
-<p>The technology world runs on acronyms. Every conversation, job posting, and documentation page is littered with three- and four-letter abbreviations that insiders use without a second thought and newcomers pretend to understand. Tech Acronym Decoder is designed to build that vocabulary through rapid-fire matching.</p>
+<h2>How the Matching Round Works</h2>
+<p>An acronym appears — API, CSS, DNS, SQL, HTTP — and you pick the correct expansion from four options. Each correct answer adds to your score and streak; wrong answers reset your streak. The difficulty tiers control how common the acronyms are.</p>
 
-<h2>How the Game Works</h2>
-<p>An acronym appears — API, CSS, DNS, SQL, HTTP — and you pick the correct expansion from four options. Each correct answer adds to your score and streak; wrong answers reset your streak. The difficulty tiers control how common the acronyms are. Easy mode sticks to the fundamentals that every developer encounters daily. Higher tiers introduce more specialized terms from networking, databases, and cloud infrastructure.</p>
+<p>Easy mode sticks to the fundamentals that every developer encounters daily. Higher tiers introduce more specialized terms from networking, databases, and cloud infrastructure, reaching into acronyms that even experienced professionals sometimes have to look up.</p>
 
-<h2>Why This Builds Real Tech Literacy</h2>
-<p>The skill is <strong>technical vocabulary acquisition</strong>. You cannot understand a subject if you do not know its vocabulary, and tech is especially acronym-dense. Knowing that API stands for Application Programming Interface — and understanding what that means — unlocks comprehension of dozens of conversations that previously sounded like alphabet soup. The game uses active recall, which is the most effective method for memorizing definitions. You see the acronym, retrieve the expansion, and get immediate feedback, which strengthens the memory far more effectively than passive reading.</p>
+<h2>Technical Vocabulary Acquisition</h2>
+<p>You cannot understand a subject if you do not know its vocabulary, and tech is especially acronym-dense. Knowing that API stands for Application Programming Interface — and understanding what that means — unlocks comprehension of dozens of conversations that previously sounded like jargon.</p>
 
-<h2>Five Acronyms Every Tech Worker Should Know</h2>
+<p>It is tempting to think you can just Google acronyms as you encounter them. In practice, the constant context-switching breaks your focus and slows comprehension. The game uses active recall — you see the acronym, retrieve the expansion, and get immediate feedback — which strengthens the memory far more effectively than passive reading and builds the instant recognition you need to follow technical discussions in real time.</p>
+
+<h2>Acronyms Every Tech Worker Should Know</h2>
 <ul>
 <li><strong>API — Application Programming Interface.</strong> The set of rules that lets one program talk to another. Every web app, mobile app, and integration runs on APIs.</li>
 <li><strong>DNS — Domain Name System.</strong> The phonebook of the internet. It translates human-readable domain names into the IP addresses that computers use to find each other.</li>
@@ -488,7 +499,7 @@ export const articles: Record<string, string> = {
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>What does API stand for and what does it do?</strong> API stands for Application Programming Interface, and it is the set of rules that lets one program talk to another. Every web app, mobile app, and integration runs on APIs.</p>
+<p><strong>What does API stand for and what does it do?</strong> API stands for Application Programming Interface, and it is the set of rules that lets one program talk to another. Every web app, mobile app, and software integration runs on APIs.</p>
 <p><strong>What is DNS in simple terms?</strong> DNS stands for Domain Name System, and it is the phonebook of the internet — it translates human-readable domain names into the IP addresses computers use to find each other.</p>
 <p><strong>What is the difference between SQL and HTTP?</strong> SQL is the standard language for interacting with relational databases, while HTTP is the protocol that defines how web browsers and servers communicate. One queries data, the other transfers web pages.</p>
 `,
