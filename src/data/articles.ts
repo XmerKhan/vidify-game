@@ -225,29 +225,32 @@ export const articles: Record<string, string> = {
 <p><strong>What math operations does Math Sprint include?</strong> Addition, subtraction, multiplication, and division, starting with single-digit problems and progressing to two-digit multiplication and three-digit addition as your streak grows.</p>
 `,
   GEO_QUIZ_ARTICLE: `
-<p>Geo Quiz is a geography game that shows you a country's flag or outline and asks you to identify it from four multiple-choice options across ten questions per round. It uses active recall and visual learning — the most effective methods for retaining geography knowledge — so you remember countries long after playing.</p>
+<h1>Geo Quiz — Free World Geography Quiz Game</h1>
+<p>Geo Quiz is a free geography game that shows you a country's flag or outline and asks you to identify it from four multiple-choice options across ten questions per round. You build geographic literacy — the ability to recognize nations by their visual signatures — through active recall under time pressure. That skill matters because geographic awareness shapes how you interpret world news, understand geopolitics, and navigate international contexts in work and travel.</p>
 
-<p>There are 195 recognized countries in the world today. The average person can name perhaps forty or fifty of them, and recognize the flags of maybe twenty. Yet every one of those countries has a flag, a shape, and a story — and the people who can identify them all are not savants. They simply practiced. Geo Quiz turns that practice into a game.</p>
+<p>There are 195 recognized sovereign countries in the world today. The average person can name perhaps forty or fifty of them and recognize the flags of maybe twenty. Yet every one of those nations has a flag, a shape, and a story. The people who can identify them all are not savants — they simply practiced. Geo Quiz compresses that practice into a fast, repeatable format.</p>
 
-<h2>How the Game Works</h2>
-<p>Each round shows you a country's flag or outline and asks you to identify it from four multiple-choice options. You pick an answer, get immediate feedback, and move on. A correct answer adds to your score and streak; a wrong one resets your streak. The game runs through ten questions per round and saves your best score locally so you can track your improvement over time. Three difficulty tiers — easy, medium, and expert — control how recognizable the countries are and how tricky the wrong-answer options get.</p>
+<h2>What Each Round Looks Like</h2>
+<p>Each round shows you a country's flag or outline and asks you to identify it from four multiple-choice options. You pick an answer, get immediate feedback, and move on. A correct answer adds to your score and streak; a wrong one resets your streak.</p>
 
-<h2>Why This Improves Your Geography Knowledge</h2>
-<p>Geography is a visual subject, and most people are visual learners. Reading that Bhutan is a small kingdom between India and China plants a fact in your memory that fades within days. Seeing Bhutan's distinctive flag — divided diagonally into saffron yellow and orange, with a white dragon across the middle — plants an image that sticks for years. Geo Quiz leverages this by presenting countries visually and testing you through active recall, which cognitive science has established as the most effective learning method. Every time you retrieve a country's name from its flag, you strengthen that memory and make it easier to retrieve next time. The spaced repetition built into the random question selection means you naturally see tricky countries more often until they stick.</p>
+<p>The game runs through ten questions per round and saves your best score locally so you can track improvement. Three difficulty tiers — easy, medium, and expert — control how recognizable the countries are and how tricky the wrong-answer options get.</p>
 
-<h2>Fun Facts About World Geography</h2>
+<h2>Geographic Literacy as a Real-World Skill</h2>
+<p>Geography is a visual subject, and most people are visual learners. Reading that Bhutan is a small kingdom between India and China plants a fact that fades within days. Seeing Bhutan's distinctive flag — divided diagonally into saffron yellow and orange, with a white dragon across the middle — plants an image that sticks for years.</p>
+
+<p>Geo Quiz leverages this by presenting countries visually and testing you through active recall. Every time you retrieve a country's name from its flag, you strengthen that memory and make it easier to retrieve next time. The spaced repetition built into the random question selection means you naturally see tricky countries more often until they stick.</p>
+
+<h2>Memory Techniques for Learning Flags</h2>
 <ul>
-<li>Russia spans eleven time zones — more than any other country — and its easternmost point is closer to Alaska than to Moscow.</li>
-<li>Canada has more lakes than the rest of the world combined, holding roughly twenty percent of the planet's fresh surface water.</li>
-<li>Vatican City is the smallest country in the world at 0.49 square kilometers, smaller than many city parks and with a population under one thousand.</li>
-<li>Indonesia is made up of over 17,000 islands, though only about 6,000 are inhabited, making it the world's largest archipelagic nation.</li>
-<li>The driest place on Earth is the Atacama Desert in Chile, where some weather stations have never recorded a single drop of rain.</li>
+<li><strong>Group flags by visual family.</strong> Pan-Slavic flags (Russia, Serbia, Bulgaria) share horizontal red-blue-white stripes. Pan-Arab flags (Egypt, Iraq, Syria) share red-white-black stripes. Grouping by pattern reduces the number of distinct images you need to memorize.</li>
+<li><strong>Focus on the distinguishing detail.</strong> Many flags differ in only one element. Monaco and Indonesia both use red-over-white horizontal stripes, but Monaco's is taller. Chad and Romania differ only in a subtle shade of blue. Find the one element that makes each flag unique.</li>
+<li><strong>Use the outline shape.</strong> Some countries are instantly recognizable by their borders. Italy's boot shape is iconic. Chile's long, narrow ribbon is distinctive. When the flag alone is not enough, the country's outline is a second clue.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>How many questions are in a Geo Quiz round?</strong> Ten. Each round runs through ten multiple-choice questions, and your best score is saved locally so you can track improvement over time.</p>
-<p><strong>What is the best way to learn country flags with Geo Quiz?</strong> Active recall. The game shows you a flag and asks you to retrieve the country name from memory, which cognitive science shows is far more effective than passive re-reading for long-term retention.</p>
-<p><strong>What do the difficulty tiers in Geo Quiz control?</strong> They control how recognizable the countries are and how tricky the wrong-answer options get — easy covers major nations, expert reaches into smaller countries rarely discussed.</p>
+<p><strong>How many countries does Geo Quiz cover?</strong> The game draws from all 195 recognized sovereign countries. Three difficulty tiers control which ones appear, from major nations on easy to smaller countries on expert.</p>
+<p><strong>Why do some country flags look almost identical?</strong> Many flags share colonial histories or cultural ties. Indonesia and Monaco have nearly identical red-and-white flags, while Chad and Romania differ only in subtle shade variations of blue.</p>
+<p><strong>What is the most effective way to learn country flags?</strong> Active recall under time pressure, which is exactly what Geo Quiz provides. Seeing a flag and retrieving the country name from memory strengthens the connection far more than passively studying a chart.</p>
 `,
   CREDIT_SCORE_CLIMB_ARTICLE: `
 <p>Credit Score Climb is a free simulation game where each financial decision you make pushes a simulated credit score up or down based on the real factors bureaus use. You learn what actually moves a FICO score — payment history, utilization, credit age, inquiries, and credit mix. That knowledge matters because your real credit score determines your mortgage rate, car loan terms, and even whether a landlord will rent to you.</p>
@@ -504,129 +507,144 @@ export const articles: Record<string, string> = {
 <p><strong>What is the difference between SQL and HTTP?</strong> SQL is the standard language for interacting with relational databases, while HTTP is the protocol that defines how web browsers and servers communicate. One queries data, the other transfers web pages.</p>
 `,
   CAPITAL_CITY_ARTICLE: `
-<p>Capital City Challenge is a geography game that shows you a country name and asks you to pick its capital from four options across ten questions per round, using active recall to make capitals stick in memory. It teaches that capitals are often purpose-built administrative centers — like Canberra, not Sydney — rather than the largest or most famous city.</p>
+<h1>Capital City Challenge — World Capitals Quiz Game</h1>
+<p>Capital City Challenge is a free geography game that shows you a country name and asks you to pick its capital from four options across ten questions per round. You learn the political centers of the world's nations and the often surprising reasons why a capital is not always the largest or most famous city. That knowledge matters because capitals are anchor points for understanding world news, diplomatic events, and the political geography that shapes international relations.</p>
 
-<p>There are nearly two hundred capital cities in the world, and the average person can name maybe twenty of them. Yet capitals are more than trivia — they are the political, cultural, and often economic centers of their countries, and knowing them gives you a framework for understanding world news, history, and geography. Capital City Challenge turns that knowledge into a game.</p>
+<p>There are nearly two hundred capital cities in the world, and the average person can name maybe twenty of them. Yet capitals are more than trivia. They are the political, cultural, and often economic centers of their countries, and knowing them gives you a framework for understanding global events. Capital City Challenge turns that knowledge into a fast, repeatable game.</p>
 
-<h2>How the Game Works</h2>
-<p>A country name appears on screen and you pick its capital from four options. Immediate feedback tells you whether you were right, and the correct answer sticks in your memory through active recall. The game runs through ten questions per round, and your best score is saved locally. Three difficulty tiers control how recognizable the countries are — easy covers major world powers, medium spans every continent, and expert reaches into smaller nations whose capitals are rarely discussed.</p>
+<h2>The Structure of a Round</h2>
+<p>A country name appears on screen and you pick its capital from four options. Immediate feedback tells you whether you were right, and the correct answer sticks in your memory through active recall. The game runs through ten questions per round, and your best score is saved locally.</p>
 
-<h2>Why This Improves Your Geography Knowledge</h2>
-<p>Capital cities are anchor points for broader geographic understanding. When you know that Canberra is the capital of Australia — not Sydney, as many people guess — you also learn that capitals are sometimes purpose-built administrative cities rather than the largest or most famous one. When you know that Brasilia replaced Rio de Janeiro as Brazil's capital in 1960, you learn that capitals can move for political and developmental reasons. Each fact you learn connects to others, building a web of geographic knowledge that makes future learning easier. The game's spaced repetition ensures that capitals you miss come up more often, naturally focusing your practice where it is needed.</p>
+<p>Three difficulty tiers control how recognizable the countries are. Easy covers major world powers, medium spans every continent, and expert reaches into smaller nations whose capitals are rarely discussed outside geography circles.</p>
 
-<h2>Fun Facts About World Capitals</h2>
+<h2>Political Geography and Why Capitals Matter</h2>
+<p>Capital cities are anchor points for broader geographic understanding. When you know that Canberra is the capital of Australia — not Sydney, as many people guess — you also learn that capitals are sometimes purpose-built administrative cities rather than the largest or most famous one.</p>
+
+<p>When you know that Brasilia replaced Rio de Janeiro as Brazil's capital in 1960, you learn that capitals can move for political and developmental reasons. Each fact you learn connects to others, building a web of geographic knowledge that makes future learning easier.</p>
+
+<h2>Memory Strategies for Retaining Capitals</h2>
 <ul>
-<li>Canberra was chosen as Australia's capital as a compromise between rivals Sydney and Melbourne. It was a rural area with no existing settlement when selected in 1908.</li>
-<li>Brazil moved its capital from Rio de Janeiro to the purpose-built city of Brasilia in 1960 to develop the interior of the country. It took just forty-one months to build.</li>
-<li>South Africa is unique in having three capital cities — Pretoria for the executive branch, Cape Town for the legislative, and Bloemfontein for the judicial.</li>
-<li>Naypyidaw, the capital of Myanmar, was built in secret in the early 2000s and has a population of under a million despite being one of the largest cities by land area in the world.</li>
-<li>Bern is the capital of Switzerland, not Zurich or Geneva, despite those cities being far larger and more internationally known.</li>
+<li><strong>Group by the purpose-built pattern.</strong> Several capitals were deliberately constructed rather than growing organically: Canberra, Brasilia, Washington D.C., and Naypyidaw. Recognizing this pattern helps you predict rather than memorize.</li>
+<li><strong>Learn the counterintuitive ones first.</strong> Bern not Zurich, Canberra not Sydney, Ottawa not Toronto, Ankara not Istanbul. The surprising ones are the ones you will be tested on most, and they are the most memorable once learned.</li>
+<li><strong>Pair the capital with one visual fact.</strong> Ottawa sits on the Rideau Canal. Brasilia is shaped like an airplane from above. Anchoring a capital to a single vivid detail makes it stick far longer than rote repetition.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>What is the capital of Australia — is it Sydney?</strong> No, it is Canberra. Canberra was chosen as a compromise between rivals Sydney and Melbourne and was a rural area with no existing settlement when selected in 1908.</p>
-<p><strong>Why does South Africa have three capital cities?</strong> Because its government branches are split across three cities — Pretoria for the executive, Cape Town for the legislative, and Bloemfontein for the judicial — making it unique among world capitals.</p>
-<p><strong>How many questions are in a Capital City Challenge round?</strong> Ten. The game runs through ten multiple-choice questions per round and saves your best score locally so you can track improvement over time.</p>
+<p><strong>Why is Canberra the capital of Australia instead of Sydney?</strong> Canberra was chosen in 1908 as a compromise between rival cities Sydney and Melbourne. It was a rural area with no existing settlement, purpose-built to serve as the administrative center.</p>
+<p><strong>Which country has three capital cities?</strong> South Africa splits its government across three cities: Pretoria for the executive branch, Cape Town for the legislative, and Bloemfontein for the judicial. No other country divides its capitals this way.</p>
+<p><strong>Are capitals always the largest city in their country?</strong> No. Many capitals are purpose-built administrative centers rather than the biggest or most famous city. Bern, not Zurich, is the capital of Switzerland, and Ottawa, not Toronto, is the capital of Canada.</p>
 `,
   SCIENCE_FACT_SPRINT_ARTICLE: `
-<p>Science Fact Sprint is a trivia game that asks science questions across biology, chemistry, physics, and earth science with four answer options and a timer, using active recall and interleaving to build a factual foundation. Active recall means retrieving information from memory rather than re-reading it, and interleaving means mixing subjects within a session, both of which cognitive science identifies as highly effective learning techniques.</p>
+<h1>Science Fact Sprint — Free Science Trivia Game</h1>
+<p>Science Fact Sprint is a free trivia game that asks science questions across biology, chemistry, physics, and earth science with four answer options and a countdown timer. You build a factual foundation in the core sciences through active recall and interleaving — two techniques cognitive science identifies as the most effective methods for long-term retention. That foundation matters because scientific literacy helps you make informed decisions about health, climate, and technology in everyday life.</p>
 
-<p>Science is not a collection of facts to memorize — it is a way of understanding how the world works. But facts are the building blocks of that understanding, and the more you know, the more connections you can make. Science Fact Sprint is designed to build that factual foundation across biology, chemistry, physics, and earth science through rapid-fire trivia.</p>
+<p>Science is not a collection of facts to memorize. It is a way of understanding how the world works. But facts are the building blocks of that understanding, and the more you know, the more connections you can make. Science Fact Sprint builds that foundation across four major disciplines through rapid-fire trivia.</p>
 
-<h2>How the Game Works</h2>
-<p>A science question appears with four answer options. You pick the correct one before the timer expires. Questions span multiple disciplines: What is the most abundant element in the universe? What organ filters blood? What is the speed of light in a vacuum? Each correct answer adds to your score and streak; wrong answers reset your streak. The difficulty tiers control the obscurity of the questions and how tight the timer is.</p>
+<h2>How a Round Plays Out</h2>
+<p>A science question appears with four answer options. You pick the correct one before the timer expires. Questions span multiple disciplines: What is the most abundant element in the universe? What organ filters blood? What is the speed of light in a vacuum?</p>
 
-<h2>Why This Builds Real Science Knowledge</h2>
-<p>The game uses <strong>active recall and interleaving</strong>, two of the most effective learning techniques identified by cognitive science. Active recall means retrieving information from memory rather than re-reading it, which strengthens the memory far more effectively. Interleaving means mixing different subjects — biology, chemistry, physics — within the same session, which forces your brain to switch contexts and builds more robust recall than studying one subject at a time. The timer adds an element of pressure that simulates the conditions of real-world knowledge use, where you need to access facts quickly and in context.</p>
+<p>Each correct answer adds to your score and streak; wrong answers reset your streak. The difficulty tiers control the obscurity of the questions and how tight the timer is.</p>
 
-<h2>Five Surprising Science Facts</h2>
+<h2>Building Cross-Disciplinary Science Knowledge</h2>
+<p>The game uses two of the most effective learning techniques identified by cognitive science. Active recall means retrieving information from memory rather than re-reading it, which strengthens the memory far more effectively than passive review.</p>
+
+<p>Interleaving means mixing different subjects — biology, chemistry, physics — within the same session. This forces your brain to switch contexts and builds more robust recall than studying one subject at a time. The timer adds pressure that simulates real-world conditions, where you need to access facts quickly and in context.</p>
+
+<h2>Techniques for Retaining Science Facts</h2>
 <ul>
-<li>Hydrogen is the most abundant element in the universe, making up roughly seventy-five percent of all normal matter. Stars, including our sun, are mostly hydrogen.</li>
-<li>The human body contains enough carbon to make graphite for nine thousand pencils, enough fat to make seven bars of soap, and enough phosphorus for a few hundred matchheads.</li>
-<li>Light travels at approximately three hundred thousand kilometers per second in a vacuum, but it slows down when passing through water or glass — which is why a straw looks bent in a glass of water.</li>
-<li>Octopuses have three hearts, nine brains, and blue blood. Two hearts pump blood through the gills, while the third circulates it through the rest of the body.</li>
-<li>A bolt of lightning is roughly five times hotter than the surface of the sun, reaching about thirty thousand degrees Celsius despite lasting only a fraction of a second.</li>
+<li><strong>Connect facts to mental images.</strong> Hydrogen making up seventy-five percent of all normal matter is easier to remember when you picture the sun, which is mostly hydrogen, burning through its fuel supply. Images stick where abstractions fade.</li>
+<li><strong>Use the interleaving principle in your own study.</strong> Do not drill biology alone for an hour. Mix biology, chemistry, and physics questions in the same session. The context-switching is harder but builds stronger recall, which is exactly why the game works.</li>
+<li><strong>Anchor surprising facts to familiar ones.</strong> Lightning is five times hotter than the sun's surface. Anchor that to the fact that lightning lasts only a fraction of a second, and the contrast makes both details more memorable.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>What is the most abundant element in the universe?</strong> Hydrogen, which makes up roughly seventy-five percent of all normal matter. Stars, including our sun, are mostly hydrogen.</p>
-<p><strong>How hot is lightning compared to the sun?</strong> A bolt of lightning is roughly five times hotter than the surface of the sun, reaching about thirty thousand degrees Celsius despite lasting only a fraction of a second.</p>
-<p><strong>Why does Science Fact Sprint mix different science subjects?</strong> Because interleaving — mixing biology, chemistry, and physics within one session — forces your brain to switch contexts, which cognitive science shows builds more robust recall than studying one subject at a time.</p>
+<p><strong>What science subjects does Science Fact Sprint cover?</strong> The game spans biology, chemistry, physics, and earth science. Questions range from the most abundant element in the universe to the speed of light and the anatomy of the human body.</p>
+<p><strong>Why does the game mix different science subjects in one session?</strong> Mixing subjects within a single session is called interleaving, a technique cognitive science identifies as more effective than studying one subject at a time. It forces your brain to switch contexts, which builds more durable recall.</p>
+<p><strong>What is the most surprising science fact in the game?</strong> A bolt of lightning reaches roughly thirty thousand degrees Celsius, about five times hotter than the surface of the sun. This happens despite the flash lasting only a fraction of a second.</p>
 `,
   PERIODIC_TABLE_BLITZ_ARTICLE: `
-<p>Periodic Table Blitz is a matching game that shows you an element symbol like Fe, Au, or Na and asks you to pick the correct element name from four options, building instant symbol recognition through timed practice. Element symbols are the alphabet of chemistry — the faster you recognize them, the easier every formula, equation, and reaction becomes.</p>
+<h1>Periodic Table Blitz — Free Chemistry Element Game</h1>
+<p>Periodic Table Blitz is a free chemistry game that shows you an element's symbol, name, or atomic number and asks you to identify it from four options before the timer expires. You learn the 118 confirmed elements of the periodic table and the organizational logic behind their arrangement — knowledge that forms the foundation of chemistry and materials science. That foundation matters because the periodic table is the reference chemists, biologists, and engineers use to predict how substances behave and interact.</p>
 
-<p>The periodic table is one of the most elegant organizing systems in all of science. One hundred eighteen elements, arranged by their atomic structure, reveal patterns that predict chemical behavior, reactivity, and physical properties. Yet most people only know a handful of elements by symbol. Periodic Table Blitz is designed to build that fluency through timed practice.</p>
+<p>The periodic table has 118 confirmed elements, organized by increasing atomic number. Each element is a pure substance that cannot be broken down further by chemical means. Everything you have ever touched, tasted, or breathed is some combination of these 118 building blocks.</p>
 
-<h2>How the Game Works</h2>
-<p>An element symbol appears — Fe, Au, Hg, Na — and you pick the correct element name from four options. Alternatively, an element name appears and you pick its symbol. Each correct answer adds to your score and streak; wrong answers reset your streak. The difficulty tiers control how deep into the table you go. Easy mode covers the first twenty elements plus common metals. Higher tiers reach into transition metals, lanthanides, and the heavier elements that even chemistry students struggle to remember.</p>
+<h2>What the Gameplay Looks Like</h2>
+<p>An element's symbol, name, or atomic number appears on screen. You pick the correct match from four options before the timer runs out. Correct answers add to your score and streak; wrong ones reset your streak.</p>
 
-<h2>Why This Builds Real Chemistry Knowledge</h2>
-<p>Element symbols are the alphabet of chemistry. Every chemical formula, equation, and reaction uses them, and the faster you can recognize them, the easier everything else becomes. The game trains <strong>instant symbol recognition</strong> through active recall under time pressure, which is exactly the cognitive condition you face when reading a chemistry textbook or balancing an equation. The game also exposes you to the patterns of the table: elements in the same group share symbols that reflect their discovery history, and learning those stories makes the symbols more memorable. For example, Fe stands for ferrum, the Latin word for iron, because many element symbols come from Latin rather than English names.</p>
+<p>Three difficulty tiers control how obscure the elements are. Easy covers the first twenty elements and common metals. Expert reaches into the lanthanides, actinides, and synthetic elements created only in laboratories.</p>
 
-<h2>Five Elements With Surprising Symbol Stories</h2>
+<h2>Chemistry Fundamentals Through the Table</h2>
+<p>The periodic table is not a random list. It is a map of chemical behavior. Elements in the same column share similar properties because they have the same number of electrons in their outer shell, which determines how they bond and react.</p>
+
+<p>This is why the table is so powerful: knowing an element's position tells you its reactivity, bonding behavior, and physical characteristics without memorizing each one individually. The table was most recently expanded in 2016 when elements 113, 115, 117, and 118 were officially recognized.</p>
+
+<h2>Memory Aids for the Elements</h2>
 <ul>
-<li><strong>Fe — Iron.</strong> From the Latin ferrum. Many elements keep their Latin symbols even today, which is why iron is Fe, not Ir (that is iridium).</li>
-<li><strong>Au — Gold.</strong> From the Latin aurum, meaning shining dawn. Gold's symbol is one of the oldest in continuous use.</li>
-<li><strong>Hg — Mercury.</strong> From the Latin hydrargyrum, meaning liquid silver. Mercury is one of the few elements liquid at room temperature.</li>
-<li><strong>Na — Sodium.</strong> From the Latin natrium. The English name comes from soda, but the symbol preserves the older Latin root.</li>
-<li><strong>W — Tungsten.</strong> From the German wolfram. Tungsten is one of the few elements whose symbol does not match its English name at all.</li>
+<li><strong>Learn the symbols that do not match English names.</strong> Iron is Fe from ferrum, gold is Au from aurum, silver is Ag from argentum, and tungsten is W from the German name wolfram. These mismatches are the most common source of errors, so mastering them early prevents mistakes later.</li>
+<li><strong>Memorize the first twenty by atomic number.</strong> Hydrogen, helium, lithium, beryllium, boron, carbon, nitrogen, oxygen, fluorine, neon — these ten cover the bulk of everyday chemistry. A common mnemonic is "Happy Henry Lives Beside Boron Cottage, Near Our Friend Nelly Nancy" for the first ten.</li>
+<li><strong>Group by column family.</strong> The noble gases (helium, neon, argon, krypton, xenon) all share full outer shells and are chemically inert. The alkali metals (lithium, sodium, potassium) are all highly reactive. Grouping by family reduces memorization to a handful of patterns rather than 118 individual facts.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>Why is the symbol for iron Fe instead of Ir?</strong> Because Fe comes from the Latin word ferrum, which is the historical root for iron. Ir is actually the symbol for iridium, a different element.</p>
-<p><strong>Why does tungsten have the symbol W?</strong> Because the symbol comes from the German name wolfram, not the English name tungsten, making it one of the few elements whose symbol does not match its English name at all.</p>
-<p><strong>What does Periodic Table Blitz train?</strong> Instant symbol recognition through active recall under time pressure, which is the same cognitive condition you face when reading a chemistry textbook or balancing an equation.</p>
+<p><strong>How many elements are on the periodic table?</strong> There are 118 confirmed elements, organized by increasing atomic number. The table was most recently expanded in 2016 when elements 113, 115, 117, and 118 were officially recognized.</p>
+<p><strong>Why do some element symbols not match their English names?</strong> Many symbols come from Latin or German roots rather than English. Iron is Fe from ferrum, gold is Au from aurum, and tungsten is W from the German name wolfram.</p>
+<p><strong>What makes the periodic table useful beyond memorizing elements?</strong> The table groups elements with similar chemical properties into columns, so knowing an element's position predicts its reactivity, bonding behavior, and physical characteristics without needing to memorize each one individually.</p>
 `,
   HISTORY_TIMELINE_ARTICLE: `
-<p>History Timeline is a sequencing game that gives you four historical events and asks you to arrange them in chronological order from earliest to latest, training temporal sequencing — the ability to place events in time relative to each other. Chronology is the skeleton of historical understanding because the relative order of events is what reveals cause and effect.</p>
+<h1>History Timeline — Free Historical Events Ordering Game</h1>
+<p>History Timeline is a free history game that shows you a historical event and asks you to place it in chronological order relative to other events before the timer expires. You build chronological reasoning — the ability to sequence events and understand cause-and-effect relationships across centuries. That skill matters because historical reasoning is how you make sense of current events, political conflicts, and social movements whose roots stretch back decades or centuries.</p>
 
-<p>History is not a list of dates to memorize — it is a story of cause and effect. But you cannot understand the story if you do not know the order of events. When did the printing press precede the Reformation? Did the fall of Rome come before or after the rise of Islam? History Timeline trains your sense of chronological order by asking you to place events in sequence.</p>
+<p>History is not a pile of dates to memorize. It is a sequence of causes and effects, where one event sets the stage for the next. Knowing that the Magna Carta was signed in 1215, centuries before the French Revolution, tells you something about the slow spread of democratic ideas. History Timeline trains you to think in that sequence.</p>
 
-<h2>How the Game Works</h2>
-<p>Four historical events appear on screen, each with a brief description. Your job is to arrange them in chronological order from earliest to latest. You drag events up or down, or tap them in order, and the game tells you whether your sequence is correct. The difficulty tiers control how close together the events are — easy mode spans centuries, while expert mode may ask you to distinguish events that happened within the same decade.</p>
+<h2>Placing Events in Order</h2>
+<p>A historical event appears on screen — the fall of the Berlin Wall, the signing of the Magna Carta, the first powered flight. You place it in chronological order relative to other events before the timer expires. Correct placements add to your score and streak.</p>
 
-<h2>Why This Builds Real Historical Understanding</h2>
-<p>Chronology is the skeleton of historical understanding. Without it, events float in a timeless fog — you might know that the Magna Carta and the French Revolution both happened, but without knowing which came first, you cannot understand how one influenced the other. The game trains <strong>temporal sequencing</strong>, which is the ability to place events in time relative to each other. This is more useful than memorizing exact years, because the relative order of events is what reveals cause and effect. When you know that the Renaissance preceded the Enlightenment, you can see how the rediscovery of classical ideas set the stage for the scientific revolution. The game makes these connections concrete by forcing you to actively arrange events rather than passively reading a timeline.</p>
+<p>The difficulty tiers control how close together the events are. Easy spans centuries, making the order relatively obvious. Expert asks you to distinguish events that happened within the same decade, which requires much tighter temporal reasoning.</p>
 
-<h2>Five Events That Changed the World</h2>
+<h2>Chronological Thinking as Historical Reasoning</h2>
+<p>Chronological thinking is the foundation of historical reasoning. Without a sense of when events happened relative to each other, you cannot understand cause and effect. The Renaissance preceded the Enlightenment, which preceded the Industrial Revolution — and each one made the next possible.</p>
+
+<p>Many people assume history is about memorizing dates. It is not. It is about understanding the order of events and the connections between them. A date without context is just a number, but knowing that the printing press arrived before the Protestant Reformation helps you understand why the Reformation spread so quickly.</p>
+
+<h2>Techniques for Building Chronological Awareness</h2>
 <ul>
-<li>The invention of the printing press around 1440 by Johannes Gutenberg made books affordable, literacy widespread, and ideas transmissible across borders — the foundation of the modern information age.</li>
-<li>The signing of the Magna Carta in 1215 established the principle that even kings are subject to law, planting the seed of constitutional government that would flower centuries later.</li>
-<li>The fall of Constantinople in 1453 ended the Byzantine Empire and sent Greek scholars westward, helping spark the Renaissance by bringing classical texts to Italy.</li>
-<li>The Industrial Revolution, beginning in the mid-1700s, transformed agrarian societies into industrial ones, urbanizing populations and reshaping the global economy within a century.</li>
-<li>The first powered flight by the Wright brothers in 1903 lasted twelve seconds and covered one hundred twenty feet — yet within sixty-six years, humans would walk on the moon.</li>
+<li><strong>Anchor events to centuries, not exact years.</strong> Knowing an event happened in the fifteenth century is often enough to place it correctly. Reserve exact dates for events within the same century where the century alone is not enough to distinguish them.</li>
+<li><strong>Build a mental timeline of major eras.</strong> Ancient, medieval, Renaissance, Enlightenment, Industrial, Modern. If you know which era an event belongs to, you can place it relative to others without knowing the exact year.</li>
+<li><strong>Connect events through cause and effect.</strong> The Treaty of Versailles led to World War II. The Industrial Revolution enabled urbanization. Causal links are easier to remember than isolated dates and naturally reinforce chronological order.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>Why is chronological order more important than exact dates in history?</strong> Because the relative order of events is what reveals cause and effect. Knowing the Renaissance preceded the Enlightenment shows how classical ideas set the stage for the scientific revolution, even if you cannot recall exact years.</p>
-<p><strong>How does History Timeline difficulty work?</strong> Easy mode spans centuries so the order is obvious, while expert mode asks you to distinguish events that happened within the same decade, requiring much tighter temporal reasoning.</p>
-<p><strong>What skill does History Timeline train?</strong> Temporal sequencing — the ability to place events in time relative to each other, which is the skeleton of historical understanding and the key to seeing cause and effect.</p>
+<p><strong>How does History Timeline difficulty work?</strong> Easy mode spans centuries so the order is relatively obvious. Expert mode asks you to distinguish events that happened within the same decade, requiring much tighter temporal reasoning.</p>
+<p><strong>Why is chronological order more useful than memorizing exact dates?</strong> Relative order reveals cause and effect. Knowing the Renaissance preceded the Enlightenment shows how classical ideas set the stage for the scientific revolution, even if you cannot recall exact years.</p>
+<p><strong>What time periods does History Timeline cover?</strong> The game spans from ancient civilizations through the modern era. Questions include events like the signing of the Magna Carta in 1215 and the first powered flight in 1903.</p>
 `,
   WORLD_CURRENCY_ARTICLE: `
-<p>World Currency Match is a geography game that shows you a country name and asks you to pick its official currency from four options, building currency literacy through active recall. Currency is a window into a country's economic and political history — for example, Switzerland uses the franc rather than the euro because it has maintained monetary independence, and Panama uses the US dollar alongside its own balboa.</p>
+<h1>World Currency Match — Free Global Currency Game</h1>
+<p>World Currency Match is a free economics game that shows you a country name and asks you to pick its official currency from four options across ten questions per round. You build global economic awareness — familiarity with the monetary systems that drive international trade, travel, and finance. That awareness matters because currency knowledge affects everything from interpreting exchange rates to understanding why some countries adopt another nation's currency for stability.</p>
 
-<p>There are over one hundred eighty currencies in circulation around the world today. Most people can name a handful — the dollar, the euro, the yen, the pound — but the rest remain a mystery. Yet in an increasingly global world, currency literacy matters: it helps you understand exchange rates, travel costs, international trade, and the news. World Currency Match is designed to build that knowledge through play.</p>
+<p>There are over 180 currencies in active circulation worldwide. The average person can name perhaps ten of them, yet every international transaction — from a tourist buying coffee to a central bank setting interest rates — depends on these currencies. World Currency Match turns that knowledge into a fast, repeatable game.</p>
 
-<h2>How the Game Works</h2>
-<p>A country name appears and you pick its official currency from four options. The game covers currencies from every continent, from the widely known to the obscure. Immediate feedback tells you whether you were right, and the correct answer sticks in your memory through active recall. The difficulty tiers control how recognizable the countries and currencies are — easy mode covers major economies, while expert mode reaches into smaller nations with less commonly discussed currencies.</p>
+<h2>How a Round Unfolds</h2>
+<p>A country name appears on screen and you pick its official currency from four options. Immediate feedback tells you whether you were right, and the correct answer sticks through active recall. The game runs through ten questions per round, and your best score is saved locally.</p>
 
-<h2>Why This Builds Real-World Knowledge</h2>
-<p>Currency is a window into a country's economic and political history. When you learn that Switzerland uses the Swiss franc rather than the euro, you learn that Switzerland has maintained monetary independence despite being surrounded by eurozone countries. When you learn that Panama uses the United States dollar alongside its own balboa, you learn about dollarization — a monetary strategy where a country adopts another nation's currency for stability. These stories make currencies memorable and give you a framework for understanding international economics that goes beyond rote memorization. The game's spaced repetition ensures that currencies you miss come up more often, naturally focusing your practice where it is needed.</p>
+<p>Three difficulty tiers control how recognizable the currencies are. Easy covers major world currencies like the dollar, euro, and yen. Expert reaches into smaller nations with currencies rarely discussed outside economic circles.</p>
 
-<h2>Five Currencies With Surprising Stories</h2>
+<h2>Global Economic Awareness Through Currency</h2>
+<p>Currencies are more than names. They are economic signals. A country's currency reveals its monetary policy, inflation history, and sometimes its political stability. The British pound sterling, the oldest currency still in use today, has survived over twelve hundred years of wars and regime changes.</p>
+
+<p>Some countries do not even issue their own currency. El Salvador, Ecuador, and Panama all use the US dollar as their official currency, a practice called dollarization. They give up control of monetary policy in exchange for the stability of a globally trusted currency.</p>
+
+<h2>Memory Strategies for Currencies</h2>
 <ul>
-<li>The Swiss franc is one of the few European currencies that never adopted the euro. Switzerland's neutrality and financial stability make the franc a traditional safe-haven currency during global crises.</li>
-<li>The Japanese yen is the third most-traded currency in the world after the dollar and euro, despite Japan having a smaller population than several countries that use less-traded currencies.</li>
-<li>El Salvador, Ecuador, and Panama all use the United States dollar as their official currency, a practice called dollarization that provides stability but gives up control of monetary policy.</li>
-<li>The euro was launched in 1999 as an accounting currency and began circulating as cash in 2002. It is now used by twenty European countries, making it the second most-held reserve currency after the dollar.</li>
-<li>The British pound sterling is the oldest currency still in use, dating back over twelve hundred years. It survived wars, empire collapse, and decimalization in 1971.</li>
+<li><strong>Group by currency unions.</strong> The euro is shared by twenty European Union member states. The West African CFA franc is shared by eight countries. Grouping by union means one fact covers many nations, dramatically reducing what you need to memorize.</li>
+<li><strong>Learn the dollarized countries.</strong> Several nations use the US dollar officially: Ecuador, El Salvador, Panama, and Zimbabwe. Recognizing this pattern helps you predict rather than memorize, and these countries are common quiz targets.</li>
+<li><strong>Anchor currencies to visual facts.</strong> The Japanese yen features a phoenix on some banknotes. The Swiss franc is one of the few currencies still backed partly by gold reserves. Pairing a currency with a vivid detail makes it stick far longer than rote repetition.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>Why does Switzerland use the franc instead of the euro?</strong> Because Switzerland has maintained monetary independence despite being surrounded by eurozone countries, and its neutrality and financial stability make the franc a traditional safe-haven currency during global crises.</p>
-<p><strong>What is dollarization and which countries use it?</strong> Dollarization is when a country adopts another nation's currency for stability. El Salvador, Ecuador, and Panama all use the United States dollar as their official currency, giving up control of monetary policy in exchange for stability.</p>
-<p><strong>What is the oldest currency still in use today?</strong> The British pound sterling, which dates back over twelve hundred years and has survived wars, empire collapse, and decimalization in 1971.</p>
+<p><strong>How many currencies are in circulation worldwide?</strong> Over 180 currencies are in active circulation. The game covers the most widely traded ones on easy mode and reaches into smaller nations with less commonly discussed currencies on expert.</p>
+<p><strong>What is dollarization and which countries use it?</strong> Dollarization is when a country adopts another nation's currency for stability. El Salvador, Ecuador, and Panama all use the US dollar as their official currency, giving up control of monetary policy in exchange for economic stability.</p>
+<p><strong>Which currency is the oldest still in use today?</strong> The British pound sterling, dating back over twelve hundred years. It has survived wars, the collapse of the British Empire, and decimalization in 1971.</p>
 `,
   SHAPE_SORTER_ARTICLE: `
 <p>Shape Sorter is an early-learning game that shows a colorful shape — a circle, square, triangle, or star — and asks the child to pick the matching basket from four options, building visual discrimination without timers or penalties. Visual discrimination is the ability to identify differences and similarities between objects, and it underpins all of mathematics.</p>

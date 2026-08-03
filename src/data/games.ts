@@ -353,9 +353,9 @@ export const games: GameMeta[] = [
     tagline: 'Identify countries from their flags and outlines across difficulty tiers.',
     description:
       'A geography quiz that shows flags and country outlines. Pick the right country from multiple-choice options across three difficulty tiers from easy to expert.',
-    metaTitle: 'Free Geography Quiz Game — Geo Quiz | Vidify Games',
+    metaTitle: 'Free World Geography Quiz Game — Geo Quiz | Vidify Games',
     metaDescription:
-      'Play Geo Quiz, a free geography quiz game. Identify countries from flags and outlines across multiple difficulty tiers. Test your geography knowledge.',
+      'Play Geo Quiz, a free geography quiz game. Identify countries from flags and outlines across multiple difficulty tiers. Test your world geography knowledge.',
     keywords: ['geography quiz', 'country quiz', 'flag game', 'world geography game'],
     accent: 'purple',
     difficulty: 'Medium',
@@ -363,6 +363,21 @@ export const games: GameMeta[] = [
       style: 'C',
       body: `GEO_QUIZ_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'How many countries does Geo Quiz cover?',
+        answer: 'The game draws from all 195 recognized sovereign countries. Three difficulty tiers control which ones appear, from major nations on easy to smaller countries on expert.',
+      },
+      {
+        question: 'Why do some country flags look almost identical?',
+        answer: 'Many flags share colonial histories or cultural ties. Indonesia and Monaco have nearly identical red-and-white flags, while Chad and Romania differ only in subtle shade variations of blue.',
+      },
+      {
+        question: 'What is the most effective way to learn country flags?',
+        answer: 'Active recall under time pressure, which is exactly what Geo Quiz provides. Seeing a flag and retrieving the country name from memory strengthens the connection far more than passively studying a chart.',
+      },
+    ],
   },
   {
     slug: 'credit-score-climb',
@@ -723,7 +738,7 @@ export const games: GameMeta[] = [
     tagline: 'Match world countries to their capital cities before the clock runs out.',
     description:
       'A country name appears and you pick its capital from four options. Covers every continent and difficulty tiers control how obscure the capitals get. Build geography fluency.',
-    metaTitle: 'World Capitals Quiz Game Free | Vidify Games',
+    metaTitle: 'World Capitals Quiz Game — Free Online | Vidify Games',
     metaDescription:
       'Test your knowledge of world capitals with Capital City Challenge. Match countries to their capital cities in this free geography game. Play free online.',
     keywords: ['capital cities', 'world capitals', 'geography game', 'country capitals', 'educational game'],
@@ -733,6 +748,21 @@ export const games: GameMeta[] = [
       style: 'A',
       body: `CAPITAL_CITY_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'Why is Canberra the capital of Australia instead of Sydney?',
+        answer: 'Canberra was chosen in 1908 as a compromise between rival cities Sydney and Melbourne. It was a rural area with no existing settlement, purpose-built to serve as the administrative center.',
+      },
+      {
+        question: 'Which country has three capital cities?',
+        answer: 'South Africa splits its government across three cities: Pretoria for the executive branch, Cape Town for the legislative, and Bloemfontein for the judicial. No other country divides its capitals this way.',
+      },
+      {
+        question: 'Are capitals always the largest city in their country?',
+        answer: 'No. Many capitals are purpose-built administrative centers rather than the biggest or most famous city. Bern, not Zurich, is the capital of Switzerland, and Ottawa, not Toronto, is the capital of Canada.',
+      },
+    ],
   },
   {
     slug: 'science-fact-sprint',
@@ -753,6 +783,21 @@ export const games: GameMeta[] = [
       style: 'B',
       body: `SCIENCE_FACT_SPRINT_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'What science subjects does Science Fact Sprint cover?',
+        answer: 'The game spans biology, chemistry, physics, and earth science. Questions range from the most abundant element in the universe to the speed of light and the anatomy of the human body.',
+      },
+      {
+        question: 'Why does the game mix different science subjects in one session?',
+        answer: 'Mixing subjects within a single session is called interleaving, a technique cognitive science identifies as more effective than studying one subject at a time. It forces your brain to switch contexts, which builds more durable recall.',
+      },
+      {
+        question: 'What is the most surprising science fact in the game?',
+        answer: 'A bolt of lightning reaches roughly thirty thousand degrees Celsius, about five times hotter than the surface of the sun. This happens despite the flash lasting only a fraction of a second.',
+      },
+    ],
   },
   {
     slug: 'periodic-table-blitz',
@@ -773,6 +818,21 @@ export const games: GameMeta[] = [
       style: 'D',
       body: `PERIODIC_TABLE_BLITZ_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'How many elements are on the periodic table?',
+        answer: 'There are 118 confirmed elements, organized by increasing atomic number. The table was most recently expanded in 2016 when elements 113, 115, 117, and 118 were officially recognized.',
+      },
+      {
+        question: 'Why do some element symbols not match their English names?',
+        answer: 'Many symbols come from Latin or German roots rather than English. Iron is Fe from ferrum, gold is Au from aurum, and tungsten is W from the German name wolfram.',
+      },
+      {
+        question: 'What makes the periodic table useful beyond memorizing elements?',
+        answer: 'The table groups elements with similar chemical properties into columns, so knowing an element\'s position predicts its reactivity, bonding behavior, and physical characteristics without needing to memorize each one individually.',
+      },
+    ],
   },
   {
     slug: 'history-timeline',
@@ -793,6 +853,21 @@ export const games: GameMeta[] = [
       style: 'A',
       body: `HISTORY_TIMELINE_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'How does History Timeline difficulty work?',
+        answer: 'Easy mode spans centuries so the order is relatively obvious. Expert mode asks you to distinguish events that happened within the same decade, requiring much tighter temporal reasoning.',
+      },
+      {
+        question: 'Why is chronological order more useful than memorizing exact dates?',
+        answer: 'Relative order reveals cause and effect. Knowing the Renaissance preceded the Enlightenment shows how classical ideas set the stage for the scientific revolution, even if you cannot recall exact years.',
+      },
+      {
+        question: 'What time periods does History Timeline cover?',
+        answer: 'The game spans from ancient civilizations through the modern era. Questions include events like the signing of the Magna Carta in 1215 and the first powered flight in 1903.',
+      },
+    ],
   },
   {
     slug: 'world-currency',
@@ -803,7 +878,7 @@ export const games: GameMeta[] = [
     tagline: 'Match countries to their official currencies.',
     description:
       'A country flag or name appears and you pick its official currency from four options. Learn the currencies of the world from dollars to yen to pesos to francs.',
-    metaTitle: 'Free Currency Matching Game | Vidify Games',
+    metaTitle: 'World Currency Matching Game — Free Online | Vidify Games',
     metaDescription:
       'Learn world currencies by playing World Currency Match. Match countries to their official currencies in this free educational geography game. Play free.',
     keywords: ['world currency', 'currency game', 'money', 'foreign exchange', 'educational game'],
@@ -813,6 +888,21 @@ export const games: GameMeta[] = [
       style: 'C',
       body: `WORLD_CURRENCY_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'How many currencies are in circulation worldwide?',
+        answer: 'Over 180 currencies are in active circulation. The game covers the most widely traded ones on easy mode and reaches into smaller nations with less commonly discussed currencies on expert.',
+      },
+      {
+        question: 'What is dollarization and which countries use it?',
+        answer: 'Dollarization is when a country adopts another nation\'s currency for stability. El Salvador, Ecuador, and Panama all use the US dollar as their official currency, giving up control of monetary policy in exchange for economic stability.',
+      },
+      {
+        question: 'Which currency is the oldest still in use today?',
+        answer: 'The British pound sterling, dating back over twelve hundred years. It has survived wars, the collapse of the British Empire, and decimalization in 1971.',
+      },
+    ],
   },
   {
     slug: 'shape-sorter',
