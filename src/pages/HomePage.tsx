@@ -13,14 +13,26 @@ export default function HomePage() {
       'Vidify Games offers free original educational games for brain-training, finance literacy, and tech skills. Play, learn, and level up your mind.',
     keywords: ['educational games', 'brain training', 'finance games', 'logic games', 'free learning games'],
     canonicalPath: '/',
-    jsonLd: {
-      '@context': 'https://schema.org',
-      '@type': 'Organization',
-      name: 'Vidify Games',
-      url: 'https://www.vidify.site',
-      description: 'Free educational gaming platform with original brain-training, finance literacy, and tech-skill games.',
-      email: 'vidifygamesinfo@gmail.com',
-    },
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'Vidify Games',
+        url: 'https://www.vidify.site',
+        description: 'Free educational gaming platform with original code-built games across finance, tech and logic, educational, and brainstorming categories — each paired with in-depth articles that teach real, applicable skills.',
+        email: 'vidifygamesinfo@gmail.com',
+        founder: { '@type': 'Person', name: 'Umer Khan' },
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'Vidify Games',
+        url: 'https://www.vidify.site',
+        description: 'A free collection of original educational games across four categories — Finance, Tech & Logic, Educational, and Brainstorming — each built from scratch and paired with original articles that teach real skills.',
+        inLanguage: 'en',
+        publisher: { '@type': 'Organization', name: 'Vidify Games', url: 'https://www.vidify.site' },
+      },
+    ],
   });
 
   // Recommended: games sorted by best score (most played first)
@@ -199,6 +211,55 @@ export default function HomePage() {
           {games.map((game) => (
             <GameCard key={game.slug} game={game} />
           ))}
+        </div>
+      </section>
+
+      {/* Learn Through Play — editorial content section */}
+      <section className="container-content py-12">
+        <div className="max-w-3xl">
+          <h2 className="font-display font-bold text-2xl lg:text-3xl text-ink-900 mb-6">Learn Through Play</h2>
+
+          <div className="prose-edu space-y-5 text-ink-700 leading-relaxed">
+            <p>
+              Vidify Games is a free platform of original, code-built browser games that teach real skills — not a directory of aggregated third-party embeds. Every game here was built from scratch, paired with an in-depth article explaining the underlying skill, and reviewed for accuracy before going live. It is built for anyone who wants to walk away from a ten-minute break having genuinely learned something. There are no downloads, no logins, and no paywalls between you and the content.
+            </p>
+
+            <p>
+              The site is organized around four categories, each delivering a distinct type of value. <strong>Finance Games</strong> turn abstract money concepts — budgeting, credit scores, compound interest — into interactive decisions you can practice safely. <strong>Tech &amp; Logic Games</strong> sharpen computational thinking through binary conversion, code-breaking, and logic-gate simulation. <strong>Educational Games</strong> reinforce world knowledge like capitals, currencies, and history through timed recall. <strong>Brainstorming Games</strong> exercise core cognitive faculties — memory, vocabulary retrieval, mental arithmetic, and deductive reasoning — to keep your mind sharp.
+            </p>
+
+            <p>
+              The philosophy is simple: a game gives you something to react to, to fail at, and to try again, which makes a skill feel real in a way a bulleted list cannot. That is why every game page includes an original article that explains what the skill is, why it matters, and how to get better at it. The games are the practice; the articles are the understanding. Together they turn a few minutes of play into a complete learning loop — try, fail, understand, improve.
+            </p>
+
+            <p>
+              Every game includes adjustable difficulty levels so you can start where you are comfortable and ramp up as you improve. Local leaderboards track your best scores in your browser, and achievement badges mark the milestones you hit along the way. All of it is free with no signup required — open a page and start playing. Your progress stays with you across visits because it is saved on your device, not on a server you have to log into.
+            </p>
+
+            <h3 className="font-display font-bold text-xl text-ink-900 pt-2">Why I Built This</h3>
+            <p>
+              I kept running into the same problem: content that teaches real-world skills was either too dry to sit through or locked behind a paywall. I wanted something you could spend ten minutes with and walk away having genuinely learned something — so I built it myself, one game at a time. — <Link to="/about" className="text-brand-700 font-semibold hover:underline">Umer Khan, Founder</Link>
+            </p>
+
+            <h3 className="font-display font-bold text-xl text-ink-900 pt-2">Frequently Asked Questions</h3>
+
+            <p>
+              <strong>Is Vidify Games really free?</strong> Yes, completely. There is no signup, no download, and no paywall — every game and every article is available the moment you open the page. The site will always stay that way.
+            </p>
+
+            <p>
+              <strong>Do I need to create an account to play?</strong> No. There is no login or registration anywhere on the site. Your scores and achievements are saved locally in your browser, so they persist across visits without an account.
+            </p>
+
+            <p>
+              <strong>How often are new games added?</strong> New games are released regularly as they are built and reviewed, with roughly one to three additions per month. The newsletter and the New Games section on this page are the fastest way to see what has just landed. Each addition goes through the same accuracy review as the existing catalog before it appears.
+            </p>
+          </div>
+
+          <p className="mt-6 text-sm text-ink-400">
+            Reviewed by the Vidify Games team. Last updated: August 2026.{' '}
+            <Link to="/about" className="text-brand-700 font-semibold hover:underline">About Us</Link>.
+          </p>
         </div>
       </section>
 
