@@ -213,6 +213,21 @@ export const games: GameMeta[] = [
       style: 'A',
       body: `CODE_BREAKER_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'What do the black and white pegs mean in Code Breaker?',
+        answer: 'A black peg means a color is correct and in the right position. A white peg means a color is correct but in the wrong position. No peg means that color is not in the sequence at all.',
+      },
+      {
+        question: 'Can the secret code contain duplicate colors?',
+        answer: 'Yes. Duplicates are allowed, so a sequence like red-red-blue-green is valid. This makes deduction harder because the feedback can be ambiguous when the same color appears more than once.',
+      },
+      {
+        question: 'What is the fastest way to crack the code?',
+        answer: 'Use the information-theoretic approach: choose each guess to eliminate as many remaining possibilities as possible, even if you think the guess is wrong. Tournament players solve codes in five or six guesses this way.',
+      },
+    ],
   },
   {
     slug: 'bug-hunter',
@@ -303,6 +318,21 @@ export const games: GameMeta[] = [
       style: 'C',
       body: `WORD_CHAIN_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'What are the rules of Word Chain Challenge?',
+        answer: 'You must type a valid English word that starts with the last letter of the previous word, without repeating any word already used, before the per-turn timer runs out. The chain ends on a repeat, an invalid word, or a timeout.',
+      },
+      {
+        question: 'Does Word Chain actually improve vocabulary?',
+        answer: 'It exercises lexical retrieval by initial letter, a different access pattern than normal speech. This makes existing words easier to recall in real writing and conversation, even though no new words are learned.',
+      },
+      {
+        question: 'Which letters are hardest to chain from?',
+        answer: 'X, Z, and J are the toughest because fewer English words start with them. Skilled players keep a mental shortlist of X-words and Z-words ready for when the chain lands on those letters.',
+      },
+    ],
   },
   {
     slug: 'memory-grid',
@@ -323,6 +353,21 @@ export const games: GameMeta[] = [
       style: 'C',
       body: `MEMORY_GRID_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'How does Memory Grid improve working memory?',
+        answer: 'It forces you to store each flag image alongside its grid position for later retrieval. This strengthens the same spatial-recall pathways used in everyday memory tasks like remembering where you parked.',
+      },
+      {
+        question: 'What is the best strategy for clearing the grid quickly?',
+        answer: 'Chunk card positions into rows and associate each flag with its location rather than trying to memorize cards individually. This mirrors the technique competitive memory athletes use to track dozens of items at once.',
+      },
+      {
+        question: 'Does Memory Grid save my best score?',
+        answer: 'Yes. Your best performance by move count and completion time is saved locally in your browser, so you can chase a personal record across sessions.',
+      },
+    ],
   },
   {
     slug: 'math-sprint',
@@ -343,6 +388,21 @@ export const games: GameMeta[] = [
       style: 'D',
       body: `MATH_SPRINT_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'Is it better to be fast or accurate in Math Sprint?',
+        answer: 'Accurate. A wrong answer costs time and resets your streak multiplier, so two slow correct answers score higher than one fast correct answer and one wrong one.',
+      },
+      {
+        question: 'How does Math Sprint increase difficulty?',
+        answer: 'Difficulty scales with your streak. Operands grow larger, operations mix more aggressively, and time pressure tightens as you answer correctly, so the game always pushes you at your current skill level.',
+      },
+      {
+        question: 'What math operations does Math Sprint include?',
+        answer: 'Addition, subtraction, multiplication, and division. Problems start with single-digit operations and progress to two-digit multiplication and three-digit addition as your streak grows.',
+      },
+    ],
   },
   {
     slug: 'geo-quiz',
@@ -923,6 +983,21 @@ export const games: GameMeta[] = [
       style: 'B',
       body: `SHAPE_SORTER_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'At what age should children start learning shapes?',
+        answer: 'Most children begin identifying circles, squares, and triangles between ages two and three. Shape Sorter is designed for that stage with no timer, no penalties, and gentle encouragement.',
+      },
+      {
+        question: 'Why does Shape Sorter have no timer or penalties?',
+        answer: 'Young children learn best when they feel safe and unhurried. The gentle pace lets them process each shape at their own speed, which builds confidence rather than anxiety.',
+      },
+      {
+        question: 'How does shape recognition help with math later on?',
+        answer: 'It builds visual discrimination — the ability to identify differences and similarities between objects. Children later use that same cognitive process to recognize quantities, patterns, and geometric relationships.',
+      },
+    ],
   },
   {
     slug: 'animal-habitat',
@@ -943,6 +1018,21 @@ export const games: GameMeta[] = [
       style: 'C',
       body: `ANIMAL_HABITAT_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'What age group is Animal Habitat Match designed for?',
+        answer: 'Young children in the early-science stage, roughly ages two to five. The game has no timer, no penalties, and gentle positive reinforcement to match that age group\'s attention span.',
+      },
+      {
+        question: 'Why does a camel have a hump?',
+        answer: 'A camel\'s hump stores fat, not water, which provides energy when food is scarce in the desert. This adaptation is what lets camels go up to two weeks without drinking.',
+      },
+      {
+        question: 'How does Animal Habitat Match teach science to young children?',
+        answer: 'It develops ecological thinking — the understanding that animals are adapted to specific environments — through matching animals to their natural habitats with friendly visuals and gentle, pressure-free feedback.',
+      },
+    ],
   },
   {
     slug: 'counting-critters',
@@ -963,6 +1053,21 @@ export const games: GameMeta[] = [
       style: 'A',
       body: `COUNTING_CRITTERS_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'What is one-to-one correspondence in counting?',
+        answer: 'It is the understanding that each object being counted gets one and only one number. This is the foundational concept that separates reciting numbers from actually counting objects.',
+      },
+      {
+        question: 'Why can my child recite numbers to ten but not count three objects?',
+        answer: 'Reciting is memorization while counting is a cognitive skill. One-to-one correspondence develops later than rote recitation, and games like Counting Critters build it through practice.',
+      },
+      {
+        question: 'At what age should a child be able to count objects?',
+        answer: 'Most children develop reliable one-to-one correspondence between ages three and four. Counting Critters supports this stage with no timer, no penalties, and groups that grow from one through three up to larger sets.',
+      },
+    ],
   },
   {
     slug: 'color-mixing',
@@ -983,6 +1088,21 @@ export const games: GameMeta[] = [
       style: 'B',
       body: `COLOR_MIXING_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'What do red and blue make when mixed?',
+        answer: 'Purple. The three primary color pairs are red and yellow make orange, blue and yellow make green, and red and blue make purple.',
+      },
+      {
+        question: 'What age group is Color Mixing Magic designed for?',
+        answer: 'Young children in the early-art stage, roughly ages two to five. The game has no timer, no penalties, and short rounds with immediate visual feedback to match that age group\'s attention span.',
+      },
+      {
+        question: 'Why does Color Mixing Magic use the red-yellow-blue model?',
+        answer: 'Because that is the traditional pigment model children encounter in paints, crayons, and markers, so the practice transfers directly to real-world art activities.',
+      },
+    ],
   },
   {
     slug: 'pattern-builder',
@@ -1003,6 +1123,21 @@ export const games: GameMeta[] = [
       style: 'C',
       body: `PATTERN_BUILDER_ARTICLE`,
     },
+    dateModified: 'August 2026',
+    faqs: [
+      {
+        question: 'How does Pattern Builder help with math?',
+        answer: 'It builds pattern recognition and prediction — the ability to identify a repeating sequence and predict what comes next. Identifying a rule and applying it is exactly what algebra asks children to do years later.',
+      },
+      {
+        question: 'What age group is Pattern Builder designed for?',
+        answer: 'Young children in the early-logic stage, roughly ages three to five. The game has no timer, no penalties, and patterns that progress from simple alternating sequences to more complex ones.',
+      },
+      {
+        question: 'Why does Pattern Builder have no time limit?',
+        answer: 'Pattern recognition requires reflective thinking, and rushing a child through it produces anxiety rather than understanding. The gentle pace lets children think at their own speed, which builds confidence and deeper comprehension.',
+      },
+    ],
   },
 ];
 

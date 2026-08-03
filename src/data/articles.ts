@@ -75,29 +75,31 @@ export const articles: Record<string, string> = {
 <p><strong>Can this game actually help me spend less?</strong> Yes. It trains the habit of pausing to categorize purchases before deciding, which is the same mental process that curbs impulse spending in real life.</p>
 `,
   CODE_BREAKER_ARTICLE: `
-<p>Code Breaker is a deduction game based on Mastermind where you guess a secret sequence of four colored pegs using feedback clues — a black peg for each correct color in the right position and a white peg for each correct color in the wrong position — within ten attempts. It trains logical reasoning and information-theoretic thinking by forcing you to treat each guess as a controlled experiment.</p>
+<h1>Code Breaker — Free Mastermind Logic Game Online</h1>
+<p>Code Breaker is a free deduction game based on Mastermind where you guess a secret sequence of four colored pegs using feedback clues within ten attempts. You build combinatorial reasoning — the ability to narrow a large space of possibilities using limited information. That skill matters because the same logical process underlies debugging code, troubleshooting systems, and scientific hypothesis testing.</p>
 
-<p>Every software engineer, at some point in their career, has to deduce something hidden from partial information. Maybe it is a bug that only appears under specific conditions, maybe it is an API that returns cryptic error codes, maybe it is a legacy system with no documentation. The mental muscle that makes you good at that kind of detective work is exactly what Code Breaker trains.</p>
+<p>The game generates a hidden sequence of four colors, with duplicates allowed. After each guess, you receive black and white peg feedback that constrains what the answer can be. Your job is to design guesses that extract maximum information and close in on the solution before your ten attempts run out.</p>
 
-<h2>How to Play, Step by Step</h2>
-<ol>
-<li>The game generates a secret sequence of four colored pegs. Duplicates are allowed, so red-red-blue-green is a valid answer.</li>
-<li>You submit a guess of four colors.</li>
-<li>The game responds with two kinds of feedback: a black peg for each color that is correct and in the right position, and a white peg for each color that is correct but in the wrong position.</li>
-<li>You use that feedback to refine your next guess. You have ten attempts to crack the code.</li>
-</ol>
+<h2>Reading the Feedback Clues</h2>
+<p>A black peg means a color is correct and in the right position. A white peg means a color is in the sequence but in the wrong position. No peg for a color means it is not in the answer at all.</p>
 
-<h2>Common Mistakes Beginners Make</h2>
-<p>The number one error is <strong>ignoring information from white pegs</strong>. A white peg tells you a color is in the sequence but not where you placed it. Beginners often fixate on black pegs and treat white-peg feedback as "almost right" when it actually carries distinct, actionable information. Another frequent mistake is changing every position on every guess — if you change everything, you cannot isolate which change produced the new feedback. The best players change one or two things at a time and treat each guess as a controlled experiment.</p>
+<p>The subtlety is that white-peg feedback does not tell you which of your placed colors is the one that belongs. If you guess red-blue-green-yellow and get one white peg, exactly one of those colors is in the answer but misplaced. You still have to figure out which one.</p>
 
-<h2>Advanced Strategy Tips</h2>
-<p>Once you are comfortable, try the <strong>information-theoretic approach</strong>: on each turn, choose the guess that you expect will eliminate the most remaining possibilities, even if it is not the one you think is correct. This sounds counterintuitive — guessing something you believe is wrong on purpose — but it maximizes the information you gain from the feedback. Tournament Mastermind players use exactly this technique to solve codes in five or six guesses consistently. Another advanced habit: keep a mental or written list of eliminated color-position combinations so you never waste a turn re-testing something the feedback has already ruled out.</p>
+<h2>Deductive Reasoning and What It Trains</h2>
+<p>Each guess in Code Breaker is a controlled experiment. You change one or two variables, observe the effect on the feedback, and update your hypothesis. This is the same reasoning structure used in A/B testing, root-cause analysis, and the scientific method.</p>
 
-<blockquote><strong>Did you know?</strong> Mastermind, the board game Code Breaker is based on, was invented in 1970 by an Israeli postmaster and telecommunications expert named Mordecai Meirowitz. It sold over fifty million copies and has been the subject of more than a dozen academic papers on information theory and game complexity.</blockquote>
+<p>The game rewards players who think information-theoretically: choosing the guess that eliminates the most remaining possibilities, even if it is not the one they believe is correct. Tournament Mastermind players use exactly this technique to solve codes in five or six guesses consistently.</p>
+
+<h2>Strategy Tips for Cracking Codes Faster</h2>
+<ul>
+<li><strong>Change one variable at a time.</strong> If you change every position on every guess, you cannot isolate which change produced the new feedback. Hold parts of your guess constant and vary one color or position to pin down its role.</li>
+<li><strong>Use a throwaway guess to probe colors.</strong> Early in the game, guess four of the same color to test whether it appears at all. This is inefficient for solving but efficient for eliminating colors quickly.</li>
+<li><strong>Track eliminated possibilities mentally.</strong> Keep a mental or written list of color-position combinations the feedback has already ruled out. Never waste a turn re-testing something that has been eliminated.</li>
+</ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>What do the black and white pegs mean in Code Breaker?</strong> A black peg means a color is correct and in the right position; a white peg means a color is correct but in the wrong position. No peg means that color is not in the sequence at all.</p>
-<p><strong>Can the secret code contain duplicate colors?</strong> Yes. Duplicates are allowed, so a sequence like red-red-blue-green is valid, which makes deduction harder because feedback can be ambiguous.</p>
+<p><strong>What do the black and white pegs mean in Code Breaker?</strong> A black peg means a color is correct and in the right position. A white peg means a color is correct but in the wrong position. No peg means that color is not in the sequence at all.</p>
+<p><strong>Can the secret code contain duplicate colors?</strong> Yes. Duplicates are allowed, so a sequence like red-red-blue-green is valid. This makes deduction harder because the feedback can be ambiguous when the same color appears more than once.</p>
 <p><strong>What is the fastest way to crack the code?</strong> Use the information-theoretic approach: choose each guess to eliminate as many remaining possibilities as possible, even if you think the guess is wrong. Tournament players solve codes in five or six guesses this way.</p>
 `,
   BINARY_BLITZ_ARTICLE: `
@@ -151,67 +153,78 @@ export const articles: Record<string, string> = {
 <p><strong>Does Bug Hunter help with real-world debugging?</strong> Yes. It trains the pattern-recognition skill that experienced developers use to spot bugs quickly during code review, which transfers directly to real debugging work.</p>
 `,
   WORD_CHAIN_ARTICLE: `
-<p>Word Chain Challenge is a vocabulary game where you type a new word that begins with the last letter of the previous word, exercising lexical retrieval by initial letter rather than by meaning. It strengthens the neural pathways that connect your passive vocabulary to your active speech, making existing words easier to recall in writing and conversation.</p>
+<h1>Word Chain Challenge — Free Vocabulary Word Game</h1>
+<p>Word Chain Challenge is a free vocabulary game where you type a new word that begins with the last letter of the previous word under a time limit. You develop verbal fluency and lexical retrieval — the ability to access words in your mental dictionary quickly and on demand. That skill matters because fluent word retrieval makes writing, speaking, and on-the-spot communication feel effortless rather than halting.</p>
 
-<p>The English language contains over 170,000 words in current use, yet the average adult activates only about 20,000 to 30,000 of them in daily life. The rest sit dormant in your mental dictionary, recognized when heard but rarely summoned when speaking or writing. Word Chain Challenge is designed to wake those sleeping words up.</p>
+<p>The English language contains over 170,000 words in current use, yet the average adult actively uses only about 20,000 to 30,000 of them. The rest sit dormant in your mental dictionary, recognized when heard but rarely summoned when speaking. Word Chain Challenge wakes those sleeping words up.</p>
 
-<h2>How the Game Works</h2>
-<p>You start with a randomly chosen word. Your job is to type a new word that begins with the last letter of the previous one. If the chain word is "planet," your next word must start with "T" — "tiger," for instance, which then demands a word starting with "R." You have a limited time window for each entry, and once a word has been used it cannot be repeated. The chain continues until you run out of time, repeat a word, or submit something that is not a valid English word.</p>
+<h2>The Chain Mechanic and How It Works</h2>
+<p>You start with a randomly chosen word. You type a new word that begins with the last letter of the previous one. If the chain word is "planet," your next word must start with T — "tiger," for instance, which then demands a word starting with R.</p>
 
-<h2>Why This Improves Your Vocabulary and Memory</h2>
-<p>The constraint of the last-letter rule forces your brain to retrieve words starting with a specific letter, which is a different access pattern than normal conversation. In everyday speech you select words by meaning; in Word Chain you select by initial letter, which exercises a part of your lexical retrieval system that normally sits idle. Over repeated sessions this strengthens the neural pathways that connect your word store to your active vocabulary. Regular players often notice they reach for more varied words in writing and conversation, not because they learned new words but because existing ones became easier to retrieve.</p>
+<p>You have a limited time window for each entry, and once a word has been used it cannot be repeated. The chain continues until you run out of time, repeat a word, or submit something that is not a valid English word.</p>
 
-<h2>Fun Facts About the English Language</h2>
+<h2>Verbal Fluency and Lexical Retrieval</h2>
+<p>In everyday speech, you select words by meaning. In Word Chain, you select by initial letter, which exercises a different retrieval pathway. This forces your brain to access your vocabulary from an unfamiliar angle, strengthening the neural connections between your word store and your active speech.</p>
+
+<p>Regular players often notice they reach for more varied words in writing and conversation. Not because they learned new words, but because existing ones became easier to retrieve. The game also trains you to think ahead: skilled players keep mental shortlists of hard-letter words ready before the chain lands on them.</p>
+
+<h2>Tips for Longer Chains and Tougher Letters</h2>
 <ul>
-<li>The letter "E" is the most common starting letter for English words, which means chains frequently pass through it — and stall on it, since many players run out of fresh E-words under pressure.</li>
-<li>"Queue" is the only common English word that is pronounced the same way whether you remove its last four letters — "Q" alone sounds identical to "queue."</li>
-<li>The shortest complete sentence in English is "Go." It has a subject (an implied "you") and a verb, making it grammatically valid — and a perfectly legal Word Chain entry.</li>
-<li>English borrows from over 350 other languages, which is part of why its spelling is so irregular and its vocabulary so enormous.</li>
-<li>"Rhythms" is one of the longest common English words without a standard vowel, which makes it a notorious chain-ender when someone needs a word starting with "S."</li>
+<li><strong>Preload words for difficult letters.</strong> X, Z, and J are the toughest because fewer English words start with them. Keep a mental shortlist of X-words like "xylophone" and "xenon" ready for when the chain lands on those letters.</li>
+<li><strong>Avoid chaining into common endings.</strong> Words ending in S, D, or E are easy to chain from, but they also exhaust quickly. If you have a choice, pick a word that ends in a less common letter to trip up the next player.</li>
+<li><strong>Think in word families.</strong> If you need a word starting with C, mentally scan categories: colors (cyan), animals (camel), foods (celery). Categorizing gives you multiple retrieval paths instead of one.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>What are the rules of Word Chain Challenge?</strong> You must type a valid English word that starts with the last letter of the previous word, without repeating any word already used, before the timer runs out for each turn.</p>
-<p><strong>Does Word Chain actually improve my vocabulary?</strong> Yes. It exercises lexical retrieval by initial letter, a different access pattern than normal speech, which makes existing words easier to recall in real writing and conversation.</p>
-<p><strong>What happens if I repeat a word in Word Chain?</strong> The chain ends immediately. Each word can only be used once per game, so you must keep retrieving fresh vocabulary as the chain grows.</p>
+<p><strong>What are the rules of Word Chain Challenge?</strong> You must type a valid English word that starts with the last letter of the previous word, without repeating any word already used, before the per-turn timer runs out. The chain ends on a repeat, an invalid word, or a timeout.</p>
+<p><strong>Does Word Chain actually improve vocabulary?</strong> It exercises lexical retrieval by initial letter, a different access pattern than normal speech. This makes existing words easier to recall in real writing and conversation, even though no new words are learned.</p>
+<p><strong>Which letters are hardest to chain from?</strong> X, Z, and J are the toughest because fewer English words start with them. Skilled players keep a mental shortlist of X-words and Z-words ready for when the chain lands on those letters.</p>
 `,
   MEMORY_GRID_ARTICLE: `
-<p>Memory Grid is a memory-matching game where you flip pairs of face-down cards to find matching world flags, training your working memory and spatial recall. Your brain builds a spatial map linking each card's position to its flag, which is the same technique memory athletes use to track many items at once.</p>
+<h1>Memory Grid — Free Memory Matching Card Game</h1>
+<p>Memory Grid is a free memory-matching game where you flip pairs of face-down cards to find matching world flags. You build working memory and spatial recall — the ability to hold and update information about locations in your mind. That skill matters because working memory underlies everyday tasks like following directions, remembering where you parked, and keeping track of a conversation.</p>
 
-<p>The human brain can hold about seven items in short-term memory at once — the famous "seven plus or minus two" rule from cognitive psychology. Yet memory-matching games routinely ask you to track twelve, sixteen, or even twenty face-down cards simultaneously. The reason you can do it is that your brain does not treat each card as an independent item. It builds a spatial map, linking each card's position to its face. Memory Grid trains exactly that spatial-recall ability.</p>
+<p>The human brain can hold roughly seven items in short-term memory at once — the famous "seven plus or minus two" finding from cognitive psychology. Yet memory-matching games routinely ask you to track twelve, sixteen, or even twenty face-down cards simultaneously. The reason you can is that your brain does not treat each card as an independent item.</p>
 
-<h2>How the Game Works</h2>
-<p>A grid of face-down cards appears on screen, each hiding a world flag. You flip two cards per turn. If the flags match, the pair stays face up. If they do not, both flip back over. The goal is to clear every pair from the grid in as few moves as possible. The game tracks your move count and completion time, and your best performance is saved locally so you can chase a personal record.</p>
+<h2>Flipping Cards and Building a Mental Map</h2>
+<p>A grid of face-down cards appears on screen, each hiding a world flag. You flip two cards per turn. If the flags match, the pair stays face up. If they do not, both flip back over.</p>
 
-<h2>Why This Improves Your Memory</h2>
-<p>Memory-matching games exercise what psychologists call <strong>working memory</strong> — the system that temporarily holds and manipulates information. Each time you flip a card and it does not match, your brain must store the flag's image along with its grid position for later retrieval. As the grid grows, you start using strategies: chunking positions into rows, associating flags with locations, even subvocalizing "top-left is Japan." These are the same memory techniques used by competitive memory athletes, and the game develops them naturally through play. Studies have shown that regular memory-matching practice produces measurable improvements in short-term recall that transfer to other tasks.</p>
+<p>The goal is to clear every pair from the grid in as few moves as possible. The game tracks your move count and completion time, and your best performance is saved locally so you can chase a personal record.</p>
 
-<h2>Fun Facts About World Flags</h2>
+<h2>Working Memory and Spatial Recall</h2>
+<p>Each time you flip a card and it does not match, your brain must store the flag image along with its grid position for later retrieval. As the grid grows, you start using strategies: chunking positions into rows, associating flags with locations, even subvocalizing "top-left is Japan."</p>
+
+<p>These are the same techniques competitive memory athletes use to memorize decks of cards or hundreds of digits. Studies have shown that regular memory-matching practice produces measurable improvements in short-term recall that transfer to other tasks.</p>
+
+<h2>Strategies for Clearing the Grid Efficiently</h2>
 <ul>
-<li>Nepal's flag is the only national flag that is not a rectangle — it is two stacked triangular pennants representing the Himalayas and the moon and sun.</li>
-<li>Libya's flag from 1977 to 2011 was the only national flag in history that was a single solid color — plain green — with no symbols or other details whatsoever.</li>
-<li>The flag of Denmark, the Dannebrog, is considered the oldest continuously used national flag in the world, dating back to at least 1219.</li>
-<li>Five countries use a one-color flag with a single centered symbol: Japan, Bangladesh, Palau, Vietnam, and Somalia — each featuring a different shape on a different background.</li>
-<li>Brazil's flag contains twenty-seven stars arranged to mirror the sky over Rio de Janeiro on the morning of November 15, 1889 — the exact moment the republic was proclaimed.</li>
+<li><strong>Chunk positions into rows and columns.</strong> Do not try to memorize cards as a flat list. Group them by row — "top row has Japan and Brazil" — so you can retrieve locations by spatial address rather than scanning the whole grid.</li>
+<li><strong>Flip unfamiliar cards first.</strong> If you do not recognize a flag, flip it early so you have more turns to find its match. Save flags you already know for later, when the grid is smaller and matches are easier to locate.</li>
+<li><strong>Subvocalize flag-position pairs.</strong> Saying "bottom-right is Canada" in your head encodes the information through two channels — visual and verbal — which makes it more durable than visual memory alone.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>How does Memory Grid improve my memory?</strong> It exercises working memory by forcing you to store each flag's image alongside its grid position for later retrieval, which strengthens the same spatial-recall pathways used in everyday memory tasks.</p>
-<p><strong>What is the best strategy for Memory Grid?</strong> Chunk card positions into rows and associate each flag with its location, rather than trying to memorize cards individually. This mirrors the technique memory athletes use.</p>
-<p><strong>Does Memory Grid save my best score?</strong> Yes. Your best performance by move count and completion time is saved locally in your browser so you can chase a personal record.</p>
+<p><strong>How does Memory Grid improve working memory?</strong> It forces you to store each flag image alongside its grid position for later retrieval. This strengthens the same spatial-recall pathways used in everyday memory tasks like remembering where you parked.</p>
+<p><strong>What is the best strategy for clearing the grid quickly?</strong> Chunk card positions into rows and associate each flag with its location rather than trying to memorize cards individually. This mirrors the technique competitive memory athletes use to track dozens of items at once.</p>
+<p><strong>Does Memory Grid save my best score?</strong> Yes. Your best performance by move count and completion time is saved locally in your browser, so you can chase a personal record across sessions.</p>
 `,
   MATH_SPRINT_ARTICLE: `
-<p>Math Sprint is a timed mental arithmetic game that presents addition, subtraction, multiplication, and division problems one at a time, rewarding both accuracy and streak length. Each correct answer adds time to the clock while wrong answers cost time and reset your streak, so accuracy matters more than raw speed.</p>
+<h1>Math Sprint — Free Mental Arithmetic Speed Game</h1>
+<p>Math Sprint is a free timed mental arithmetic game that presents addition, subtraction, multiplication, and division problems one at a time. You build arithmetic fluency — the ability to solve basic math problems quickly and accurately without a calculator. That skill matters because mental math underpins everyday decisions from splitting a bill to comparing unit prices to estimating a discount.</p>
 
-<p>Mental arithmetic is a skill most adults let rust. You reach for the calculator app to split a dinner bill, to figure out a discount, to convert a recipe measurement. Each time you do, the neural pathways that handle quick number manipulation get a little slower. Math Sprint exists to reverse that rust — and the problem it solves is surprisingly practical.</p>
+<p>Mental arithmetic is a skill most adults let rust. You reach for the calculator app to split a dinner bill, figure out a discount, or convert a recipe measurement. Each time you do, the neural pathways that handle quick number manipulation get a little slower. Math Sprint exists to reverse that rust.</p>
 
-<h2>How the Game Simulates the Skill</h2>
-<p>You are given arithmetic problems — addition, subtraction, multiplication, and division — one at a time. Type the answer and hit enter. Each correct response adds a few seconds to the clock and extends your streak. Each wrong answer costs you time and resets your streak multiplier, which means accuracy is more valuable than raw speed. The game ends when the timer reaches zero, and your final score is a function of how many problems you solved, how long your best streak was, and how far the difficulty climbed.</p>
+<h2>Solving Problems Against the Clock</h2>
+<p>You are given arithmetic problems — addition, subtraction, multiplication, and division — one at a time. Type the answer and hit enter. Each correct response adds a few seconds to the clock and extends your streak.</p>
 
-<h2>How Difficulty Progresses</h2>
-<p>The first few problems are single-digit operations that most adults can answer without thinking. As your streak grows, the operands get larger, the operations mix more aggressively, and the time pressure tightens. By a streak of ten you are multiplying two-digit numbers. By twenty you might see three-digit addition or division with remainders. The progression is continuous and tied to your performance, which means the game scales to your skill level automatically — there is no fixed "level two" or "level three," just a steady ramp that pushes you exactly as hard as you can handle.</p>
+<p>Each wrong answer costs time and resets your streak multiplier, which means accuracy is more valuable than raw speed. The game ends when the timer reaches zero, and your final score reflects how many problems you solved, your best streak, and how far the difficulty climbed.</p>
 
-<h2>Tips for Improving Speed and Accuracy</h2>
+<h2>Arithmetic Fluency and Mental Math</h2>
+<p>The first few problems are single-digit operations that most adults can answer without thinking. As your streak grows, the operands get larger, the operations mix more aggressively, and the time pressure tightens.</p>
+
+<p>By a streak of ten you are multiplying two-digit numbers. By twenty you might see three-digit addition or division with remainders. The progression is continuous and tied to your performance, so the game scales to your skill level automatically — there is no fixed level structure, just a steady ramp that pushes you exactly as hard as you can handle.</p>
+
+<h2>Techniques for Faster Mental Calculation</h2>
 <ul>
 <li><strong>Round and adjust.</strong> To multiply 47 by 6, round to 50, multiply to get 300, then subtract 18. This is faster than traditional multiplication and less error-prone under time pressure.</li>
 <li><strong>Memorize the 12x12 multiplication table.</strong> Most people stop at 10. Knowing products up to 12 × 12 eliminates a surprising number of intermediate steps in harder problems.</li>
@@ -647,63 +660,78 @@ export const articles: Record<string, string> = {
 <p><strong>Which currency is the oldest still in use today?</strong> The British pound sterling, dating back over twelve hundred years. It has survived wars, the collapse of the British Empire, and decimalization in 1971.</p>
 `,
   SHAPE_SORTER_ARTICLE: `
-<p>Shape Sorter is an early-learning game that shows a colorful shape — a circle, square, triangle, or star — and asks the child to pick the matching basket from four options, building visual discrimination without timers or penalties. Visual discrimination is the ability to identify differences and similarities between objects, and it underpins all of mathematics.</p>
+<h1>Shape Sorter — Free Shape Sorting Game for Kids</h1>
+<p>Shape Sorter is a free shape-matching game designed for toddlers and preschoolers where children pick the basket that matches a colorful shape with no timer and no penalties. Your child builds visual discrimination — the ability to tell objects apart by their form — which is a foundational pre-literacy and pre-math skill. That skill matters because distinguishing shapes trains the same visual processing the brain later uses to distinguish letters, numbers, and geometric relationships.</p>
 
-<p>Shape recognition is one of the first mathematical skills children develop. Long before they learn to count or add, kids learn to identify circles, squares, triangles, and stars by their visual properties. This foundational skill is the gateway to geometry, pattern recognition, and spatial reasoning. Shape Sorter is designed to make that early learning joyful and pressure-free.</p>
+<p>Most children begin identifying circles, squares, and triangles between ages two and three. Shape Sorter is designed for that stage. The game has no timer, no penalties, and gentle positive reinforcement so children can explore and learn at their own pace.</p>
 
-<h2>How the Game Works</h2>
-<p>A colorful shape appears on screen — a circle, a square, a triangle, or a star — along with four baskets. The child picks the basket that matches the shape. Correct choices trigger cheerful animations and gentle encouragement. There is no timer, no penalty for wrong answers, and no game-over screen. The game simply continues, celebrating every correct match with colorful feedback and moving on to the next shape. Difficulty controls how many shape types appear and how similar the options look.</p>
+<h2>How the Gameplay Works</h2>
+<p>A colorful shape appears on screen — a circle, square, triangle, or star — along with four baskets. Your child picks the basket that matches the shape. A correct choice triggers a cheerful animation and gentle encouragement.</p>
 
-<h2>Why This Builds Early Math Skills</h2>
-<p>Shape recognition is not just about naming forms — it is about developing <strong>visual discrimination</strong>, the ability to identify differences and similarities between objects. This skill underpins all of mathematics: recognizing that two triangles are the same shape despite being different colors is the same cognitive process as recognizing that two groups of three are the same quantity despite containing different objects. The game reinforces this by presenting shapes in varied colors, sizes, and orientations, so children learn to identify the shape itself rather than memorizing a single example. The lack of time pressure is intentional: young children learn best when they feel safe and unhurried, and the game's gentle pace lets them process each shape at their own speed.</p>
+<p>There is no wrong-answer penalty. If your child picks the wrong basket, the game simply waits for another try. Difficulty controls how many shape types appear and how similar the options look.</p>
 
-<h2>Three Ways to Extend the Learning</h2>
+<h2>Visual Discrimination and Early Learning</h2>
+<p>Visual discrimination is the ability to identify differences and similarities between objects. It is what lets a child tell a circle from an oval, a square from a rectangle, or the letter B from the letter D.</p>
+
+<p>Children use that same cognitive process later to recognize quantities, spot patterns, and identify geometric relationships. The game presents shapes in varied colors, sizes, and orientations so children learn to identify the shape itself rather than memorizing a single example.</p>
+
+<h2>Ways to Extend the Learning at Home</h2>
 <ul>
-<li><strong>Point out shapes in the real world.</strong> A clock is a circle, a book is a rectangle, a stop sign is an octagon. Connecting the game to everyday objects helps children see shapes everywhere.</li>
-<li><strong>Sort household objects by shape.</strong> Give your child a box of mixed items — blocks, balls, books — and ask them to group them by shape. This reinforces the same skill the game teaches, but with physical objects.</li>
+<li><strong>Point out shapes during a walk.</strong> A stop sign is an octagon, a clock is a circle, a book is a rectangle. Connecting shapes to real objects deepens your child's understanding beyond the screen.</li>
+<li><strong>Sort household objects by shape.</strong> Give your child a box of mixed items — blocks, balls, books — and ask them to group them by shape. This reinforces the same skill the game teaches with physical objects they can touch.</li>
 <li><strong>Draw shapes together.</strong> Hand your child a crayon and ask them to draw a circle, a square, a triangle. The act of creating a shape deepens understanding beyond just recognizing one.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>At what age should children start learning shapes?</strong> Most children begin identifying circles, squares, and triangles between ages two and three. Shape Sorter is designed for that early stage with no timer, no penalties, and gentle encouragement.</p>
-<p><strong>Why does Shape Sorter have no timer or penalties?</strong> Because young children learn best when they feel safe and unhurried. The gentle pace lets them process each shape at their own speed, which builds confidence rather than anxiety.</p>
-<p><strong>How does shape recognition help with math later on?</strong> It builds visual discrimination — the ability to identify differences and similarities between objects — which is the same cognitive process children later use to recognize quantities, patterns, and geometric relationships.</p>
+<p><strong>At what age should children start learning shapes?</strong> Most children begin identifying circles, squares, and triangles between ages two and three. Shape Sorter is designed for that stage with no timer, no penalties, and gentle encouragement.</p>
+<p><strong>Why does Shape Sorter have no timer or penalties?</strong> Young children learn best when they feel safe and unhurried. The gentle pace lets them process each shape at their own speed, which builds confidence rather than anxiety.</p>
+<p><strong>How does shape recognition help with math later on?</strong> It builds visual discrimination — the ability to identify differences and similarities between objects. Children later use that same cognitive process to recognize quantities, patterns, and geometric relationships.</p>
 `,
   ANIMAL_HABITAT_ARTICLE: `
-<p>Animal Habitat Match is an early-science game that shows a friendly animal and asks the child to pick its natural habitat from four options — forest, ocean, desert, or arctic — building ecological thinking without timers or penalties. Ecological thinking is the understanding that animals are adapted to specific environments, like a camel's hump storing fat for desert survival or a penguin's feathers trapping air for warmth in freezing water.</p>
+<h1>Animal Habitat Match — Free Animal Matching Game for Kids</h1>
+<p>Animal Habitat Match is a free early-science game where children pick the natural habitat of a friendly animal from four options with no timer and no penalties. Your child builds categorization skills and ecological thinking — the understanding that animals are adapted to specific environments. That knowledge matters because it lays the groundwork for science education by teaching children to connect living things to the conditions that sustain them.</p>
 
-<p>Understanding where animals live is one of the first science concepts children encounter. A fish lives in water, a bird lives in trees, a camel lives in the desert — these connections build a framework for understanding ecosystems, adaptation, and the diversity of life. Animal Habitat Match turns that learning into a gentle, joyful game.</p>
+<p>Children are naturally curious about animals. Animal Habitat Match channels that curiosity into structured learning by asking children to place each animal in the habitat where it naturally lives. The game is designed for young children, roughly ages two to five, with friendly visuals and gentle, pressure-free feedback.</p>
 
-<h2>How the Game Works</h2>
-<p>A friendly animal appears on screen — a bear, a dolphin, a camel, a penguin — along with four habitat options: forest, ocean, desert, and arctic. The child picks the habitat where the animal naturally lives. Correct answers trigger cheerful animations and the animal happily moves to its home. Wrong answers are gentle — the animal just waits for another try, with no penalty or negative feedback. There is no timer, keeping the experience calm and encouraging for young learners.</p>
+<h2>Matching Animals to Where They Live</h2>
+<p>A friendly animal appears on screen — a bear, a dolphin, a camel, a penguin — along with four habitat options: forest, ocean, desert, and arctic. Your child picks the habitat where the animal naturally lives.</p>
 
-<h2>Why This Builds Early Science Knowledge</h2>
-<p>The game develops <strong>ecological thinking</strong> — the understanding that animals are adapted to specific environments and that different habitats support different life. A camel's hump stores fat for desert survival, a penguin's feathers trap air for warmth in freezing water, a fish's gills extract oxygen from water. By matching animals to habitats, children begin to grasp these connections intuitively, even if they cannot articulate them yet. The game uses friendly, cartoon-style animals that are appealing without being misleading — a bear looks like a bear, not a stuffed toy — which helps children recognize the animals in real life, books, and nature documentaries. The gentle format is designed for young attention spans: no harsh sounds, no time pressure, and positive reinforcement for every correct answer.</p>
+<p>A correct answer triggers a cheerful animation and the animal happily moves to its home. There is no timer and no wrong-answer penalty. If your child picks the wrong habitat, the animal just waits for another try.</p>
 
-<h2>Three Fun Animal Facts to Share</h2>
+<h2>Categorization and Early Science Thinking</h2>
+<p>Categorization is the cognitive skill of grouping things by shared characteristics. When a child learns that penguins live in the arctic and camels live in deserts, they are not just memorizing facts. They are building a mental framework for understanding how living things relate to their environments.</p>
+
+<p>That framework is the foundation of ecological thinking. A camel's hump stores fat for energy, not water, which lets it survive in the desert where food is scarce. A penguin's feathers trap air for warmth in freezing water. These adaptations are what the game introduces in an age-appropriate way.</p>
+
+<h2>Simple Ways to Build on the Learning</h2>
 <ul>
-<li>Polar bears have black skin under their white fur. The fur is not actually white — it is transparent and reflects light, which helps them blend into the snow and ice.</li>
-<li>Camels can go up to two weeks without water, not because they store water in their humps, but because their humps store fat that provides energy when food is scarce.</li>
-<li>Otters hold hands while sleeping to keep from drifting apart in the water. They also wrap themselves in seaweed to stay anchored while they nap.</li>
+<li><strong>Talk about animals you see outside.</strong> A squirrel lives in trees, a fish lives in water. Connecting real animals to their habitats reinforces what the game teaches in a way your child can see and touch.</li>
+<li><strong>Read animal books together.</strong> Picture books about animals expand your child's vocabulary and introduce habitats beyond what the game covers, like the African savanna or the Amazon rainforest.</li>
+<li><strong>Visit a zoo or nature center.</strong> Seeing animals in person and reading the habitat signs connects the digital game to the real world. Your child will start spotting habitat features they learned in the game.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
 <p><strong>What age group is Animal Habitat Match designed for?</strong> Young children in the early-science stage, roughly ages two to five. The game has no timer, no penalties, and gentle positive reinforcement to match that age group's attention span.</p>
-<p><strong>Why does a camel have a hump?</strong> A camel's hump stores fat, not water, which provides energy when food is scarce in the desert. This adaptation is what lets camels go up to two weeks without water.</p>
-<p><strong>How does Animal Habitat Match teach science to young children?</strong> By developing ecological thinking — the understanding that animals are adapted to specific environments — through matching animals to their natural habitats with friendly visuals and gentle, pressure-free feedback.</p>
+<p><strong>Why does a camel have a hump?</strong> A camel's hump stores fat, not water, which provides energy when food is scarce in the desert. This adaptation is what lets camels go up to two weeks without drinking.</p>
+<p><strong>How does Animal Habitat Match teach science to young children?</strong> It develops ecological thinking — the understanding that animals are adapted to specific environments — through matching animals to their natural habitats with friendly visuals and gentle, pressure-free feedback.</p>
 `,
   COUNTING_CRITTERS_ARTICLE: `
-<p>Counting Critters is an early-math game that shows a group of friendly animals and asks the child to count them and pick the correct number from four options, building one-to-one correspondence without timers or penalties. One-to-one correspondence is the understanding that each object being counted gets one and only one number, and it is the foundational concept that separates reciting numbers from actually counting.</p>
+<h1>Counting Critters — Free Counting Game for Preschoolers</h1>
+<p>Counting Critters is a free early-math game where children count groups of friendly animals and pick the correct number from four options with no timer and no penalties. Your child builds number sense and one-to-one correspondence — the understanding that each object being counted gets exactly one number. That skill matters because one-to-one correspondence is the foundation all later math is built on, separating real counting from merely reciting numbers.</p>
 
-<p>Counting is the first math skill children learn, and it is the foundation for everything that follows — addition, subtraction, multiplication, and beyond. But counting is not just about reciting numbers; it is about understanding that each number represents a quantity. Counting Critters is designed to build that understanding through gentle, playful interaction.</p>
+<p>Many parents notice their child can recite numbers from one to ten but cannot count three objects. That gap is normal. Reciting is memorization while counting is a cognitive skill that develops later. Counting Critters is designed to bridge that gap.</p>
 
-<h2>How the Game Works</h2>
-<p>A group of friendly critters appears on screen — one, two, three, four, or five little bugs, fish, or birds. The child counts them and picks the correct number from four options. Correct answers trigger cheerful animations and the critters celebrate. Wrong answers are gentle — the critters just wait for another try. There is no timer, no game-over screen, and no negative feedback. The game simply continues, celebrating every correct count and moving on to the next group. Difficulty controls how many critters appear, starting with one through three and progressing to larger groups.</p>
+<h2>How the Counting Works</h2>
+<p>A group of friendly critters appears on screen — one, two, three, four, or five little bugs, fish, or birds. Your child counts them and picks the correct number from four options. A correct answer triggers a cheerful animation and the critters celebrate.</p>
 
-<h2>Why This Builds Early Number Sense</h2>
-<p>The game develops <strong>one-to-one correspondence</strong> — the understanding that each object being counted gets one and only one number. This is the foundational concept of counting, and it is harder than it looks. Many children can recite numbers to ten before they can reliably count three objects, because reciting is memorization while counting is a cognitive skill. The game reinforces this by showing varying numbers of critters, so children cannot just memorize an answer — they must actually count each time. The critters are intentionally spread out and varied in appearance so children practice pointing or looking at each one individually, which builds the habit of one-to-one correspondence. The gentle, pressure-free format lets children count at their own pace, which is essential for building confidence with numbers.</p>
+<p>There is no timer and no wrong-answer penalty. If your child picks the wrong number, the critters just wait for another try. Difficulty controls how many critters appear, starting with one through three and progressing to larger groups.</p>
 
-<h2>Three Counting Activities for Home</h2>
+<h2>Number Sense and One-to-One Correspondence</h2>
+<p>One-to-one correspondence is the understanding that each object being counted gets one and only one number. It sounds obvious to adults, but it is a genuine cognitive leap for young children. Before this concept clicks, a child pointing at objects and saying numbers may not be matching them up.</p>
+
+<p>Counting Critters builds this skill through practice. The critters are intentionally spread out and varied in appearance so children practice pointing or looking at each one individually. This is the same foundational skill that later supports addition, subtraction, and all of arithmetic.</p>
+
+<h2>Everyday Ways to Practice Counting Together</h2>
 <ul>
 <li><strong>Count everyday objects.</strong> Ask your child to count the stairs as you walk up, the forks on the table, or the toys in a box. Real-world counting reinforces what the game teaches.</li>
 <li><strong>Use fingers and toes.</strong> Counting on fingers connects the abstract number to a physical quantity. It is not a crutch — it is a legitimate counting strategy that builds number sense.</li>
@@ -712,25 +740,30 @@ export const articles: Record<string, string> = {
 
 <h2>Frequently Asked Questions</h2>
 <p><strong>What is one-to-one correspondence in counting?</strong> It is the understanding that each object being counted gets one and only one number. This is the foundational concept that separates reciting numbers from actually counting objects.</p>
-<p><strong>Why can my child recite numbers to ten but not count three objects?</strong> Because reciting is memorization while counting is a cognitive skill. One-to-one correspondence — giving each object exactly one number — develops later than rote recitation, and games like Counting Critters build it through practice.</p>
+<p><strong>Why can my child recite numbers to ten but not count three objects?</strong> Reciting is memorization while counting is a cognitive skill. One-to-one correspondence develops later than rote recitation, and games like Counting Critters build it through practice.</p>
 <p><strong>At what age should a child be able to count objects?</strong> Most children develop reliable one-to-one correspondence between ages three and four. Counting Critters supports this stage with no timer, no penalties, and groups that grow from one through three up to larger sets.</p>
 `,
   COLOR_MIXING_ARTICLE: `
-<p>Color Mixing Magic is an early-learning game that shows two primary colors and asks the child to pick what color they make when mixed from four options, building color literacy through gentle, pressure-free play. Color literacy is the ability to identify, name, and predict color combinations, and it is foundational for both art and science — red and yellow make orange, blue and yellow make green, red and blue make purple.</p>
+<h1>Color Mixing Magic — Free Color Learning Game for Kids</h1>
+<p>Color Mixing Magic is a free early-art game where children pick what color two primary colors make when mixed, with no timer and no penalties. Your child builds early color theory understanding — knowledge of how primary colors combine to create secondary colors. That skill matters because it introduces cause-and-effect thinking through art and gives children confidence with the color concepts they will use in every creative activity.</p>
 
-<p>Color mixing is one of the first art concepts children encounter, and it is also a gateway to understanding how the physical world works. Red and yellow make orange, blue and yellow make green, red and blue make purple. These combinations are not arbitrary — they reflect how light and pigment interact. Color Mixing Magic is designed to teach these fundamentals through gentle, joyful play.</p>
+<p>Color is one of the first ways children make sense of the visual world. They notice it everywhere — in toys, clothes, food, and nature. Color Mixing Magic turns that natural interest into structured learning by teaching the three primary colors and the three secondary colors they create.</p>
 
-<h2>How the Game Works</h2>
-<p>Two primary colors appear on screen — for example, red and blue. The child picks what color they make when mixed, choosing from four options. Correct answers trigger a colorful animation where the two colors swirl together to form the result. Wrong answers are gentle — the colors just wait for another try. There is no timer, no penalty, and no game-over screen. The game celebrates every correct answer with a burst of color and moves on to the next combination. Difficulty controls how many color combinations are included, starting with the three primary pairs and progressing to secondary and tertiary mixes.</p>
+<h2>How the Color Mixing Works</h2>
+<p>Two primary colors appear on screen — for example, red and blue. Your child picks what color they make when mixed, choosing from four options. A correct answer triggers a colorful animation where the two colors swirl together to form the result.</p>
 
-<h2>Why This Builds Early Art and Science Skills</h2>
-<p>The game develops <strong>color literacy</strong> — the ability to identify, name, and predict color combinations. This skill is foundational for both art and science. In art, understanding color theory helps children make intentional choices about what they create. In science, color mixing is an early lesson in how different elements combine to create something new. The game uses the traditional red-yellow-blue pigment model, which is what children will encounter in paints, crayons, and markers. The gentle format is designed for young attention spans: each round is short, the feedback is immediate and visual, and the animations are satisfying without being overstimulating. Children learn best when they feel safe and curious, and the game's calm pace supports both.</p>
+<p>There is no timer and no wrong-answer penalty. If your child picks the wrong color, the game simply waits for another try. Difficulty controls how many color combinations are included, starting with the three primary pairs and progressing to more complex mixes.</p>
 
-<h2>Three Color Activities for Home</h2>
+<h2>Early Color Theory and Creative Thinking</h2>
+<p>The game uses the traditional red-yellow-blue pigment model — the one children encounter in paints, crayons, and markers. The three primary colors are red, yellow, and blue. The three secondary colors are orange, green, and purple.</p>
+
+<p>Each secondary color comes from mixing two primaries: red and yellow make orange, blue and yellow make green, and red and blue make purple. This is cause-and-effect thinking expressed through color, which is a gentle introduction to logical reasoning for young children.</p>
+
+<h2>Bringing Color Learning Into Everyday Life</h2>
 <ul>
-<li><strong>Mix paint or food coloring.</strong> Let your child physically mix two colors and watch the result appear. This reinforces what the game teaches through hands-on experience.</li>
+<li><strong>Mix paint or food coloring together.</strong> Let your child physically mix two colors and watch the result appear. Hands-on mixing reinforces what the game teaches through experience a screen cannot provide.</li>
 <li><strong>Go on a color hunt.</strong> Ask your child to find something red, something blue, something yellow in the room. This builds color identification skills and connects the game to the real world.</li>
-<li><strong>Sort objects by color.</strong> Give your child a mix of colorful objects — blocks, buttons, or toys — and ask them to group them by color. This reinforces color recognition and sorting skills simultaneously.</li>
+<li><strong>Point out mixed colors in nature.</strong> A sunset shows orange and purple. A flower might have yellow and red blending into orange. Nature is full of color mixing if you know where to look.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
@@ -739,26 +772,31 @@ export const articles: Record<string, string> = {
 <p><strong>Why does Color Mixing Magic use the red-yellow-blue model?</strong> Because that is the traditional pigment model children encounter in paints, crayons, and markers, so the practice transfers directly to real-world art activities.</p>
 `,
   PATTERN_BUILDER_ARTICLE: `
-<p>Pattern Builder is an early-learning game that shows a sequence of colorful shapes with a missing item and asks the child to pick what comes next from four options, building pattern recognition and prediction without timers or penalties. Pattern recognition is the foundation of algebraic thinking — when a child sees circle-square-circle-square and predicts circle, they are identifying a rule and applying it, which is exactly what algebra asks them to do years later.</p>
+<h1>Pattern Builder — Free Pattern Recognition Game for Kids</h1>
+<p>Pattern Builder is a free early-logic game where children complete visual sequences by picking the shape or color that comes next, with no timer and no penalties. Your child builds sequence recognition and prediction — the ability to identify a repeating pattern and extend it. That skill matters because pattern recognition is the bridge between counting and algebra, teaching children to identify a rule and apply it.</p>
 
-<p>Pattern recognition is one of the most important cognitive skills young children can develop. It underlies mathematics, music, language, and logic. A child who can identify a pattern — red, blue, red, blue, what comes next? — is already doing algebraic thinking, even if they do not know it. Pattern Builder is designed to nurture this skill through gentle, colorful play.</p>
+<p>Pattern recognition is one of the most important early-math skills. Before children can add or subtract, they learn to recognize and extend patterns. Pattern Builder is designed for young children, roughly ages three to five, to build that skill through gentle, pressure-free play.</p>
 
-<h2>How the Game Works</h2>
-<p>A sequence of colorful shapes appears on screen — circle, square, circle, square, circle, and then a question mark. The child picks the shape that comes next from four options. Correct answers trigger cheerful animations and the pattern completes. Wrong answers are gentle — the shapes just wait for another try. There is no timer, no penalty, and no game-over screen. The game celebrates every correct answer and moves on to the next pattern. Difficulty controls the complexity of the patterns, starting with simple alternating sequences and progressing to patterns with three or more elements.</p>
+<h2>Completing the Sequence</h2>
+<p>A sequence of colorful shapes appears on screen — circle, square, circle, square, circle, and then a question mark. Your child picks the shape that comes next from four options. A correct answer triggers a cheerful animation and the pattern completes.</p>
 
-<h2>Why This Builds Early Math and Logic Skills</h2>
-<p>The game develops <strong>pattern recognition and prediction</strong> — the ability to identify a repeating sequence and predict what comes next. This is the foundation of algebraic thinking, where a child generalizes from specific examples to a rule. When a child sees circle-square-circle-square and correctly predicts circle, they are identifying a rule and applying it, which is exactly what algebra asks them to do years later. The game uses colorful, friendly shapes that appeal to young children, and the patterns are varied so children cannot memorize answers — they must identify the rule each time. The gentle format lets children think at their own pace, which is essential for the kind of reflective thinking that pattern recognition requires. Rushing a child through pattern tasks produces anxiety, not understanding, so the game intentionally removes all time pressure.</p>
+<p>There is no timer and no wrong-answer penalty. If your child picks the wrong shape, the game simply waits for another try. Difficulty controls the complexity of the patterns, starting with simple alternating sequences and progressing to patterns with three or more elements.</p>
 
-<h2>Three Pattern Activities for Home</h2>
+<h2>Sequence Recognition and the Path to Algebra</h2>
+<p>Pattern recognition is more than a preschool activity. It is the foundation of algebraic thinking. When a child sees circle-square-circle-square and correctly predicts circle, they are identifying a rule and applying it to predict the next element.</p>
+
+<p>That is exactly what algebra asks children to do years later, just with numbers and symbols instead of colors and shapes. Pattern Builder gives children an intuitive, visual introduction to that kind of reasoning before they ever see an equation.</p>
+
+<h2>Simple Activities to Strengthen Pattern Thinking</h2>
 <ul>
-<li><strong>Make patterns with household objects.</strong> Line up fork, spoon, fork, spoon and ask what comes next. Or use blocks, crayons, or buttons in alternating colors.</li>
+<li><strong>Make patterns with household objects.</strong> Line up fork, spoon, fork, spoon, fork and ask what comes next. Or use blocks, crayons, or buttons in alternating colors. Physical patterns your child can touch make the concept concrete.</li>
 <li><strong>Clap patterns together.</strong> Clap-stomp-clap-stomp, or loud-soft-loud-soft. Patterns do not have to be visual — sound patterns build the same skill and add a fun physical element.</li>
 <li><strong>Look for patterns in nature.</strong> Petals on a flower, stripes on a cat, the repeating segments of a caterpillar. Nature is full of patterns, and finding them helps children see math everywhere.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
-<p><strong>How does Pattern Builder help with math?</strong> It builds pattern recognition and prediction — the ability to identify a repeating sequence and predict what comes next — which is the foundation of algebraic thinking. Identifying a rule and applying it is exactly what algebra asks children to do years later.</p>
+<p><strong>How does Pattern Builder help with math?</strong> It builds pattern recognition and prediction — the ability to identify a repeating sequence and predict what comes next. Identifying a rule and applying it is exactly what algebra asks children to do years later.</p>
 <p><strong>What age group is Pattern Builder designed for?</strong> Young children in the early-logic stage, roughly ages three to five. The game has no timer, no penalties, and patterns that progress from simple alternating sequences to more complex ones.</p>
-<p><strong>Why does Pattern Builder have no time limit?</strong> Because pattern recognition requires reflective thinking, and rushing a child through it produces anxiety rather than understanding. The gentle pace lets children think at their own speed, which builds confidence and deeper comprehension.</p>
+<p><strong>Why does Pattern Builder have no time limit?</strong> Pattern recognition requires reflective thinking, and rushing a child through it produces anxiety rather than understanding. The gentle pace lets children think at their own speed, which builds confidence and deeper comprehension.</p>
 `,
 };
