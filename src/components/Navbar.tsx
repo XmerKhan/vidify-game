@@ -14,7 +14,7 @@ const categoryIcons: Record<string, typeof Wallet> = {
 const topLinks = [
   { to: '/about', label: 'About Us' },
   { to: '/contact', label: 'Contact Us' },
-  { to: '/privacy', label: 'Privacy Policy' },
+  { to: '/privacy-policy', label: 'Privacy Policy' },
   { to: '/terms', label: 'Terms & Conditions' },
   { to: '/disclaimer', label: 'Disclaimer' },
 ];

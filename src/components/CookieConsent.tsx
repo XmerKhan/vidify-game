@@ -48,7 +48,7 @@ export default function CookieConsent() {
             <h3 className="font-display font-bold text-ink-900 text-sm">We use cookies</h3>
             <p className="text-xs text-ink-500 mt-1 leading-relaxed">
               We use cookies to operate the site, remember your preferences, and support advertising via Google AdSense. By continuing, you agree to our use of cookies. See our{' '}
-              <Link to="/privacy" className="font-semibold text-brand-700 hover:underline">Privacy Policy</Link>{' '}and{' '}
+              <Link to="/privacy-policy" className="font-semibold text-brand-700 hover:underline">Privacy Policy</Link>{' '}and{' '}
               <Link to="/terms" className="font-semibold text-brand-700 hover:underline">Terms</Link>.
             </p>
             <div className="flex gap-2 mt-3">

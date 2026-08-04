@@ -20,7 +20,7 @@ const router = createBrowserRouter([
       { path: '/category/:category', element: <CategoryPage /> },
       { path: '/category/kids', element: <Navigate to="/category/brainstorming" replace /> },
       { path: '/about', element: <AboutPage /> },
-      { path: '/privacy', element: <PrivacyPage /> },
+      { path: '/privacy-policy', element: <PrivacyPage /> },
       { path: '/terms', element: <TermsPage /> },
       { path: '/contact', element: <ContactPage /> },
       { path: '/advertisement-disclosure', element: <AdvertisementDisclosurePage /> },

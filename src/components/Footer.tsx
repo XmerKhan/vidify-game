@@ -37,7 +37,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><Link to="/about" className="text-sm text-ink-500 hover:text-brand-700">About Us</Link></li>
               <li><Link to="/contact" className="text-sm text-ink-500 hover:text-brand-700">Contact</Link></li>
-              <li><Link to="/privacy" className="text-sm text-ink-500 hover:text-brand-700">Privacy Policy</Link></li>
+              <li><Link to="/privacy-policy" className="text-sm text-ink-500 hover:text-brand-700">Privacy Policy</Link></li>
               <li><Link to="/terms" className="text-sm text-ink-500 hover:text-brand-700">Terms of Service</Link></li>
               <li><Link to="/advertisement-disclosure" className="text-sm text-ink-500 hover:text-brand-700">Advertisement Disclosure</Link></li>
               <li><Link to="/disclaimer" className="text-sm text-ink-500 hover:text-brand-700">Disclaimer</Link></li>
